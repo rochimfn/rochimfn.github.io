@@ -1,0 +1,668 @@
+<!DOCTYPE html><html><head><meta charSet="utf-8"/><meta http-equiv="x-ua-compatible" content="ie=edge"/><meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no"/><style id="typography.js">html{font-family:sans-serif;-ms-text-size-adjust:100%;-webkit-text-size-adjust:100%}body{margin:0}article,aside,details,figcaption,figure,footer,header,main,menu,nav,section,summary{display:block}audio,canvas,progress,video{display:inline-block}audio:not([controls]){display:none;height:0}progress{vertical-align:baseline}[hidden],template{display:none}a{background-color:transparent;-webkit-text-decoration-skip:objects}a:active,a:hover{outline-width:0}abbr[title]{border-bottom:none;text-decoration:underline;text-decoration:underline dotted}b,strong{font-weight:inherit;font-weight:bolder}dfn{font-style:italic}h1{font-size:2em;margin:.67em 0}mark{background-color:#ff0;color:#000}small{font-size:80%}sub,sup{font-size:75%;line-height:0;position:relative;vertical-align:baseline}sub{bottom:-.25em}sup{top:-.5em}img{border-style:none}svg:not(:root){overflow:hidden}code,kbd,pre,samp{font-family:monospace,monospace;font-size:1em}figure{margin:1em 40px}hr{box-sizing:content-box;height:0;overflow:visible}button,input,optgroup,select,textarea{font:inherit;margin:0}optgroup{font-weight:700}button,input{overflow:visible}button,select{text-transform:none}[type=reset],[type=submit],button,html [type=button]{-webkit-appearance:button}[type=button]::-moz-focus-inner,[type=reset]::-moz-focus-inner,[type=submit]::-moz-focus-inner,button::-moz-focus-inner{border-style:none;padding:0}[type=button]:-moz-focusring,[type=reset]:-moz-focusring,[type=submit]:-moz-focusring,button:-moz-focusring{outline:1px dotted ButtonText}fieldset{border:1px solid silver;margin:0 2px;padding:.35em .625em .75em}legend{box-sizing:border-box;color:inherit;display:table;max-width:100%;padding:0;white-space:normal}textarea{overflow:auto}[type=checkbox],[type=radio]{box-sizing:border-box;padding:0}[type=number]::-webkit-inner-spin-button,[type=number]::-webkit-outer-spin-button{height:auto}[type=search]{-webkit-appearance:textfield;outline-offset:-2px}[type=search]::-webkit-search-cancel-button,[type=search]::-webkit-search-decoration{-webkit-appearance:none}::-webkit-input-placeholder{color:inherit;opacity:.54}::-webkit-file-upload-button{-webkit-appearance:button;font:inherit}html{font:100%/1.4 'Roboto',sans-serif;box-sizing:border-box;overflow-y:scroll;-webkit-font-smoothing:antialiased;}*{box-sizing:inherit;}*:before{box-sizing:inherit;}*:after{box-sizing:inherit;}body{color:hsla(0,0%,0%,0.87);font-family:'Roboto',sans-serif;font-weight:400;word-wrap:break-word;font-kerning:normal;-moz-font-feature-settings:"kern", "liga", "clig", "calt";-ms-font-feature-settings:"kern", "liga", "clig", "calt";-webkit-font-feature-settings:"kern", "liga", "clig", "calt";font-feature-settings:"kern", "liga", "clig", "calt";letter-spacing:.03em;}img{max-width:100%;margin-left:0;margin-right:0;margin-top:0;padding-bottom:0;padding-left:0;padding-right:0;padding-top:0;margin-bottom:1.4rem;}h1{margin-left:0;margin-right:0;margin-top:0;padding-bottom:0;padding-left:0;padding-right:0;padding-top:0;margin-bottom:1.4rem;color:inherit;font-family:'Lato',sans-serif;font-weight:400;text-rendering:optimizeLegibility;font-size:2rem;line-height:1.1;}h2{margin-left:0;margin-right:0;margin-top:0;padding-bottom:0;padding-left:0;padding-right:0;padding-top:0;margin-bottom:1.4rem;color:inherit;font-family:'Lato',sans-serif;font-weight:400;text-rendering:optimizeLegibility;font-size:1.51572rem;line-height:1.1;}h3{margin-left:0;margin-right:0;margin-top:0;padding-bottom:0;padding-left:0;padding-right:0;padding-top:0;margin-bottom:1.4rem;color:inherit;font-family:'Lato',sans-serif;font-weight:400;text-rendering:optimizeLegibility;font-size:1.31951rem;line-height:1.1;}h4{margin-left:0;margin-right:0;margin-top:0;padding-bottom:0;padding-left:0;padding-right:0;padding-top:0;margin-bottom:1.4rem;color:inherit;font-family:'Lato',sans-serif;font-weight:400;text-rendering:optimizeLegibility;font-size:1rem;line-height:1.1;}h5{margin-left:0;margin-right:0;margin-top:0;padding-bottom:0;padding-left:0;padding-right:0;padding-top:0;margin-bottom:1.4rem;color:inherit;font-family:'Lato',sans-serif;font-weight:400;text-rendering:optimizeLegibility;font-size:0.87055rem;line-height:1.1;}h6{margin-left:0;margin-right:0;margin-top:0;padding-bottom:0;padding-left:0;padding-right:0;padding-top:0;margin-bottom:1.4rem;color:inherit;font-family:'Lato',sans-serif;font-weight:400;text-rendering:optimizeLegibility;font-size:0.81225rem;line-height:1.1;}hgroup{margin-left:0;margin-right:0;margin-top:0;padding-bottom:0;padding-left:0;padding-right:0;padding-top:0;margin-bottom:1.4rem;}ul{margin-left:1.4rem;margin-right:0;margin-top:0;padding-bottom:0;padding-left:0;padding-right:0;padding-top:0;margin-bottom:1.4rem;list-style-position:outside;list-style-image:none;}ol{margin-left:1.4rem;margin-right:0;margin-top:0;padding-bottom:0;padding-left:0;padding-right:0;padding-top:0;margin-bottom:1.4rem;list-style-position:outside;list-style-image:none;}dl{margin-left:0;margin-right:0;margin-top:0;padding-bottom:0;padding-left:0;padding-right:0;padding-top:0;margin-bottom:1.4rem;}dd{margin-left:0;margin-right:0;margin-top:0;padding-bottom:0;padding-left:0;padding-right:0;padding-top:0;margin-bottom:1.4rem;}p{margin-left:0;margin-right:0;margin-top:0;padding-bottom:0;padding-left:0;padding-right:0;padding-top:0;margin-bottom:1.4rem;}figure{margin-left:0;margin-right:0;margin-top:0;padding-bottom:0;padding-left:0;padding-right:0;padding-top:0;margin-bottom:1.4rem;}pre{margin-left:0;margin-right:0;margin-top:0;padding-bottom:0;padding-left:0;padding-right:0;padding-top:0;margin-bottom:1.4rem;font-size:0.85rem;line-height:1.4rem;}table{margin-left:0;margin-right:0;margin-top:0;padding-bottom:0;padding-left:0;padding-right:0;padding-top:0;margin-bottom:1.4rem;font-size:1rem;line-height:1.4rem;border-collapse:collapse;width:100%;}fieldset{margin-left:0;margin-right:0;margin-top:0;padding-bottom:0;padding-left:0;padding-right:0;padding-top:0;margin-bottom:1.4rem;}blockquote{margin-left:-1.4rem;margin-right:1.4rem;margin-top:0;padding-bottom:0;padding-left:1.1375rem;padding-right:0;padding-top:0;margin-bottom:1.4rem;font-size:1.1487rem;line-height:1.4rem;color:hsla(0,0%,0%,0.6);border-left:0.2625rem solid hsla(0,0%,0%,0.87);}form{margin-left:0;margin-right:0;margin-top:0;padding-bottom:0;padding-left:0;padding-right:0;padding-top:0;margin-bottom:1.4rem;}noscript{margin-left:0;margin-right:0;margin-top:0;padding-bottom:0;padding-left:0;padding-right:0;padding-top:0;margin-bottom:1.4rem;}iframe{margin-left:0;margin-right:0;margin-top:0;padding-bottom:0;padding-left:0;padding-right:0;padding-top:0;margin-bottom:1.4rem;}hr{margin-left:0;margin-right:0;margin-top:0;padding-bottom:0;padding-left:0;padding-right:0;padding-top:0;margin-bottom:calc(1.4rem - 1px);background:hsla(0,0%,0%,0.2);border:none;height:1px;}address{margin-left:0;margin-right:0;margin-top:0;padding-bottom:0;padding-left:0;padding-right:0;padding-top:0;margin-bottom:1.4rem;}b{font-weight:700;}strong{font-weight:700;}dt{font-weight:700;}th{font-weight:700;}li{margin-bottom:calc(1.4rem / 2);}ol li{padding-left:0;}ul li{padding-left:0;}li > ol{margin-left:1.4rem;margin-bottom:calc(1.4rem / 2);margin-top:calc(1.4rem / 2);}li > ul{margin-left:1.4rem;margin-bottom:calc(1.4rem / 2);margin-top:calc(1.4rem / 2);}blockquote *:last-child{margin-bottom:0;}li *:last-child{margin-bottom:0;}p *:last-child{margin-bottom:0;}li > p{margin-bottom:calc(1.4rem / 2);}code{font-size:0.7rem!important;line-height:1!important;}kbd{font-size:0.85rem;line-height:1.4rem;}samp{font-size:0.85rem;line-height:1.4rem;}abbr{border-bottom:1px dotted hsla(0,0%,0%,0.5);cursor:help;}acronym{border-bottom:1px dotted hsla(0,0%,0%,0.5);cursor:help;}abbr[title]{border-bottom:1px dotted hsla(0,0%,0%,0.5);cursor:help;text-decoration:none;}thead{text-align:left;}td,th{text-align:left;border-bottom:1px solid hsla(0,0%,0%,0.12);font-feature-settings:"tnum";-moz-font-feature-settings:"tnum";-ms-font-feature-settings:"tnum";-webkit-font-feature-settings:"tnum";padding-left:0.93333rem;padding-right:0.93333rem;padding-top:0.7rem;padding-bottom:calc(0.7rem - 1px);}th:first-child,td:first-child{padding-left:0;}th:last-child,td:last-child{padding-right:0;}a{color:inherit;}a:hover{color:#3498DB;}@media only screen and (max-width:480px){blockquote{margin-left:-1.05rem;padding-left:0.7875rem;margin-right:0;}}</style><style data-href="/styles.85333577aa7dbfd7b7d3.css">code[class*=language-],pre[class*=language-]{color:#657b83;font-family:Consolas,Monaco,Andale Mono,Ubuntu Mono,monospace;font-size:1em;text-align:left;white-space:pre;word-spacing:normal;word-break:normal;word-wrap:normal;line-height:1.5;-moz-tab-size:4;-o-tab-size:4;tab-size:4;-webkit-hyphens:none;-ms-hyphens:none;hyphens:none}code[class*=language-]::selection,code[class*=language-] ::selection,pre[class*=language-]::selection,pre[class*=language-] ::selection{background:#073642}pre[class*=language-]{padding:1em;margin:.5em 0;overflow:auto;border-radius:.3em}:not(pre)>code[class*=language-],pre[class*=language-]{background-color:#fdf6e3}:not(pre)>code[class*=language-]{padding:.1em;border-radius:.3em}.token.cdata,.token.comment,.token.doctype,.token.prolog{color:#93a1a1}.token.punctuation{color:#586e75}.token.namespace{opacity:.7}.token.boolean,.token.constant,.token.deleted,.token.number,.token.property,.token.symbol,.token.tag{color:#268bd2}.token.attr-name,.token.builtin,.token.char,.token.inserted,.token.selector,.token.string,.token.url{color:#2aa198}.token.entity{color:#657b83;background:#eee8d5}.token.atrule,.token.attr-value,.token.keyword{color:#859900}.token.class-name,.token.function{color:#b58900}.token.important,.token.regex,.token.variable{color:#cb4b16}.token.bold,.token.important{font-weight:700}.token.italic{font-style:italic}.token.entity{cursor:help}</style><meta name="generator" content="Gatsby 2.23.12"/><title data-react-helmet="true">Protostar: Persiapan  | Rochim&#x27;s Log</title><meta data-react-helmet="true" name="google-site-verification" content="Mss0Hxe25yLcF_RF5r9RCdZJNLRyMN9PVSGzKd5neb0"/><style type="text/css">svg:not(:root).svg-inline--fa {
+  overflow: visible;
+}
+
+.svg-inline--fa {
+  display: inline-block;
+  font-size: inherit;
+  height: 1em;
+  overflow: visible;
+  vertical-align: -0.125em;
+}
+.svg-inline--fa.fa-lg {
+  vertical-align: -0.225em;
+}
+.svg-inline--fa.fa-w-1 {
+  width: 0.0625em;
+}
+.svg-inline--fa.fa-w-2 {
+  width: 0.125em;
+}
+.svg-inline--fa.fa-w-3 {
+  width: 0.1875em;
+}
+.svg-inline--fa.fa-w-4 {
+  width: 0.25em;
+}
+.svg-inline--fa.fa-w-5 {
+  width: 0.3125em;
+}
+.svg-inline--fa.fa-w-6 {
+  width: 0.375em;
+}
+.svg-inline--fa.fa-w-7 {
+  width: 0.4375em;
+}
+.svg-inline--fa.fa-w-8 {
+  width: 0.5em;
+}
+.svg-inline--fa.fa-w-9 {
+  width: 0.5625em;
+}
+.svg-inline--fa.fa-w-10 {
+  width: 0.625em;
+}
+.svg-inline--fa.fa-w-11 {
+  width: 0.6875em;
+}
+.svg-inline--fa.fa-w-12 {
+  width: 0.75em;
+}
+.svg-inline--fa.fa-w-13 {
+  width: 0.8125em;
+}
+.svg-inline--fa.fa-w-14 {
+  width: 0.875em;
+}
+.svg-inline--fa.fa-w-15 {
+  width: 0.9375em;
+}
+.svg-inline--fa.fa-w-16 {
+  width: 1em;
+}
+.svg-inline--fa.fa-w-17 {
+  width: 1.0625em;
+}
+.svg-inline--fa.fa-w-18 {
+  width: 1.125em;
+}
+.svg-inline--fa.fa-w-19 {
+  width: 1.1875em;
+}
+.svg-inline--fa.fa-w-20 {
+  width: 1.25em;
+}
+.svg-inline--fa.fa-pull-left {
+  margin-right: 0.3em;
+  width: auto;
+}
+.svg-inline--fa.fa-pull-right {
+  margin-left: 0.3em;
+  width: auto;
+}
+.svg-inline--fa.fa-border {
+  height: 1.5em;
+}
+.svg-inline--fa.fa-li {
+  width: 2em;
+}
+.svg-inline--fa.fa-fw {
+  width: 1.25em;
+}
+
+.fa-layers svg.svg-inline--fa {
+  bottom: 0;
+  left: 0;
+  margin: auto;
+  position: absolute;
+  right: 0;
+  top: 0;
+}
+
+.fa-layers {
+  display: inline-block;
+  height: 1em;
+  position: relative;
+  text-align: center;
+  vertical-align: -0.125em;
+  width: 1em;
+}
+.fa-layers svg.svg-inline--fa {
+  -webkit-transform-origin: center center;
+          transform-origin: center center;
+}
+
+.fa-layers-counter, .fa-layers-text {
+  display: inline-block;
+  position: absolute;
+  text-align: center;
+}
+
+.fa-layers-text {
+  left: 50%;
+  top: 50%;
+  -webkit-transform: translate(-50%, -50%);
+          transform: translate(-50%, -50%);
+  -webkit-transform-origin: center center;
+          transform-origin: center center;
+}
+
+.fa-layers-counter {
+  background-color: #ff253a;
+  border-radius: 1em;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  color: #fff;
+  height: 1.5em;
+  line-height: 1;
+  max-width: 5em;
+  min-width: 1.5em;
+  overflow: hidden;
+  padding: 0.25em;
+  right: 0;
+  text-overflow: ellipsis;
+  top: 0;
+  -webkit-transform: scale(0.25);
+          transform: scale(0.25);
+  -webkit-transform-origin: top right;
+          transform-origin: top right;
+}
+
+.fa-layers-bottom-right {
+  bottom: 0;
+  right: 0;
+  top: auto;
+  -webkit-transform: scale(0.25);
+          transform: scale(0.25);
+  -webkit-transform-origin: bottom right;
+          transform-origin: bottom right;
+}
+
+.fa-layers-bottom-left {
+  bottom: 0;
+  left: 0;
+  right: auto;
+  top: auto;
+  -webkit-transform: scale(0.25);
+          transform: scale(0.25);
+  -webkit-transform-origin: bottom left;
+          transform-origin: bottom left;
+}
+
+.fa-layers-top-right {
+  right: 0;
+  top: 0;
+  -webkit-transform: scale(0.25);
+          transform: scale(0.25);
+  -webkit-transform-origin: top right;
+          transform-origin: top right;
+}
+
+.fa-layers-top-left {
+  left: 0;
+  right: auto;
+  top: 0;
+  -webkit-transform: scale(0.25);
+          transform: scale(0.25);
+  -webkit-transform-origin: top left;
+          transform-origin: top left;
+}
+
+.fa-lg {
+  font-size: 1.3333333333em;
+  line-height: 0.75em;
+  vertical-align: -0.0667em;
+}
+
+.fa-xs {
+  font-size: 0.75em;
+}
+
+.fa-sm {
+  font-size: 0.875em;
+}
+
+.fa-1x {
+  font-size: 1em;
+}
+
+.fa-2x {
+  font-size: 2em;
+}
+
+.fa-3x {
+  font-size: 3em;
+}
+
+.fa-4x {
+  font-size: 4em;
+}
+
+.fa-5x {
+  font-size: 5em;
+}
+
+.fa-6x {
+  font-size: 6em;
+}
+
+.fa-7x {
+  font-size: 7em;
+}
+
+.fa-8x {
+  font-size: 8em;
+}
+
+.fa-9x {
+  font-size: 9em;
+}
+
+.fa-10x {
+  font-size: 10em;
+}
+
+.fa-fw {
+  text-align: center;
+  width: 1.25em;
+}
+
+.fa-ul {
+  list-style-type: none;
+  margin-left: 2.5em;
+  padding-left: 0;
+}
+.fa-ul > li {
+  position: relative;
+}
+
+.fa-li {
+  left: -2em;
+  position: absolute;
+  text-align: center;
+  width: 2em;
+  line-height: inherit;
+}
+
+.fa-border {
+  border: solid 0.08em #eee;
+  border-radius: 0.1em;
+  padding: 0.2em 0.25em 0.15em;
+}
+
+.fa-pull-left {
+  float: left;
+}
+
+.fa-pull-right {
+  float: right;
+}
+
+.fa.fa-pull-left,
+.fas.fa-pull-left,
+.far.fa-pull-left,
+.fal.fa-pull-left,
+.fab.fa-pull-left {
+  margin-right: 0.3em;
+}
+.fa.fa-pull-right,
+.fas.fa-pull-right,
+.far.fa-pull-right,
+.fal.fa-pull-right,
+.fab.fa-pull-right {
+  margin-left: 0.3em;
+}
+
+.fa-spin {
+  -webkit-animation: fa-spin 2s infinite linear;
+          animation: fa-spin 2s infinite linear;
+}
+
+.fa-pulse {
+  -webkit-animation: fa-spin 1s infinite steps(8);
+          animation: fa-spin 1s infinite steps(8);
+}
+
+@-webkit-keyframes fa-spin {
+  0% {
+    -webkit-transform: rotate(0deg);
+            transform: rotate(0deg);
+  }
+  100% {
+    -webkit-transform: rotate(360deg);
+            transform: rotate(360deg);
+  }
+}
+
+@keyframes fa-spin {
+  0% {
+    -webkit-transform: rotate(0deg);
+            transform: rotate(0deg);
+  }
+  100% {
+    -webkit-transform: rotate(360deg);
+            transform: rotate(360deg);
+  }
+}
+.fa-rotate-90 {
+  -ms-filter: "progid:DXImageTransform.Microsoft.BasicImage(rotation=1)";
+  -webkit-transform: rotate(90deg);
+          transform: rotate(90deg);
+}
+
+.fa-rotate-180 {
+  -ms-filter: "progid:DXImageTransform.Microsoft.BasicImage(rotation=2)";
+  -webkit-transform: rotate(180deg);
+          transform: rotate(180deg);
+}
+
+.fa-rotate-270 {
+  -ms-filter: "progid:DXImageTransform.Microsoft.BasicImage(rotation=3)";
+  -webkit-transform: rotate(270deg);
+          transform: rotate(270deg);
+}
+
+.fa-flip-horizontal {
+  -ms-filter: "progid:DXImageTransform.Microsoft.BasicImage(rotation=0, mirror=1)";
+  -webkit-transform: scale(-1, 1);
+          transform: scale(-1, 1);
+}
+
+.fa-flip-vertical {
+  -ms-filter: "progid:DXImageTransform.Microsoft.BasicImage(rotation=2, mirror=1)";
+  -webkit-transform: scale(1, -1);
+          transform: scale(1, -1);
+}
+
+.fa-flip-both, .fa-flip-horizontal.fa-flip-vertical {
+  -ms-filter: "progid:DXImageTransform.Microsoft.BasicImage(rotation=2, mirror=1)";
+  -webkit-transform: scale(-1, -1);
+          transform: scale(-1, -1);
+}
+
+:root .fa-rotate-90,
+:root .fa-rotate-180,
+:root .fa-rotate-270,
+:root .fa-flip-horizontal,
+:root .fa-flip-vertical,
+:root .fa-flip-both {
+  -webkit-filter: none;
+          filter: none;
+}
+
+.fa-stack {
+  display: inline-block;
+  height: 2em;
+  position: relative;
+  width: 2.5em;
+}
+
+.fa-stack-1x,
+.fa-stack-2x {
+  bottom: 0;
+  left: 0;
+  margin: auto;
+  position: absolute;
+  right: 0;
+  top: 0;
+}
+
+.svg-inline--fa.fa-stack-1x {
+  height: 1em;
+  width: 1.25em;
+}
+.svg-inline--fa.fa-stack-2x {
+  height: 2em;
+  width: 2.5em;
+}
+
+.fa-inverse {
+  color: #fff;
+}
+
+.sr-only {
+  border: 0;
+  clip: rect(0, 0, 0, 0);
+  height: 1px;
+  margin: -1px;
+  overflow: hidden;
+  padding: 0;
+  position: absolute;
+  width: 1px;
+}
+
+.sr-only-focusable:active, .sr-only-focusable:focus {
+  clip: auto;
+  height: auto;
+  margin: 0;
+  overflow: visible;
+  position: static;
+  width: auto;
+}
+
+.svg-inline--fa .fa-primary {
+  fill: var(--fa-primary-color, currentColor);
+  opacity: 1;
+  opacity: var(--fa-primary-opacity, 1);
+}
+
+.svg-inline--fa .fa-secondary {
+  fill: var(--fa-secondary-color, currentColor);
+  opacity: 0.4;
+  opacity: var(--fa-secondary-opacity, 0.4);
+}
+
+.svg-inline--fa.fa-swap-opacity .fa-primary {
+  opacity: 0.4;
+  opacity: var(--fa-secondary-opacity, 0.4);
+}
+
+.svg-inline--fa.fa-swap-opacity .fa-secondary {
+  opacity: 1;
+  opacity: var(--fa-primary-opacity, 1);
+}
+
+.svg-inline--fa mask .fa-primary,
+.svg-inline--fa mask .fa-secondary {
+  fill: black;
+}
+
+.fad.fa-inverse {
+  color: #fff;
+}</style><link href="//fonts.googleapis.com/css?family=Roboto:400,400i|Lato:400,700" rel="stylesheet" type="text/css"/><link as="script" rel="preload" href="/webpack-runtime-f963eae2120b2b1d61d8.js"/><link as="script" rel="preload" href="/framework-8dcecaaefd71e2213eb2.js"/><link as="script" rel="preload" href="/styles-fa79fef4936efa84b233.js"/><link as="script" rel="preload" href="/app-0842d1f2308dcbc38b7d.js"/><link as="script" rel="preload" href="/a9a7754c-a2394e3013f6ec8b3709.js"/><link as="script" rel="preload" href="/commons-0789b8c625ffd9cdd70f.js"/><link as="script" rel="preload" href="/component---src-templates-blog-post-js-0314926304c56436cd57.js"/><link as="fetch" rel="preload" href="/page-data/belajar-reversing-persiapan-protostar/page-data.json" crossorigin="anonymous"/><link as="fetch" rel="preload" href="/page-data/app-data.json" crossorigin="anonymous"/></head><body><div id="___gatsby"><div style="outline:none" tabindex="-1" id="gatsby-focus-wrapper"><style data-emotion-css="qtdpw1">.css-qtdpw1{margin:0 auto;max-width:800px;padding:2.8rem;padding-top:2.1rem;}</style><div class="css-qtdpw1"><a href="/"><style data-emotion-css="1qwpq04">.css-1qwpq04{margin-bottom:2.8rem;display:inline-block;font-style:normal;}</style><h2 class="css-1qwpq04"> <!-- -->Rochim&#x27;s Log</h2></a><style data-emotion-css="16klv83">.css-16klv83{float:right;-webkit-text-decoration:none;text-decoration:none;}</style><a class="css-16klv83" href="/about/">About</a><style data-emotion-css="e9bgae">.css-e9bgae{float:right;margin-right:2.8rem;-webkit-text-decoration:none;text-decoration:none;}</style><a class="css-e9bgae" href="/contact/">Contact</a><a class="css-e9bgae" href="/blog/">Blog</a><hr/><div><h1>Protostar: Persiapan </h1><div><p><strong>Protostar</strong> memiliki berbagai macam challenge bertingkat yang dikhususkan untuk para pemula belajar reverse engineering dan materi lainnya. Keterangan lebih lanjut dapat dibaca di situs aslinya <a href="https://exploit-exercises.lains.space/protostar/">exploit-exercises</a>.</p>
+<h3>Unduh Image</h3>
+<p>Protostar hadir dalam berkas dengan format "iso" yang dapat dijalankan dengan program virtual machine seperti virtualbox dan vmware. Berkas iso dapat diunduh di <a href="https://exploit-exercises.lains.space/download/">https://exploit-exercises.lains.space/download/</a> atau di <a href="https://drive.google.com/drive/folders/0B9RbZkKdRR8qbkJjQ2VXbWNlQzg?usp=sharing">Google Drive</a>.</p>
+<h3>Unduh dan pasang VMware Workstation Player</h3>
+<p>Untuk menjalankan protostar saya menggunakan VMware Workstation Player yang dapat diunduh dengan gratis di <a href="https://www.vmware.com/products/workstation-player/workstation-player-evaluation.html">situs resminya</a> untuk sistem operasi windows dan linux.</p>
+<h3>Membuat VM untuk protostar</h3>
+<p>Buat virtual machine baru dan atur agar virtual machine me load berkas iso dari protostar.</p>
+<p><span
+      class="gatsby-resp-image-wrapper"
+      style="position: relative; display: block; margin-left: auto; margin-right: auto; max-width: 706px; "
+    >
+      <a
+    class="gatsby-resp-image-link"
+    href="/static/bd7511f5e7f4ee8948a194ad46e0cd2d/9f21b/persiapan-protostar-1.png"
+    style="display: block"
+    target="_blank"
+    rel="noopener"
+  >
+    <span
+    class="gatsby-resp-image-background-image"
+    style="padding-bottom: 80%; position: relative; bottom: 0; left: 0; background-image: url('data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABQAAAAQCAYAAAAWGF8bAAAACXBIWXMAAA7DAAAOwwHHb6hkAAACy0lEQVQ4y21UyY7aQBTk/w85Rco5p+SQS/IBibJORhqWIQYvgMELeGvjHYPBVN5rj2dElJZKbbvt6ldVzz2Idir2e4F9kiJJU+RFgTwvUNDseZ6EEAJZliFJEnktYiHnmOYoiuD7Hq2nuL//jUFOLwIXQkNo6eWYNkhwOBxQ10ecTic0TYPz+Sxnvu+fHY8nXK9X9GOxMDC4Gy/w6u0XvH53hzfvf2K9sbB1XbjuFo7jyErKkqvOUdEmbdtKckZKirjy9onUMHQMHjUbHz7P8fHbEp++afRCjs16jdlsDkWZSUynU0wmj/TBguQFEJEgwgspqBGG4XOF67WJQZKXqGmDIyGrG7jbLTabDYIgePLHfwb7ud3uyMtUeixEDMO0kRSHrkKWHMQZgqxBWJzhioI+6Ahdki0D+AcxeczhsFyubmWu4Qch2VKRqhkG0T5HVFwgqha7uERIVRmGgeFwhIeHITRNw3K5JMMXEnzNwbF3TMjE/eC1QSDSG0LP8ynl/Q04EP5QVkbgFinKUhI6jivXDlWFOW0+iJKiIyxbePsKlmVBpwVV1WR1um5I75i4JBImN90AfxYWFtZObsIB8dB0IoyzSvoX95LDiNLaSMnj8USCr6ePU9pIx3yu4sf9CAoRmo6HiaJDWzmwdxGU/3m4o2pMMporVFUVmtpVy5VzUBya73nSw5hCYtkNNTquLfTliiXfEvrULo7tEKkpsaae5Nm2bCK1ZcMzmUyZAmQL+mGwZCE9fJEcyT+j86pHURQ39+xb14fiJuUVbfxU4QuhTi3DUjkIlsPgNlIURVaqaSopsDs7KDQm7P9nbivZ2CFJjsoL/OyEpUMElg9zK7AiWDsBh7yz6b/WiOTr918YjqcYjcYU1pBIljBXJh0mdXc4JBnJOTTIqpOcy+NFoqjPyAnV8fIsqabDIUpLpNVZ3vcHBZ8+3eFg4C9qbam2L233ggAAAABJRU5ErkJggg=='); background-size: cover; display: block;"
+  ></span>
+  <img
+        class="gatsby-resp-image-image"
+        alt="Buat Virtual Machine"
+        title="Buat Virtual Machine"
+        src="/static/bd7511f5e7f4ee8948a194ad46e0cd2d/9f21b/persiapan-protostar-1.png"
+        srcset="/static/bd7511f5e7f4ee8948a194ad46e0cd2d/772e8/persiapan-protostar-1.png 200w,
+/static/bd7511f5e7f4ee8948a194ad46e0cd2d/e17e5/persiapan-protostar-1.png 400w,
+/static/bd7511f5e7f4ee8948a194ad46e0cd2d/9f21b/persiapan-protostar-1.png 706w"
+        sizes="(max-width: 706px) 100vw, 706px"
+        style="width:100%;height:100%;margin:0;vertical-align:middle;position:absolute;top:0;left:0;"
+        loading="lazy"
+      />
+  </a>
+    </span></p>
+<p>Protostar menggunakan kernel linux versi 2.6 32bit. Next, nama vm dapat disesuaikan. Next, ukuran virtual disk biarkan saja karena nantinya juga tidak digunakan dan akan dihapus.</p>
+<p><span
+      class="gatsby-resp-image-wrapper"
+      style="position: relative; display: block; margin-left: auto; margin-right: auto; max-width: 703px; "
+    >
+      <a
+    class="gatsby-resp-image-link"
+    href="/static/eda50216e803d13b02e8e2fec9dd2661/242e2/persiapan-protostar-2.png"
+    style="display: block"
+    target="_blank"
+    rel="noopener"
+  >
+    <span
+    class="gatsby-resp-image-background-image"
+    style="padding-bottom: 80%; position: relative; bottom: 0; left: 0; background-image: url('data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABQAAAAQCAYAAAAWGF8bAAAACXBIWXMAAA7DAAAOwwHHb6hkAAACeElEQVQ4y21UTW+bQBTk/596qtRrpR7aqvdeGjVSUzWRWzVp7NpgPm1swGBgAfNlPN33MLHjZqURy3qZnXlv1srs/hqmacC0LBiGCdt2YMm567oMmi8WCwRBgPV6zc/VagXf9/mdsFwueY2eSrkrABwkOtCIkwQiy1DXNaNtW0bTNM+ew/xwOOB8KN9/zvDq7Ve8fv8Dbz7cSKU2HJvgSLU2K8mOBxABYZinaYpECqDRdR2TK78mNt59fsDHqxk+fRkjSQWW0qKmzaGqGjRVha7rCMNQEgjEccwuaFRVBc/zeE5kTJhkBSq5UEuIspGKAlZFNSGSPC9YISk5R57n2G630AwHoqiOpNJymOTw0gaBaLGKcozHEzz+ecR0OpVFdvlj+pCVnYHWN5sNVE3H2gv48LpuesIgaxHme3jxThLNYMnakYKhRi+BfttsQiYfLHNTtmLH6sK8w3pbMKGmaXCcvime53OdGP5pTmWhmDjOgktCxFRTJYyzXmHRsWXKo3VET+idIDN3/k45DcNIRmgvyWrs9x2UKO0tR5LQDTPeQCcKIRjp0R7bP9aOQL9R3R4mKuaOB91eodhVJ8sDId0E+uCyCUNcLptCaSCrJIKyqcT/EW6eCAc1L5HTOikcgv10Uy4JadNl7sjuyb7gtUy+R1HEkXp2Uy4JqcPqTJVd9NgSHWBZJmYyl2NjiW/3c0xMF/O5xnvpsGEwIdXQP8bGSyqo9hpTw4W+DBj2KuAIGaYlQ/8XV9c3uB39xmg0wt3tHV9PS97/KOqVKiIvEec1kqJGWjTy+u2RSaS7lpGX7ZOCIs/ghylCUcmI9P821JCyLNG0/b5/pc22mUAzocQAAAAASUVORK5CYII='); background-size: cover; display: block;"
+  ></span>
+  <img
+        class="gatsby-resp-image-image"
+        alt="Buat Virtual Machine"
+        title="Buat Virtual Machine"
+        src="/static/eda50216e803d13b02e8e2fec9dd2661/242e2/persiapan-protostar-2.png"
+        srcset="/static/eda50216e803d13b02e8e2fec9dd2661/772e8/persiapan-protostar-2.png 200w,
+/static/eda50216e803d13b02e8e2fec9dd2661/e17e5/persiapan-protostar-2.png 400w,
+/static/eda50216e803d13b02e8e2fec9dd2661/242e2/persiapan-protostar-2.png 703w"
+        sizes="(max-width: 703px) 100vw, 703px"
+        style="width:100%;height:100%;margin:0;vertical-align:middle;position:absolute;top:0;left:0;"
+        loading="lazy"
+      />
+  </a>
+    </span></p>
+<p>Pada tampilan selanjutnya, sebelum menyelesaikan pembuatan, saya melakukan perubahan dengan memilih 'customize hardware'. Saya menambah alokasi RAM menjadi 2GB. Mengubah pengaturan core processor menjadi 2 cores. Close lalu Finish.</p>
+<p><span
+      class="gatsby-resp-image-wrapper"
+      style="position: relative; display: block; margin-left: auto; margin-right: auto; max-width: 706px; "
+    >
+      <a
+    class="gatsby-resp-image-link"
+    href="/static/7a18cc207ec7f850ba4def0cb02eca38/9f21b/persiapan-protostar-3.png"
+    style="display: block"
+    target="_blank"
+    rel="noopener"
+  >
+    <span
+    class="gatsby-resp-image-background-image"
+    style="padding-bottom: 95%; position: relative; bottom: 0; left: 0; background-image: url('data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABQAAAATCAYAAACQjC21AAAACXBIWXMAAA7DAAAOwwHHb6hkAAACZklEQVQ4y5VUyY7TQBDN/58BCYkDVz6AO9KgSDPHEcNk85rFdifeHbvj7VHVnjYhSiCUVCq72/38ql5VT7ztDnEUoZYVTrJUsT7Rc1WOLnnvdEJVVcr5XUo5Rl7rug6z2QyTQxhhE0TYZxKC3A1iGBsBkUoEaYU9eZJmOBwOb4flCMxelhXyvFCApmlisvYCfJmaePdtjQ/fA3yaevj4sMX7B4/cx+dHgZ2IYJkGbNuB67h00IJpmPD9AEmSIOIM63oA3BHgfL7E7PUV+/0BKbFRMUmJVUgMSsUiTVNkWYY4jhFSVkVxRBAIAkyhzXEcTAQdXq1MLJcrlVIcJ1ivN+gpBba2bdE2LYGEkFRHtr7vcc1s28LEF3sslgbyolCLzMCgdDiFEZB8t90qsdRa1yMvJYkoFYmCzrZtR4A2JpyGlCdVVA3Aip6/8zOLYu8LyGZYX3sCi/kcLy8/Vcn4O4sBizdmt1IZUm6oXgHcsID+pCqP6ifH41HVeUiZAPM8/wOMo3Y2ZsdpeZ6Hpq7QdDW6vkMQ+gh8ocQqCHSsIffQOdAlW64N15MVrQiYdvg3KDLqVXFAQYS47lw2a2D4L8BBFAVIU4N+ECvPQkTUEVqUjoSyLOt+QCE0Q+BG1+ga3gfYUepcT/0dP2vn/f8C1C10Lti5633buQJ4qfIl4DXT+67r/G6bW8bFvpehmmVmONaEop4UbhWOfDHoA9eNQc8AWfKGhp8BGpoIfl+tDLqafNUGhmGovUshlBjkNWHVzSCK47p0wdL48Dxzx//N+d7THpMf8wzPhoev0x8Ud1gulnh8esIviYe8T3siE8AAAAAASUVORK5CYII='); background-size: cover; display: block;"
+  ></span>
+  <img
+        class="gatsby-resp-image-image"
+        alt="Buat Virtual Machine"
+        title="Buat Virtual Machine"
+        src="/static/7a18cc207ec7f850ba4def0cb02eca38/9f21b/persiapan-protostar-3.png"
+        srcset="/static/7a18cc207ec7f850ba4def0cb02eca38/772e8/persiapan-protostar-3.png 200w,
+/static/7a18cc207ec7f850ba4def0cb02eca38/e17e5/persiapan-protostar-3.png 400w,
+/static/7a18cc207ec7f850ba4def0cb02eca38/9f21b/persiapan-protostar-3.png 706w"
+        sizes="(max-width: 706px) 100vw, 706px"
+        style="width:100%;height:100%;margin:0;vertical-align:middle;position:absolute;top:0;left:0;"
+        loading="lazy"
+      />
+  </a>
+    </span></p>
+<p>Sebelum menjalankan protostar terlebih dahulu saya akan menghapus alokasi harddisk. Pilih nama virtual machine lalu pilih 'Edit virtual machine settings'. Menekan hardisk dan klik remove. Oke.</p>
+<p><span
+      class="gatsby-resp-image-wrapper"
+      style="position: relative; display: block; margin-left: auto; margin-right: auto; max-width: 706px; "
+    >
+      <a
+    class="gatsby-resp-image-link"
+    href="/static/b8898a7308cc44570893353d62775fe6/9f21b/persiapan-protostar-4.png"
+    style="display: block"
+    target="_blank"
+    rel="noopener"
+  >
+    <span
+    class="gatsby-resp-image-background-image"
+    style="padding-bottom: 97.50000000000001%; position: relative; bottom: 0; left: 0; background-image: url('data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABQAAAAUCAYAAACNiR0NAAAACXBIWXMAAA7DAAAOwwHHb6hkAAACiklEQVQ4y41U227aQBDl/5tvqCDJU1WUqmrTKg9J1UaCKhEkDbeEJGBsY7Ax+Ipv2KczS0yBlJaRjna9O3t2Zs54C/JAhqqoAkEQIooihGH4CkEQ/BPsc35+jsLEnEJRh+DRcV3MLAu249LcE3BpjfG3S9axWCxQLpdRmBo6gAXY0pAIpgaWlgmEdHu3+whJkqCqKhTKRJEVGhUxyrKMfr8Pz/NwdHSIwvvvDXy4kvDtycWnXzpOGwZO2xa+ED43ZxhOKVJrBsuy4TgObNt+hdlshiRJUCqVUDi7fkT5RwtnjRG+NnSc/Ozh5FrGu8ozPtaH0IhQVWQYhiEOZthtpVIRhUG/h373HmnkI4vmMMdDTn7llMQRBiQcQ9M0qlW6QZJlGdI0/UPY7nRhTmdiwbIcdDoP8PxAfC/SDPN5AG2oYTQawfd9EiBYqc4dwWSc7orQJSVZIRENbXBxcwe+nVtJkgbo9fpUfInGnhDi6emZauq+Tnk99G3LCTVtJOq37NFo1ascCM85iBUhH8rJ8vn6NxPoukGiTIQw+ngs5rquI45jsXZ3dyfUFm2zTrQdbUpjFMWYCAIDpmmuGt22HeHHhDc3t+DS7UkYiUNjioyJuQQsSF73MYl1U6/D9/YhJAU5La4RC8AjpzalrgjpItEZFOltswPTcpeN/T/CPJJd5gYxrh5U9HQPb4vF/QnXBdsWL7fD7Qg3sAdhvp77rFLeaWvOuyLc/PWIkA8kyUIcZAF8fy5+Nz+M4cypgaNEPGPpXoTFzQiZlN84fmzliYd7ZYooxd52fHxEj0O7hVar+YIW2u32C1rovOw1m0vwfp167vLyErVaDRcXF6hUK6hWq6hUKjg4eIPfpHbw2V3nDy8AAAAASUVORK5CYII='); background-size: cover; display: block;"
+  ></span>
+  <img
+        class="gatsby-resp-image-image"
+        alt="Buat Virtual Machine"
+        title="Buat Virtual Machine"
+        src="/static/b8898a7308cc44570893353d62775fe6/9f21b/persiapan-protostar-4.png"
+        srcset="/static/b8898a7308cc44570893353d62775fe6/772e8/persiapan-protostar-4.png 200w,
+/static/b8898a7308cc44570893353d62775fe6/e17e5/persiapan-protostar-4.png 400w,
+/static/b8898a7308cc44570893353d62775fe6/9f21b/persiapan-protostar-4.png 706w"
+        sizes="(max-width: 706px) 100vw, 706px"
+        style="width:100%;height:100%;margin:0;vertical-align:middle;position:absolute;top:0;left:0;"
+        loading="lazy"
+      />
+  </a>
+    </span></p>
+<h3>Menjalankan VM protostar</h3>
+<p>Play VM protostar maka. Saat memasuki grub, pilih saja live. Tunggu booting dan kita sudah ada di protostar.</p>
+<p><span
+      class="gatsby-resp-image-wrapper"
+      style="position: relative; display: block; margin-left: auto; margin-right: auto; max-width: 706px; "
+    >
+      <a
+    class="gatsby-resp-image-link"
+    href="/static/b8898a7308cc44570893353d62775fe6/9f21b/persiapan-protostar-4.png"
+    style="display: block"
+    target="_blank"
+    rel="noopener"
+  >
+    <span
+    class="gatsby-resp-image-background-image"
+    style="padding-bottom: 97.50000000000001%; position: relative; bottom: 0; left: 0; background-image: url('data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABQAAAAUCAYAAACNiR0NAAAACXBIWXMAAA7DAAAOwwHHb6hkAAACiklEQVQ4y41U227aQBDl/5tvqCDJU1WUqmrTKg9J1UaCKhEkDbeEJGBsY7Ax+Ipv2KczS0yBlJaRjna9O3t2Zs54C/JAhqqoAkEQIooihGH4CkEQ/BPsc35+jsLEnEJRh+DRcV3MLAu249LcE3BpjfG3S9axWCxQLpdRmBo6gAXY0pAIpgaWlgmEdHu3+whJkqCqKhTKRJEVGhUxyrKMfr8Pz/NwdHSIwvvvDXy4kvDtycWnXzpOGwZO2xa+ED43ZxhOKVJrBsuy4TgObNt+hdlshiRJUCqVUDi7fkT5RwtnjRG+NnSc/Ozh5FrGu8ozPtaH0IhQVWQYhiEOZthtpVIRhUG/h373HmnkI4vmMMdDTn7llMQRBiQcQ9M0qlW6QZJlGdI0/UPY7nRhTmdiwbIcdDoP8PxAfC/SDPN5AG2oYTQawfd9EiBYqc4dwWSc7orQJSVZIRENbXBxcwe+nVtJkgbo9fpUfInGnhDi6emZauq+Tnk99G3LCTVtJOq37NFo1ascCM85iBUhH8rJ8vn6NxPoukGiTIQw+ngs5rquI45jsXZ3dyfUFm2zTrQdbUpjFMWYCAIDpmmuGt22HeHHhDc3t+DS7UkYiUNjioyJuQQsSF73MYl1U6/D9/YhJAU5La4RC8AjpzalrgjpItEZFOltswPTcpeN/T/CPJJd5gYxrh5U9HQPb4vF/QnXBdsWL7fD7Qg3sAdhvp77rFLeaWvOuyLc/PWIkA8kyUIcZAF8fy5+Nz+M4cypgaNEPGPpXoTFzQiZlN84fmzliYd7ZYooxd52fHxEj0O7hVar+YIW2u32C1rovOw1m0vwfp167vLyErVaDRcXF6hUK6hWq6hUKjg4eIPfpHbw2V3nDy8AAAAASUVORK5CYII='); background-size: cover; display: block;"
+  ></span>
+  <img
+        class="gatsby-resp-image-image"
+        alt="Buat Virtual Machine"
+        title="Buat Virtual Machine"
+        src="/static/b8898a7308cc44570893353d62775fe6/9f21b/persiapan-protostar-4.png"
+        srcset="/static/b8898a7308cc44570893353d62775fe6/772e8/persiapan-protostar-4.png 200w,
+/static/b8898a7308cc44570893353d62775fe6/e17e5/persiapan-protostar-4.png 400w,
+/static/b8898a7308cc44570893353d62775fe6/9f21b/persiapan-protostar-4.png 706w"
+        sizes="(max-width: 706px) 100vw, 706px"
+        style="width:100%;height:100%;margin:0;vertical-align:middle;position:absolute;top:0;left:0;"
+        loading="lazy"
+      />
+  </a>
+    </span></p>
+<p>Untuk login dapat menggunakan kombinasi <strong>user:user</strong> untuk masuk sebagai akun user biasa atau <strong>root:root</strong> untuk masuk sebagai root. Saya masuk dengan akun user.</p>
+<p><span
+      class="gatsby-resp-image-wrapper"
+      style="position: relative; display: block; margin-left: auto; margin-right: auto; max-width: 722px; "
+    >
+      <a
+    class="gatsby-resp-image-link"
+    href="/static/17ab5b7775210136d6e7d9c375b0b1a2/d44c9/persiapan-protostar-5.png"
+    style="display: block"
+    target="_blank"
+    rel="noopener"
+  >
+    <span
+    class="gatsby-resp-image-background-image"
+    style="padding-bottom: 64.5%; position: relative; bottom: 0; left: 0; background-image: url('data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABQAAAANCAYAAACpUE5eAAAACXBIWXMAAA7DAAAOwwHHb6hkAAABeklEQVQ4y4WSa27CQAyEQyBAIOENCuL+h6jUF0QqgXCH3oBAUPuDCrn5NnK0pS0gjdZe1uMZO85H9i7HbC+fp1wOh6Nk+0zy/CT5MZdTXoIYXC4X+e93Pp8LfInz+PQs8fJV0pcHWcWxkC9XsaRpKpvNxpyK3W5XYbvdSpIk5k1S4G29NrVOFEUyGo0kCHsyHA4NyAeDgUwmE5OHYSi+70uj0RDP86TZbEqtVhPHcX4jiuYyHo8rgul0+oMUMgharZa02+0KNPCKe7cg9gsiTwnn85IQIoBi8n6/bwB5EATS6XQMKSr/VHZNiLrZbGaAMoi4JzdqCquQKVBdr9fLBrZ9iune7XYrYJO7Xq9XxajT+Smh67qG9GqG5VJ0fsQ6U2JdCvaxThN7QfaiaOpgiQIIKOAxf+gSyDnVBTHKIELdNRw6UkxCJ04K1I5Cc86bS1ksFsaubhqbNLEXo58RTm6SAR5jB7sAW3YMdEZ31dlbBszLtqvxXRIL3zjHgV33e3IhAAAAAElFTkSuQmCC'); background-size: cover; display: block;"
+  ></span>
+  <img
+        class="gatsby-resp-image-image"
+        alt="Buat Virtual Machine"
+        title="Buat Virtual Machine"
+        src="/static/17ab5b7775210136d6e7d9c375b0b1a2/d44c9/persiapan-protostar-5.png"
+        srcset="/static/17ab5b7775210136d6e7d9c375b0b1a2/772e8/persiapan-protostar-5.png 200w,
+/static/17ab5b7775210136d6e7d9c375b0b1a2/e17e5/persiapan-protostar-5.png 400w,
+/static/17ab5b7775210136d6e7d9c375b0b1a2/d44c9/persiapan-protostar-5.png 722w"
+        sizes="(max-width: 722px) 100vw, 722px"
+        style="width:100%;height:100%;margin:0;vertical-align:middle;position:absolute;top:0;left:0;"
+        loading="lazy"
+      />
+  </a>
+    </span></p>
+<p>Setelah masuk akan diberikan shell sh. Jika lebih suka dengan bash diprotostar juga disediakan. Untuk mematikan vm langsung saja dengan menekan tombol Shutdown Guest (vm ini tidak menggunakan harddisk sehingga aman saja). Sebagai catatan untuk mengeluar kan cursor dari vm dapat menggunakan kombinasi tombol <strong>ctrl+alt</strong>.</p>
+<p><span
+      class="gatsby-resp-image-wrapper"
+      style="position: relative; display: block; margin-left: auto; margin-right: auto; max-width: 722px; "
+    >
+      <a
+    class="gatsby-resp-image-link"
+    href="/static/abd6666d270866fb90c20fdf0587ce08/d44c9/persiapan-protostar-6.png"
+    style="display: block"
+    target="_blank"
+    rel="noopener"
+  >
+    <span
+    class="gatsby-resp-image-background-image"
+    style="padding-bottom: 64.5%; position: relative; bottom: 0; left: 0; background-image: url('data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABQAAAANCAYAAACpUE5eAAAACXBIWXMAAA7DAAAOwwHHb6hkAAABa0lEQVQ4y52T206DUBRE6RVK7zee+v+foDbSoi+VfoZfgKWQvtCMrmO2AZuosclkznX27DnUu5xelb9lupzPOp1yZVmmPD9/IFdRFCrLUmUBCv30q6pK1fUq7/5hq2QXK43vlDw9a/sYa58kOh6PStP0zzgcXhTv9vLm87mGw6F8P1C/33dotVryPO9/WK1Wmk6nThSxMAw1GAwUBIFj5r7vq9frOWYNtvGNgeVyqdls5kThxWLhxjiHmTPmHPPJZOJ4PB47EzDC7Xb7U5DDHGJjNBp9sV20PSuAI3MLOp1Os+XNZiPLEVj7VOVit9t1LeGAOcwcoRsxEEWRc0G7dWGcIAaTp+VouQHW2GsIcsgyW6/XTpi8eCzGtMvDGCw7BHFI0YYgC2RmD2BicP0yTihev0zrFgdwEXCRls0R4ta2FTJhW7Mi9jA2pgPnkHZxZw5B3a3lC1O8nuPNo1DNHNq39t0hAib02z/lHaFBghTz7YnVAAAAAElFTkSuQmCC'); background-size: cover; display: block;"
+  ></span>
+  <img
+        class="gatsby-resp-image-image"
+        alt="Buat Virtual Machine"
+        title="Buat Virtual Machine"
+        src="/static/abd6666d270866fb90c20fdf0587ce08/d44c9/persiapan-protostar-6.png"
+        srcset="/static/abd6666d270866fb90c20fdf0587ce08/772e8/persiapan-protostar-6.png 200w,
+/static/abd6666d270866fb90c20fdf0587ce08/e17e5/persiapan-protostar-6.png 400w,
+/static/abd6666d270866fb90c20fdf0587ce08/d44c9/persiapan-protostar-6.png 722w"
+        sizes="(max-width: 722px) 100vw, 722px"
+        style="width:100%;height:100%;margin:0;vertical-align:middle;position:absolute;top:0;left:0;"
+        loading="lazy"
+      />
+  </a>
+    </span></p></div></div><footer style="margin-top:5rem;text-align:center"><p>By <a href="http://rochimfn.github.io/contact/">Rochim</a></p><a href="mailto:rochim.noviyan@gmail.com"><svg aria-hidden="true" focusable="false" data-prefix="far" data-icon="envelope" class="svg-inline--fa fa-envelope fa-w-16 fa-2x " role="img" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512" style="color:;margin-right:10px"><path fill="currentColor" d="M464 64H48C21.49 64 0 85.49 0 112v288c0 26.51 21.49 48 48 48h416c26.51 0 48-21.49 48-48V112c0-26.51-21.49-48-48-48zm0 48v40.805c-22.422 18.259-58.168 46.651-134.587 106.49-16.841 13.247-50.201 45.072-73.413 44.701-23.208.375-56.579-31.459-73.413-44.701C106.18 199.465 70.425 171.067 48 152.805V112h416zM48 400V214.398c22.914 18.251 55.409 43.862 104.938 82.646 21.857 17.205 60.134 55.186 103.062 54.955 42.717.231 80.509-37.199 103.053-54.947 49.528-38.783 82.032-64.401 104.947-82.653V400H48z"></path></svg></a><a href="https://github.com/rochimfn"><svg aria-hidden="true" focusable="false" data-prefix="fab" data-icon="github" class="svg-inline--fa fa-github fa-w-16 fa-2x " role="img" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 496 512" style="color:#24292e;margin-right:10px"><path fill="currentColor" d="M165.9 397.4c0 2-2.3 3.6-5.2 3.6-3.3.3-5.6-1.3-5.6-3.6 0-2 2.3-3.6 5.2-3.6 3-.3 5.6 1.3 5.6 3.6zm-31.1-4.5c-.7 2 1.3 4.3 4.3 4.9 2.6 1 5.6 0 6.2-2s-1.3-4.3-4.3-5.2c-2.6-.7-5.5.3-6.2 2.3zm44.2-1.7c-2.9.7-4.9 2.6-4.6 4.9.3 2 2.9 3.3 5.9 2.6 2.9-.7 4.9-2.6 4.6-4.6-.3-1.9-3-3.2-5.9-2.9zM244.8 8C106.1 8 0 113.3 0 252c0 110.9 69.8 205.8 169.5 239.2 12.8 2.3 17.3-5.6 17.3-12.1 0-6.2-.3-40.4-.3-61.4 0 0-70 15-84.7-29.8 0 0-11.4-29.1-27.8-36.6 0 0-22.9-15.7 1.6-15.4 0 0 24.9 2 38.6 25.8 21.9 38.6 58.6 27.5 72.9 20.9 2.3-16 8.8-27.1 16-33.7-55.9-6.2-112.3-14.3-112.3-110.5 0-27.5 7.6-41.3 23.6-58.9-2.6-6.5-11.1-33.3 2.6-67.9 20.9-6.5 69 27 69 27 20-5.6 41.5-8.5 62.8-8.5s42.8 2.9 62.8 8.5c0 0 48.1-33.6 69-27 13.7 34.7 5.2 61.4 2.6 67.9 16 17.7 25.8 31.5 25.8 58.9 0 96.5-58.9 104.2-114.8 110.5 9.2 7.9 17 22.9 17 46.4 0 33.7-.3 75.4-.3 83.6 0 6.5 4.6 14.4 17.3 12.1C428.2 457.8 496 362.9 496 252 496 113.3 383.5 8 244.8 8zM97.2 352.9c-1.3 1-1 3.3.7 5.2 1.6 1.6 3.9 2.3 5.2 1 1.3-1 1-3.3-.7-5.2-1.6-1.6-3.9-2.3-5.2-1zm-10.8-8.1c-.7 1.3.3 2.9 2.3 3.9 1.6 1 3.6.7 4.3-.7.7-1.3-.3-2.9-2.3-3.9-2-.6-3.6-.3-4.3.7zm32.4 35.6c-1.6 1.3-1 4.3 1.3 6.2 2.3 2.3 5.2 2.6 6.5 1 1.3-1.3.7-4.3-1.3-6.2-2.2-2.3-5.2-2.6-6.5-1zm-11.4-14.7c-1.6 1-1.6 3.6 0 5.9 1.6 2.3 4.3 3.3 5.6 2.3 1.6-1.3 1.6-3.9 0-6.2-1.4-2.3-4-3.3-5.6-2z"></path></svg></a><a href="https://www.linkedin.com/in/rochim-farul-noviyan-421292164"><svg aria-hidden="true" focusable="false" data-prefix="fab" data-icon="linkedin" class="svg-inline--fa fa-linkedin fa-w-14 fa-2x " role="img" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512" style="color:#0e76a8;margin-right:10px"><path fill="currentColor" d="M416 32H31.9C14.3 32 0 46.5 0 64.3v383.4C0 465.5 14.3 480 31.9 480H416c17.6 0 32-14.5 32-32.3V64.3c0-17.8-14.4-32.3-32-32.3zM135.4 416H69V202.2h66.5V416zm-33.2-243c-21.3 0-38.5-17.3-38.5-38.5S80.9 96 102.2 96c21.2 0 38.5 17.3 38.5 38.5 0 21.3-17.2 38.5-38.5 38.5zm282.1 243h-66.4V312c0-24.8-.5-56.7-34.5-56.7-34.6 0-39.9 27-39.9 54.9V416h-66.4V202.2h63.7v29.2h.9c8.9-16.8 30.6-34.5 62.9-34.5 67.2 0 79.7 44.3 79.7 101.9V416z"></path></svg></a><a href="https://twitter.com/rochimfn"><svg aria-hidden="true" focusable="false" data-prefix="fab" data-icon="twitter" class="svg-inline--fa fa-twitter fa-w-16 fa-2x " role="img" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512" style="color:#1DA1F2;margin-right:10px"><path fill="currentColor" d="M459.37 151.716c.325 4.548.325 9.097.325 13.645 0 138.72-105.583 298.558-298.558 298.558-59.452 0-114.68-17.219-161.137-47.106 8.447.974 16.568 1.299 25.34 1.299 49.055 0 94.213-16.568 130.274-44.832-46.132-.975-84.792-31.188-98.112-72.772 6.498.974 12.995 1.624 19.818 1.624 9.421 0 18.843-1.3 27.614-3.573-48.081-9.747-84.143-51.98-84.143-102.985v-1.299c13.969 7.797 30.214 12.67 47.431 13.319-28.264-18.843-46.781-51.005-46.781-87.391 0-19.492 5.197-37.36 14.294-52.954 51.655 63.675 129.3 105.258 216.365 109.807-1.624-7.797-2.599-15.918-2.599-24.04 0-57.828 46.782-104.934 104.934-104.934 30.213 0 57.502 12.67 76.67 33.137 23.715-4.548 46.456-13.32 66.599-25.34-7.798 24.366-24.366 44.833-46.132 57.827 21.117-2.273 41.584-8.122 60.426-16.243-14.292 20.791-32.161 39.308-52.628 54.253z"></path></svg></a><a href="https://instagram.com/rochim.noviyan"><svg aria-hidden="true" focusable="false" data-prefix="fab" data-icon="instagram" class="svg-inline--fa fa-instagram fa-w-14 fa-2x " role="img" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512" style="color:#C13584;margin-right:10px"><path fill="currentColor" d="M224.1 141c-63.6 0-114.9 51.3-114.9 114.9s51.3 114.9 114.9 114.9S339 319.5 339 255.9 287.7 141 224.1 141zm0 189.6c-41.1 0-74.7-33.5-74.7-74.7s33.5-74.7 74.7-74.7 74.7 33.5 74.7 74.7-33.6 74.7-74.7 74.7zm146.4-194.3c0 14.9-12 26.8-26.8 26.8-14.9 0-26.8-12-26.8-26.8s12-26.8 26.8-26.8 26.8 12 26.8 26.8zm76.1 27.2c-1.7-35.9-9.9-67.7-36.2-93.9-26.2-26.2-58-34.4-93.9-36.2-37-2.1-147.9-2.1-184.9 0-35.8 1.7-67.6 9.9-93.9 36.1s-34.4 58-36.2 93.9c-2.1 37-2.1 147.9 0 184.9 1.7 35.9 9.9 67.7 36.2 93.9s58 34.4 93.9 36.2c37 2.1 147.9 2.1 184.9 0 35.9-1.7 67.7-9.9 93.9-36.2 26.2-26.2 34.4-58 36.2-93.9 2.1-37 2.1-147.8 0-184.8zM398.8 388c-7.8 19.6-22.9 34.7-42.6 42.6-29.5 11.7-99.5 9-132.1 9s-102.7 2.6-132.1-9c-19.6-7.8-34.7-22.9-42.6-42.6-11.7-29.5-9-99.5-9-132.1s-2.6-102.7 9-132.1c7.8-19.6 22.9-34.7 42.6-42.6 29.5-11.7 99.5-9 132.1-9s102.7-2.6 132.1 9c19.6 7.8 34.7 22.9 42.6 42.6 11.7 29.5 9 99.5 9 132.1s2.7 102.7-9 132.1z"></path></svg></a><a href="https://www.facebook.com/rochim.farulnoviyan"><svg aria-hidden="true" focusable="false" data-prefix="fab" data-icon="facebook" class="svg-inline--fa fa-facebook fa-w-16 fa-2x " role="img" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512" style="color:#4267B2;margin-right:10px"><path fill="currentColor" d="M504 256C504 119 393 8 256 8S8 119 8 256c0 123.78 90.69 226.38 209.25 245V327.69h-63V256h63v-54.64c0-62.15 37-96.48 93.67-96.48 27.14 0 55.52 4.84 55.52 4.84v61h-31.28c-30.8 0-40.41 19.12-40.41 38.73V256h68.78l-11 71.69h-57.78V501C413.31 482.38 504 379.78 504 256z"></path></svg></a></footer></div></div><div id="gatsby-announcer" style="position:absolute;top:0;width:1px;height:1px;padding:0;overflow:hidden;clip:rect(0, 0, 0, 0);white-space:nowrap;border:0" aria-live="assertive" aria-atomic="true"></div></div><script id="gatsby-script-loader">/*<![CDATA[*/window.pagePath="/belajar-reversing-persiapan-protostar/";/*]]>*/</script><script id="gatsby-chunk-mapping">/*<![CDATA[*/window.___chunkMapping={"app":["/app-0842d1f2308dcbc38b7d.js"],"component---src-pages-about-js":["/component---src-pages-about-js-ebc61f3364eb2defea06.js"],"component---src-pages-blog-js":["/component---src-pages-blog-js-1ada6ead1510deb1c65a.js"],"component---src-pages-contact-js":["/component---src-pages-contact-js-51c992ceb0bd14ffd81a.js"],"component---src-pages-index-js":["/component---src-pages-index-js-57d2c0dd1ec01bf06e1a.js"],"component---src-templates-blog-post-js":["/component---src-templates-blog-post-js-0314926304c56436cd57.js"]};/*]]>*/</script><script src="/component---src-templates-blog-post-js-0314926304c56436cd57.js" async=""></script><script src="/commons-0789b8c625ffd9cdd70f.js" async=""></script><script src="/a9a7754c-a2394e3013f6ec8b3709.js" async=""></script><script src="/app-0842d1f2308dcbc38b7d.js" async=""></script><script src="/styles-fa79fef4936efa84b233.js" async=""></script><script src="/framework-8dcecaaefd71e2213eb2.js" async=""></script><script src="/webpack-runtime-f963eae2120b2b1d61d8.js" async=""></script></body></html>
