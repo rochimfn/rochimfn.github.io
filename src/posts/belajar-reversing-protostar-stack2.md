@@ -42,7 +42,7 @@ int main(int argc, char **argv)
 }
 ```
 
-Setelah diperhatikan source code dari stack2 ini tidak jauh berbeda dengan milik [stack1](/belajar-revesing-protostar-stack1). Pembeda diantara keduanya terletak pada nilai modified yang diminta (0x0d0a0d0a) dan pada bagian input user. Pada stack1 input dimasukkan sebagai argumen sedangkan pada stack2 ini input dimasukkan melalui fungsi **getenv()**. Mari kita lihat dulu apa kegunaan fungsi ini di manual.
+Setelah diperhatikan source code dari stack2 ini tidak jauh berbeda dengan milik [stack1](/belajar-reversing-protostar-stack1). Pembeda diantara keduanya terletak pada nilai modified yang diminta (0x0d0a0d0a) dan pada bagian input user. Pada stack1 input dimasukkan sebagai argumen sedangkan pada stack2 ini input dimasukkan melalui fungsi **getenv()**. Mari kita lihat dulu apa kegunaan fungsi ini di manual.
 
 ```bash
 man getenv
