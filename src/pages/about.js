@@ -11,7 +11,7 @@ export default function About({ data })
 			<img src={background} alt="Background"/>
 			<br></br>
 			<p><em>
-				  “Rochim Farul Noviyan, biasa dipanggil <strong>Rochim</strong>, ialah seorang mahasiswa S1 Sistem Informasi di salah satu perguruan tinggi negeri di kota Surabaya. Menjadi seorang SysAdmin adalah cita - citanya dan menjadi dokter ialah impiannya (emang nggak nyambung sih, tapi yowislah… :D ). Saat ini sedang berusaha mendalami dunia <strong>front-end</strong> dan mulai merambah ke dunia <strong>back-end.</strong>”
+				  “Gambar diatas, Rochim Farul Noviyan, biasa dipanggil <strong>Rochim</strong>, merupakan seorang mahasiswa S1 Sistem Informasi di salah satu perguruan tinggi negeri di kota Surabaya. Bercita - cita menjadi SysAdmin. Namun dalam perjalanannya ia terjerumus dalam dunia menakjubkan Web Development.
 	      </em></p>
 		</Layout>
 	)
