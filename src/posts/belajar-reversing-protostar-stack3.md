@@ -60,6 +60,7 @@ disas win
 ```
 output:
 ![mencari alamat fungsi win](../images/protostar-stack3-3.png)
+\*catatan: alamat fungsi juga dapat diketahui dengan menggunakan **objdump** dengan perintah `objdump -D stack3 | grep win`.
 
 Alamat fungsi win terdapat pada sebelah kiri instruksi `push %ebp` atau pada syntax intel `push ebp`. Catat terlebih dahulu lalu keluar dari gdb dengan memasukkan perintah `q`. Fungsi win terdapat pada **0x08048424**, kita rapikan terlebih dahulu menjadi 08 04 84 24. Lalu kita cek karakter yang mewakili di manual ascii.
 
