@@ -571,7 +571,8 @@ info <span class="token keyword">function</span></code></pre></div>
         loading="lazy"
       />
   </a>
-    </span></p>
+    </span>
+*catatan: alamat fungsi juga dapat diketahui dengan menggunakan <strong>objdump</strong> dengan perintah <code class="language-text">objdump -D stack3 | grep win</code>.</p>
 <p>Alamat fungsi win terdapat pada sebelah kiri instruksi <code class="language-text">push %ebp</code> atau pada syntax intel <code class="language-text">push ebp</code>. Catat terlebih dahulu lalu keluar dari gdb dengan memasukkan perintah <code class="language-text">q</code>. Fungsi win terdapat pada <strong>0x08048424</strong>, kita rapikan terlebih dahulu menjadi 08 04 84 24. Lalu kita cek karakter yang mewakili di manual ascii.</p>
 <div class="gatsby-highlight" data-language="bash"><pre class="language-bash"><code class="language-bash"><span class="token function">man</span> ascii</code></pre></div>
 <p>output:
