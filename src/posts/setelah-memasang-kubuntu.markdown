@@ -2,7 +2,7 @@
 layout: post
 title:  "Hal yang dilakukan setelah memasang Ubuntu 18.04 Bionic Beaver"
 date:   2019-08-26 19:09:03 +0700
-categories: ubuntu
+categories: [ubuntu]
 ---
 ![Screenshot Kubuntu 18.04](../images/ssafterinstall.png)
 

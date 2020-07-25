@@ -2,10 +2,10 @@
 layout: post
 title:  "Memasang youtube-dl di Ubuntu"
 date:   2019-11-24 08:55:03 +0700
-categories: ubuntu
+categories: [ubuntu]
 ---
 
->**youtube-dl** is a command-line program to download videos from YouTube.com and a few more sites. It requires the Python interpreter, version 2.6, 2.7, or 3.2+, and it is not platform specific. It should work on your Unix box, on Windows or on macOS. It is released to the public domain, which means you can modify it, redistribute it or use it however you like. [https://ytdl-org.github.io/youtube-dl/](https://ytdl-org.github.io/youtube-dl/)
+**youtube-dl** is a command-line program to download videos from YouTube.com and a few more sites. It requires the Python interpreter, version 2.6, 2.7, or 3.2+, and it is not platform specific. It should work on your Unix box, on Windows or on macOS. It is released to the public domain, which means you can modify it, redistribute it or use it however you like. [(https://ytdl-org.github.io/youtube-dl/)](https://ytdl-org.github.io/youtube-dl/)
 
 **youtube-dl** sudah tersedia di repository resmi Ubuntu dan dapat dipasang dengan mudah dengan command berikut
 

@@ -2,7 +2,7 @@
 layout: post
 title:  "Memasang LAMP Stack di Ubuntu 18.04 Bionic Beaver beserta phpMyAdmin"
 date:   2019-08-27 19:21:03 +0700
-categories: ubuntu
+categories: [ubuntu]
 ---
 
 LAMP merupakan sebuah singkatan untuk Linux, Apache, Mariadb(atau Mysql), dan PHP. LAMP merupakan kombinasi yang paling sering dipakai untuk membangun web server sederhana di sistem operasi berbasis GNU/Linux. Biasanya untuk mempermudah penngaturan database ditambahkan phpMyAdmin, utillity tambahan yang berguna untuk memudahkan manajemen database mariadb.
