@@ -4,7 +4,6 @@ import { Link } from "gatsby"
 export default function Header({ title })
 {
 	const navStyle = { display: 'flex', justifyContent: 'space-between'}
-	const divStyle = {}
 	const titleStyle = {display: 'inline-block'}
 	const linkStyle = {textDecoration: 'none', float: 'right', marginRight: '10px'}
 	return(

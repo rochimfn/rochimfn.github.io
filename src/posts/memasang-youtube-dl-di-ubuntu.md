@@ -46,9 +46,20 @@ keterangan :
 **-i** menunjukkan bahwa yang akan diunduh ialah playlist. Jika tidak diberikan argumen -i tersebut youtube-dl hanya akan mengunduh video pertama dari playlist.
 **-c** menunjukkan continue, maksudnya agar pengunduhan bisa dilanjutkan bila terputus sebelum pengunduhan selesai.
 
+Mengunduh playlist dari youtube dengan subtitle
+```bash
+youtube-dl -ic --all-subs https://www.youtube.com/playlist?list=PLlrxD0HtieHhS8VzuMCfQD4uJ9yne1mE6
+```
+Mengunduh hanya subtitle playlist dari youtube
+```bash
+youtube-dl -ic --skip-download --all-subs https://www.youtube.com/playlist?list=PLlrxD0HtieHhS8VzuMCfQD4uJ9yne1mE6
+```
+
 Mengunduh playlist dari youtube sebagai file mp3
 ```bash
-youtube-dl -cit --extract-audio --audio-format mp3 https://www.youtube.com/
+youtube-dl -cit --extract-audio --audio-format mp3 https://www.youtube.com/playlist?list=PLTGU-M8ykHxqzXfKnClnhp78_L5VJI7tP
 ```
+
+Seluruh opsi dari youtube-dl dapat dilihat dengan `youtube-dl --help`
 
 Done

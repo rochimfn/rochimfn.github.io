@@ -5,9 +5,9 @@ date:   2020-07-09 21:07:03 +0700
 categories: [reversing, protostar]
 ---
 
-stack4 dapat ditemukan pada directory `/opt/protostar/bin/` bersama dengan challange lainnya. Sebelum mengerjakan challange ini baca terlebih dahulu deskripsi dan hints nya [disini](https://exploit-exercises.lains.space/protostar/stack4/). Pada halaman tersebut diberitahukan jika challange kali ini kita akan "benar - benar" menimpa **EIP**. [EIP](http://www.c-jump.com/CIS77/ASM/Instructions/I77_0040_instruction_pointer.htm) sendiri merupakan bagian register yang selalu berisikan alamat dari instruksi yang akan dieksekusi selanjutnya. Pengertian dan pembahasan lebih lanjut dari EIP dapat dibaca di [wikipedia](wikipedia.org) laman [Program Counter](https://en.wikipedia.org/wiki/Program_counter).
+stack4 dapat ditemukan pada directory `/opt/protostar/bin/` bersama dengan challenge lainnya. Sebelum mengerjakan challenge ini baca terlebih dahulu deskripsi dan hints nya [disini](https://exploit-exercises.lains.space/protostar/stack4/). Pada halaman tersebut diberitahukan jika challenge kali ini kita akan "benar - benar" menimpa **EIP**. [EIP](http://www.c-jump.com/CIS77/ASM/Instructions/I77_0040_instruction_pointer.htm) sendiri merupakan bagian register yang selalu berisikan alamat dari instruksi yang akan dieksekusi selanjutnya. Pengertian dan pembahasan lebih lanjut dari EIP dapat dibaca di [wikipedia](wikipedia.org) laman [Program Counter](https://en.wikipedia.org/wiki/Program_counter).
 
-Pembeda utama dari challange ini dengan [sebelumnya](/belajar-reversing-protostar-stack3/) ialah kali ini input untuk overflow kita yang sebelumnya terdiri dari **ukuran buffer** + **alamat fungsi** menjadi **ukuran buffer** + **padding** + **alamat fungsi** dengan padding merupakan jarak antara buffer dengan EIP. Mari kita cek dulu berkas stack4 dengan `file` seperti biasa.
+Pembeda utama dari challenge ini dengan [sebelumnya](/belajar-reversing-protostar-stack3/) ialah kali ini input untuk overflow kita yang sebelumnya terdiri dari **ukuran buffer** + **alamat fungsi** menjadi **ukuran buffer** + **padding** + **alamat fungsi** dengan padding merupakan jarak antara buffer dengan EIP. Mari kita cek dulu berkas stack4 dengan `file` seperti biasa.
 
 ```bash
 file stack4

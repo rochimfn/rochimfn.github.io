@@ -5,7 +5,7 @@ date:   2020-07-04 18:32:03 +0700
 categories: [reversing, protostar]
 ---
 
-stack0 merupakan level paling awal dari protostar. Challange ini terdapat pada `/opt/protostar/bin/stack0` bersama dengan berkas untuk level selanjutnya. Pada [halaman resminya](https://exploit-exercises.lains.space/protostar/stack0/) diberikan deskripsi singkat mengenai challenge ini beserta dengan source code dari stack0. Berikut merupakan source codenya
+stack0 merupakan level paling awal dari protostar. Challenge ini terdapat pada `/opt/protostar/bin/stack0` bersama dengan berkas untuk level selanjutnya. Pada [halaman resminya](https://exploit-exercises.lains.space/protostar/stack0/) diberikan deskripsi singkat mengenai challenge ini beserta dengan source code dari stack0. Berikut merupakan source codenya
 
 ```c
 #include <stdlib.h>
