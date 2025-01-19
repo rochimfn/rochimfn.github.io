@@ -5,6 +5,8 @@ date: 2025-01-07 10:57:00 +0700
 categories: [python, kafka]
 ---
 
+What I mean by transformer is program that consume event from kafka, "transform" the event, than produce it back to kafka. Transformer is not a common way to say this operation. 
+
 ## Prepare The Kafka Broker
 Lets start with prepare the kafka broker. Here I will use Redpanda. You can learn more about Redpanda in the Redpanda website at [https://www.redpanda.com/](https://www.redpanda.com/). In simple terms, Redpanda is message broker that using Kafka protocol as interface. Using Kafka protocol as interface means you can use any existing kafka client or library without changing anything (except connection details of course) and in theory it should be working as expected. I already prepare docker-compose.yaml file for easy deployment. 
 
