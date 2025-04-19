@@ -94,3 +94,6 @@ ssh user@ip
 ![ssh into rhel 9 on lxd](/images/rhel9-ssh-into.png)
 
 Now you can [register the subscription](https://access.redhat.com/articles/1378093) for your installation and you're good to go. Thank you and see you later.
+
+Credit: 
+ - [@stgraber](https://github.com/stgraber) for the excellent video [Windows 11 VM on LXD](https://www.youtube.com/watch?v=3PDMGwbbk48)
