@@ -1,6 +1,6 @@
 #!/usr/bin/env bash
 
-sudo apt install -y ruby-full build-essential zlib1g-dev
+pkg install -y ruby build-essential zlib
 retVal=$?
 if [ $retVal -ne 0 ]; then
     echo ""
