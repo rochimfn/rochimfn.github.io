@@ -16,8 +16,6 @@ GEM
     forwardable-extended (2.6.0)
     google-protobuf (4.26.1)
       rake (>= 13)
-    google-protobuf (4.26.1-x86_64-linux)
-      rake (>= 13)
     http_parser.rb (0.8.0)
     i18n (1.14.4)
       concurrent-ruby (~> 1.0)
@@ -70,6 +68,8 @@ GEM
     safe_yaml (1.0.5)
     sass-embedded (1.75.0-aarch64-linux-android)
       google-protobuf (>= 3.25, < 5.0)
+    sass-embedded (1.75.0-arm64-darwin)
+      google-protobuf (>= 3.25, < 5.0)
     sass-embedded (1.75.0-x86_64-linux-gnu)
       google-protobuf (>= 3.25, < 5.0)
     terminal-table (3.0.2)
@@ -79,6 +79,7 @@ GEM
 
 PLATFORMS
   aarch64-linux-android
+  arm64-darwin-24
   x86_64-linux
 
 DEPENDENCIES
